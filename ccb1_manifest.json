@@ -1,0 +1,224 @@
+{
+  "version": "CCB-1 v0.1",
+  "created_at": "2026-09-22T04:09:26.673319+00:00",
+  "source_datasets": [
+    "Google ConvApparel",
+    "Amazon ESCI",
+    "Wayfair WANDS"
+  ],
+  "source_artifacts": {
+    "created_at": "2026-09-22T01:51:50.902859+00:00",
+    "files": [
+      {
+        "dataset": "amazon_esci",
+        "path": "data/ccb1/raw/amazon_esci/esci-code/shopping_queries_dataset/shopping_queries_dataset_examples.parquet",
+        "repository": "https://github.com/amazon-research/esci-code.git",
+        "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+        "sha256": "4a735b693b4a424a6fc67f5be6e4c811495c488bbf66d02a602d308b2744263a"
+      },
+      {
+        "dataset": "amazon_esci",
+        "path": "data/ccb1/raw/amazon_esci/esci-code/shopping_queries_dataset/shopping_queries_dataset_products.parquet",
+        "repository": "https://github.com/amazon-research/esci-code.git",
+        "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+        "sha256": "25124442d064d64b26f74082d6fa09438d679efc0c183cf28d19064a2b65a265"
+      },
+      {
+        "dataset": "amazon_esci",
+        "path": "data/ccb1/raw/amazon_esci/esci-code/shopping_queries_dataset/shopping_queries_dataset_sources.csv",
+        "repository": "https://github.com/amazon-research/esci-code.git",
+        "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+        "sha256": "a5fed8ecc016443de40bf3c63098f0e3f23bbe4daa4236f1c38b8c3184778c50"
+      },
+      {
+        "dataset": "wayfair_wands",
+        "path": "data/ccb1/raw/wayfair_wands/query.csv",
+        "url": "https://raw.githubusercontent.com/wayfair/WANDS/main/dataset/query.csv",
+        "sha256": "63b61660560fecc33ec490804c7e2b81402ee3e7c31a9cbb5e03736639f68e95"
+      },
+      {
+        "dataset": "wayfair_wands",
+        "path": "data/ccb1/raw/wayfair_wands/product.csv",
+        "url": "https://raw.githubusercontent.com/wayfair/WANDS/main/dataset/product.csv",
+        "sha256": "d993926254572e6eba96c8fd87cc549a17fb91ad3748308036eee4cf92b10ac6"
+      },
+      {
+        "dataset": "wayfair_wands",
+        "path": "data/ccb1/raw/wayfair_wands/label.csv",
+        "url": "https://raw.githubusercontent.com/wayfair/WANDS/main/dataset/label.csv",
+        "sha256": "c11fe81ad62f17f56f316b0ec9630ebe8fbe1393578cb0ca4f05c17253a180ef"
+      },
+      {
+        "dataset": "google_convapparel",
+        "path": "data/ccb1/raw/google_convapparel/ConvApparel.zip",
+        "url": "https://huggingface.co/datasets/google/ConvApparel/resolve/main/ConvApparel.zip?download=true",
+        "sha256": "fb177b2d1c037b6f46b849a2dcd28fceaa496dded076a124644ce59d0a10b6fc"
+      }
+    ],
+    "git_revisions": {
+      "amazon_esci": {
+        "repository": "https://github.com/amazon-research/esci-code.git",
+        "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5"
+      }
+    },
+    "updated_at": "2026-09-22T04:04:23.769168+00:00",
+    "license_references": {
+      "google_convapparel": {
+        "license": "CC BY 4.0",
+        "reference": "https://huggingface.co/datasets/google/ConvApparel"
+      },
+      "amazon_esci": {
+        "license": "Apache-2.0",
+        "reference": "https://github.com/amazon-research/esci-code"
+      },
+      "wayfair_wands": {
+        "license": "MIT",
+        "reference": "https://github.com/wayfair/WANDS"
+      }
+    }
+  },
+  "source_license_references": {
+    "google_convapparel": "CC BY 4.0; https://huggingface.co/datasets/google/ConvApparel",
+    "amazon_esci": "Apache-2.0 with upstream LICENSE/NOTICE; https://github.com/amazon-research/esci-code",
+    "wayfair_wands": "MIT; https://github.com/wayfair/WANDS"
+  },
+  "normalized_files": [
+    {
+      "path": "data/ccb1/normalized/amazon_esci.jsonl",
+      "records": 10000,
+      "sha256": "f5d43bd70d1f9a33e49497c40e5fab3f8963dbcfcc58928a64de88f43f37f548"
+    },
+    {
+      "path": "data/ccb1/normalized/google_convapparel.jsonl",
+      "records": 175751,
+      "sha256": "f993ee7714b2056d37b3416323cd64e1d378896ea55f8ab3a042374ccc877108"
+    },
+    {
+      "path": "data/ccb1/normalized/wayfair_wands.jsonl",
+      "records": 233448,
+      "sha256": "14a721440a59da8cf11dd3337b319e43369faf45f3ce5bf0b89b91261b27e677"
+    }
+  ],
+  "normalization_runs": [
+    {
+      "records": 10000,
+      "destination": "data/ccb1/normalized/amazon_esci.jsonl",
+      "sha256": "f5d43bd70d1f9a33e49497c40e5fab3f8963dbcfcc58928a64de88f43f37f548",
+      "dataset": "amazon_esci",
+      "source_rows": 10000
+    },
+    {
+      "records": 233448,
+      "destination": "data/ccb1/normalized/wayfair_wands.jsonl",
+      "sha256": "14a721440a59da8cf11dd3337b319e43369faf45f3ce5bf0b89b91261b27e677",
+      "dataset": "wayfair_wands"
+    },
+    {
+      "records": 175751,
+      "destination": "data/ccb1/normalized/google_convapparel.jsonl",
+      "sha256": "f993ee7714b2056d37b3416323cd64e1d378896ea55f8ab3a042374ccc877108",
+      "dataset": "google_convapparel"
+    }
+  ],
+  "augmentation_files": [
+    {
+      "path": "data/ccb1/augmented/controlled_benchmark.jsonl",
+      "records": 140,
+      "sha256": "42974c574f77e1724e0390ea14938a26ff16a72bcfdacb4239b93015fa3d53bf"
+    },
+    {
+      "path": "data/ccb1/augmented/hard_negatives.jsonl",
+      "records": 500,
+      "sha256": "7069d8958ee8a819779601805b67bd2e11f0a7429d4216e8d962e7cbc5b45cf8"
+    },
+    {
+      "path": "data/ccb1/augmented/stage_a_azure.jsonl",
+      "records": 255,
+      "sha256": "235beee5925b353eec9cf5808b79e7acbf5ed5ae42be59260c1b2717ee4bd07f"
+    },
+    {
+      "path": "data/ccb1/augmented/stage_a_azure_missing.jsonl",
+      "records": 40,
+      "sha256": "f08cb4d7efb04a0d081367714312534637009b52f117b2f3ab17c9246dd895cd"
+    },
+    {
+      "path": "data/ccb1/augmented/stage_a_azure_retry.jsonl",
+      "records": 245,
+      "sha256": "ade5545d610cc90882cae8c62b43208d46a1ac43deb7a36b6dcee919736046a6"
+    },
+    {
+      "path": "data/ccb1/augmented/stage_a_template.jsonl",
+      "records": 500,
+      "sha256": "f6598191eb7fe5117e03d7d2a4006a0310bd2e71b03d143dd214d3645053daf8"
+    }
+  ],
+  "record_counts": {
+    "real_normalized": 419199,
+    "conversational_augmentations": 500,
+    "template_control_records": 500,
+    "hard_negatives": 500,
+    "controlled_constraint_location_records": 140,
+    "gold_records": 0,
+    "train": 345460,
+    "validation": 39785,
+    "hidden_test": 35094
+  },
+  "split_manifest": {
+    "seed": 20260921,
+    "input_records_after_dedupe": 420339,
+    "duplicate_records_dropped": 40,
+    "groups": 25522,
+    "record_counts": {
+      "train": 345460,
+      "hidden_test": 35094,
+      "validation": 39785
+    },
+    "group_counts": {
+      "train": 20440,
+      "hidden_test": 2511,
+      "validation": 2571
+    },
+    "group_leakage_check": true
+  },
+  "model_configurations": {
+    "provider": "azure_openai",
+    "billing_policy": "Only deploy/use models documented as sold directly by Azure and covered by the Microsoft for Startups sponsorship; partner/community models require explicit approval.",
+    "roles": {
+      "bulk_generator": {
+        "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_BULK_GENERATOR",
+        "deployment": "buyermoment-bulk-generator",
+        "model": "gpt-5.4-nano",
+        "version": "2026-03-17",
+        "sku": "GlobalStandard",
+        "capacity": 10,
+        "status": "deployed; Stage A complete"
+      },
+      "extractor": {
+        "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_EXTRACTOR",
+        "deployment": "buyermoment-extractor",
+        "model": "gpt-5.4-mini",
+        "version": "2026-03-17",
+        "sku": "GlobalStandard",
+        "capacity": 10,
+        "status": "deployed; bounded comparison sample only"
+      },
+      "judge": {
+        "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_JUDGE",
+        "deployment": null,
+        "status": "not deployed; source human labels take precedence"
+      },
+      "reasoner": {
+        "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_REASONER",
+        "deployment": null,
+        "status": "not deployed"
+      },
+      "fallback": {
+        "deployment_env": null,
+        "deployment": "deterministic-contextfit-v0.1",
+        "status": "local"
+      }
+    }
+  },
+  "transformation_pipeline_version": "ccb1-normalize-split-augment-v0.1",
+  "hidden_test_policy": "source/group aware; labels and examples are local ignored artifacts and are not committed"
+}

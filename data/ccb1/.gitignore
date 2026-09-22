@@ -1,0 +1,13 @@
+raw/*
+normalized/*
+augmented/*
+gold/*
+train/*
+validation/*
+hidden_test/*
+!*/.gitkeep
+!manifest.json
+!source_manifest.json
+!normalization_manifest.json
+!split_manifest.json
+!augmented/*_run.json

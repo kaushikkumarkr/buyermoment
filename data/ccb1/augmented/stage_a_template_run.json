@@ -1,0 +1,12 @@
+{
+  "stage": "A",
+  "provider": "template",
+  "role": "bulk_generator",
+  "parent_records": 100,
+  "generated_records": 500,
+  "rejected_parent_records": 0,
+  "rejected": [],
+  "elapsed_seconds": 0.019,
+  "output_sha256": "f6598191eb7fe5117e03d7d2a4006a0310bd2e71b03d143dd214d3645053daf8",
+  "quality_gate": "review_required"
+}

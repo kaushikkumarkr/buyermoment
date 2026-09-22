@@ -1,0 +1,209 @@
+{
+  "stage": "A",
+  "provider": "azure",
+  "role": "bulk_generator",
+  "parent_records": 100,
+  "generated_records": 255,
+  "rejected_parent_records": 49,
+  "rejected": [
+    {
+      "parent_record_id": "wands:13",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:14",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:1:B0BVJ14WSY",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:14",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:1:B095PW81M5",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:15",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:16",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:16",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:17",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:1:B0742KPVD6",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:17",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:18",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:18",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:20",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:1:B00Y1U7M9C",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:20",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:21",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:1:B09XTDQP6L",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:21",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:22",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:22",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:23",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B09XTDQP6L",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:23",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:24",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B083M65X7K",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:24",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:25",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:25",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:26",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B074662GJQ",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:26",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:27",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B0BVJ14WSY",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:27",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:28",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:28",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:29",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B08ZSKPJSB",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:29",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:30",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B08B67K8FW",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:30",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B09QZYCYZ7",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:31",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:32",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "convapparel:bottoms_bad:0:2:B07CPQRY1X",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "wands:32",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    },
+    {
+      "parent_record_id": "esci:33",
+      "error": "Azure OpenAI request failed (429): {\n  \"error\": {\n    \"message\": \"Your requests to gpt-5.4-nano for buyermoment-bulk-generator in eastus2 have exceeded rate limit.\",\n    \"type\": \"too_many_requests\",\n    \"param\": null,\n    \"code\": \"rate_limit_exceeded\"\n  }\n}"
+    }
+  ],
+  "elapsed_seconds": 248.18,
+  "output_sha256": "235beee5925b353eec9cf5808b79e7acbf5ed5ae42be59260c1b2717ee4bd07f",
+  "quality_gate": "review_required"
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "A",
+  "provider": "azure",
+  "role": "bulk_generator",
+  "parent_records": 1,
+  "generated_records": 5,
+  "rejected_parent_records": 0,
+  "rejected": [],
+  "elapsed_seconds": 5.621,
+  "output_sha256": "35b29e06d1aaffd581b394c9a99fb72f3ede65b2f7d35d7b0cd712fe43249700",
+  "quality_gate": "review_required"
+}

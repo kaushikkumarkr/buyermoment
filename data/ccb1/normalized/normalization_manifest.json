@@ -1,0 +1,21 @@
+[
+  {
+    "records": 10000,
+    "destination": "data/ccb1/normalized/amazon_esci.jsonl",
+    "sha256": "f5d43bd70d1f9a33e49497c40e5fab3f8963dbcfcc58928a64de88f43f37f548",
+    "dataset": "amazon_esci",
+    "source_rows": 10000
+  },
+  {
+    "records": 233448,
+    "destination": "data/ccb1/normalized/wayfair_wands.jsonl",
+    "sha256": "14a721440a59da8cf11dd3337b319e43369faf45f3ce5bf0b89b91261b27e677",
+    "dataset": "wayfair_wands"
+  },
+  {
+    "records": 175751,
+    "destination": "data/ccb1/normalized/google_convapparel.jsonl",
+    "sha256": "f993ee7714b2056d37b3416323cd64e1d378896ea55f8ab3a042374ccc877108",
+    "dataset": "google_convapparel"
+  }
+]

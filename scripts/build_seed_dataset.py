@@ -1,9 +1,8 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
-from buyermoment.models import CommercialContext, DatasetRecord, Evidence, Product
+from buyermoment.models import DatasetRecord, Evidence, Product
 from buyermoment.scoring import build_context
 
 
@@ -35,4 +34,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

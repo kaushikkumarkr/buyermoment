@@ -7,6 +7,8 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 EvidenceKind = Literal["observed", "inference", "hypothesis", "result"]
 PurchaseStage = Literal["informational", "exploration", "comparison", "consideration", "transactional"]
+CommercialityLevel = Literal["none", "low", "medium", "high"]
+RelevanceLabel = Literal["exact", "substitute", "complement", "irrelevant", "unknown"]
 
 
 class Evidence(BaseModel):
@@ -197,3 +199,59 @@ class DatasetRecord(BaseModel):
     split: Literal["train", "validation", "hidden_test"]
     metadata: dict[str, Any] = Field(default_factory=dict)
 
+
+class CanonicalConstraints(BaseModel):
+    """Nullable canonical fields: missing source evidence stays missing."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    budget_min: float | None = Field(default=None, ge=0)
+    budget_max: float | None = Field(default=None, ge=0)
+    currency: str | None = None
+    required_features: list[str] = Field(default_factory=list)
+    excluded_features: list[str] = Field(default_factory=list)
+    compatibility: list[str] = Field(default_factory=list)
+    timing: str | None = None
+    geography: str | None = None
+    language: str | None = None
+    shipping: str | None = None
+
+
+class CommercialContextRecord(BaseModel):
+    """CCB-1 v0.1 canonical record for real and augmented examples."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    record_id: str
+    source_dataset: str
+    source_record_id: str
+    source_license: str
+    source_version: str | None = None
+    context_text: str = Field(min_length=1)
+    original_query: str | None = None
+    product_id: str | None = None
+    product_title: str | None = None
+    product_description: str | None = None
+    product_attributes: dict[str, Any] = Field(default_factory=dict)
+    problem: str | None = None
+    desired_outcome: str | None = None
+    use_case: str | None = None
+    constraints: CanonicalConstraints = Field(default_factory=CanonicalConstraints)
+    purchase_stage: PurchaseStage | None = None
+    commerciality: CommercialityLevel | None = None
+    relevance: RelevanceLabel | None = None
+    product_fit: float | None = Field(default=None, ge=0, le=1)
+    constraint_match: float | None = Field(default=None, ge=0, le=1)
+    ad_relevance: float | None = Field(default=None, ge=0, le=1)
+    location: LocationContext = Field(default_factory=LocationContext)
+    evidence: list[Evidence] = Field(default_factory=list)
+    provenance: list[str] = Field(default_factory=list)
+    transformation_history: list[str] = Field(default_factory=list)
+    confidence: float | None = Field(default=None, ge=0, le=1)
+    split: Literal["train", "validation", "hidden_test", "unassigned"] = "unassigned"
+    metadata: dict[str, Any] = Field(default_factory=dict)
+
+    @field_validator("context_text")
+    @classmethod
+    def normalize_context_text(cls, value: str) -> str:
+        return " ".join(value.split())

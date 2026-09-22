@@ -1,0 +1,17 @@
+{
+  "stage": "A",
+  "provider": "azure",
+  "role": "bulk_generator",
+  "parent_records": 1,
+  "generated_records": 0,
+  "rejected_parent_records": 1,
+  "rejected": [
+    {
+      "parent_record_id": "esci:0",
+      "error": "Azure OpenAI request failed (401): {\"error\":{\"code\":\"PermissionDenied\",\"message\":\"Principal does not have access to API/Operation.\"}}"
+    }
+  ],
+  "elapsed_seconds": 0.262,
+  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "quality_gate": "review_required"
+}

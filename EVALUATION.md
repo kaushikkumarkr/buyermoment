@@ -12,3 +12,13 @@ The benchmark should grow to include commercial-intent and purchase-stage accura
 
 The hidden split is generated separately and should not be placed in prompts or developer-visible fixtures.
 
+## Phase 2 measured benchmark
+
+Run the hidden benchmark after the local split exists:
+
+```bash
+PYTHONPATH=backend/src python3 scripts/evaluate_contextfit.py \
+  --input data/ccb1/hidden_test/real.jsonl
+```
+
+This writes `artifacts/contextfit_v0_1_benchmark.json` and `reports/contextfit_v0_1_benchmark.md`. Original ESCI/WANDS labels are the relevance ground truth; controlled augmentation, hard negatives, and constraint/location controls are reported separately and are not human gold. Null metrics are intentional when the source has no defensible annotation. `scripts/benchmark_models.py` runs a bounded same-input comparison across configured Azure-direct roles and records tokens/latency without inventing dollar costs.

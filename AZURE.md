@@ -16,9 +16,8 @@ The dedicated BuyerMoment deployment is intentionally separate from the existing
 
 Logical roles are configured by environment variables rather than hard-coded deployments: `bulk_generator`, `extractor`, `judge`, `reasoner`, and `fallback`.
 
-Until direct billing is confirmed, `MODEL_PROVIDER=deterministic` is the safe default.
+The Phase 2 model decision uses Azure-direct GPT deployments after checking the Microsoft Foundry sponsorship guidance. The deterministic provider remains the evaluation fallback; partner/community models are not enabled.
 
 ## Deployment shape
 
 Use a Container Apps API and web container after images exist in the new registry. Key Vault should hold secrets, and Managed Identity should be used for storage, registry pull, and Key Vault access. The current local MVP does not include a live customer authentication surface; tenant/org IDs are represented in the data model boundary and must be wired before production use.
-

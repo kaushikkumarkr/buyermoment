@@ -1,0 +1,17 @@
+{
+  "seed": 20260921,
+  "input_records_after_dedupe": 420339,
+  "duplicate_records_dropped": 40,
+  "groups": 25522,
+  "record_counts": {
+    "train": 345460,
+    "hidden_test": 35094,
+    "validation": 39785
+  },
+  "group_counts": {
+    "train": 20440,
+    "hidden_test": 2511,
+    "validation": 2571
+  },
+  "group_leakage_check": true
+}

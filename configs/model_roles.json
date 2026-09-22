@@ -1,0 +1,39 @@
+{
+  "provider": "azure_openai",
+  "billing_policy": "Only deploy/use models documented as sold directly by Azure and covered by the Microsoft for Startups sponsorship; partner/community models require explicit approval.",
+  "roles": {
+    "bulk_generator": {
+      "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_BULK_GENERATOR",
+      "deployment": "buyermoment-bulk-generator",
+      "model": "gpt-5.4-nano",
+      "version": "2026-03-17",
+      "sku": "GlobalStandard",
+      "capacity": 10,
+      "status": "deployed; Stage A complete"
+    },
+    "extractor": {
+      "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_EXTRACTOR",
+      "deployment": "buyermoment-extractor",
+      "model": "gpt-5.4-mini",
+      "version": "2026-03-17",
+      "sku": "GlobalStandard",
+      "capacity": 10,
+      "status": "deployed; bounded comparison sample only"
+    },
+    "judge": {
+      "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_JUDGE",
+      "deployment": null,
+      "status": "not deployed; source human labels take precedence"
+    },
+    "reasoner": {
+      "deployment_env": "BUYERMOMENT_AZURE_OPENAI_DEPLOYMENT_REASONER",
+      "deployment": null,
+      "status": "not deployed"
+    },
+    "fallback": {
+      "deployment_env": null,
+      "deployment": "deterministic-contextfit-v0.1",
+      "status": "local"
+    }
+  }
+}

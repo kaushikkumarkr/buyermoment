@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-09-22T01:51:50.902859+00:00",
+  "files": [
+    {
+      "dataset": "amazon_esci",
+      "path": "data/ccb1/raw/amazon_esci/esci-code/shopping_queries_dataset/shopping_queries_dataset_examples.parquet",
+      "repository": "https://github.com/amazon-research/esci-code.git",
+      "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+      "sha256": "4a735b693b4a424a6fc67f5be6e4c811495c488bbf66d02a602d308b2744263a"
+    },
+    {
+      "dataset": "amazon_esci",
+      "path": "data/ccb1/raw/amazon_esci/esci-code/shopping_queries_dataset/shopping_queries_dataset_products.parquet",
+      "repository": "https://github.com/amazon-research/esci-code.git",
+      "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+      "sha256": "25124442d064d64b26f74082d6fa09438d679efc0c183cf28d19064a2b65a265"
+    },
+    {
+      "dataset": "amazon_esci",
+      "path": "data/ccb1/raw/amazon_esci/esci-code/shopping_queries_dataset/shopping_queries_dataset_sources.csv",
+      "repository": "https://github.com/amazon-research/esci-code.git",
+      "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5",
+      "sha256": "a5fed8ecc016443de40bf3c63098f0e3f23bbe4daa4236f1c38b8c3184778c50"
+    },
+    {
+      "dataset": "wayfair_wands",
+      "path": "data/ccb1/raw/wayfair_wands/query.csv",
+      "url": "https://raw.githubusercontent.com/wayfair/WANDS/main/dataset/query.csv",
+      "sha256": "63b61660560fecc33ec490804c7e2b81402ee3e7c31a9cbb5e03736639f68e95"
+    },
+    {
+      "dataset": "wayfair_wands",
+      "path": "data/ccb1/raw/wayfair_wands/product.csv",
+      "url": "https://raw.githubusercontent.com/wayfair/WANDS/main/dataset/product.csv",
+      "sha256": "d993926254572e6eba96c8fd87cc549a17fb91ad3748308036eee4cf92b10ac6"
+    },
+    {
+      "dataset": "wayfair_wands",
+      "path": "data/ccb1/raw/wayfair_wands/label.csv",
+      "url": "https://raw.githubusercontent.com/wayfair/WANDS/main/dataset/label.csv",
+      "sha256": "c11fe81ad62f17f56f316b0ec9630ebe8fbe1393578cb0ca4f05c17253a180ef"
+    },
+    {
+      "dataset": "google_convapparel",
+      "path": "data/ccb1/raw/google_convapparel/ConvApparel.zip",
+      "url": "https://huggingface.co/datasets/google/ConvApparel/resolve/main/ConvApparel.zip?download=true",
+      "sha256": "fb177b2d1c037b6f46b849a2dcd28fceaa496dded076a124644ce59d0a10b6fc"
+    }
+  ],
+  "git_revisions": {
+    "amazon_esci": {
+      "repository": "https://github.com/amazon-research/esci-code.git",
+      "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5"
+    }
+  },
+  "updated_at": "2026-09-22T04:04:23.769168+00:00",
+  "license_references": {
+    "google_convapparel": {
+      "license": "CC BY 4.0",
+      "reference": "https://huggingface.co/datasets/google/ConvApparel"
+    },
+    "amazon_esci": {
+      "license": "Apache-2.0",
+      "reference": "https://github.com/amazon-research/esci-code"
+    },
+    "wayfair_wands": {
+      "license": "MIT",
+      "reference": "https://github.com/wayfair/WANDS"
+    }
+  }
+}
