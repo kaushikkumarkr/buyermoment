@@ -1,0 +1,75 @@
+{
+  "format": "buyermoment_chatgpt_ads_hypothesis_package_v1",
+  "manual_import_required": true,
+  "template_mapping_required": true,
+  "experiment": {
+    "experiment_id": "adexp-buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+    "business_id": "buyermoment",
+    "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+    "platform": "chatgpt_ads",
+    "status": "PENDING_APPROVAL",
+    "hypothesis": "The situation 'A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.' will respond to a context-led explanation of Buyer Moment Discovery.",
+    "audience_or_context_strategy": {
+      "commercial_context": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.",
+      "context_hints": [
+        "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel."
+      ],
+      "search_terms": [],
+      "notes": [
+        "Context hints are natural situations, not exact-match keywords.",
+        "Hypothesis only; no performance claim."
+      ]
+    },
+    "offer": {
+      "offer_id": null,
+      "description": "Evaluate Buyer Moment Discovery against the stated situation.",
+      "landing_page": null
+    },
+    "creative": {
+      "headline": "Buyer Moment Discovery for SaaS marketer translating customer situations into AI-ad context \u2014 Buyer Moment Discovery",
+      "body": "See whether Buyer Moment Discovery fits the problem and constraints described in this Buyer Moment.",
+      "cta": "Review the fit"
+    },
+    "budget": {
+      "planned_total": null,
+      "planned_daily": null,
+      "currency": "USD"
+    },
+    "measurement": {
+      "primary_conversion": "pilot_request",
+      "secondary_events": [
+        "landing_page_view",
+        "qualified_cta_click"
+      ],
+      "tracking_parameters": {
+        "bm_buyer_moment": "buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+        "bm_experiment": "adexp-buyermoment-moment-saas-marketer-context-bm-buyer-moments"
+      }
+    },
+    "contextfit_score": 0.6773378378378379,
+    "test_readiness": 0.6076452702702703,
+    "commercial_potential": 0.6813378378378379,
+    "spend_decision": "ABSTAIN",
+    "approval": {
+      "required": true,
+      "approved": false,
+      "approved_by": null,
+      "approved_at": null
+    },
+    "contextfit_version": "phase6",
+    "policy_version": "phase5-v1",
+    "experiment_version": "1",
+    "provenance": {
+      "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+      "product_id": "bm-buyer-moments",
+      "evidence_ids": [
+        "bm-e8",
+        "bm-e1",
+        "bm-e3",
+        "buyermoment-saas-marketer-context-inference"
+      ],
+      "human_approval_required": true
+    },
+    "created_at": "2026-09-22T06:46:12.842467Z"
+  }
+}

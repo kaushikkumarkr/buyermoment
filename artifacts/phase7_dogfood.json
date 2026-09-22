@@ -1,0 +1,1412 @@
+{
+  "report": {
+    "business_id": "buyermoment",
+    "business_name": "BuyerMoment",
+    "generated_at": "2026-09-22T06:46:12.843727Z",
+    "evidence_analyzed": 10,
+    "raw_candidate_count": 30,
+    "supported_candidate_count": 30,
+    "top_buyer_moments": [
+      {
+        "id": "buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+        "business_id": "buyermoment",
+        "title": "SaaS marketer translating customer situations into AI-ad context \u2014 Buyer Moment Discovery",
+        "problem": "The team has product and customer evidence but lacks a disciplined way to rank which commercial contexts deserve an experiment.",
+        "situation": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.",
+        "desired_outcome": "Prioritize a small set of evidence-backed contexts and turn them into reviewable experiment hypotheses.",
+        "constraints": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "shipping": null,
+          "language": null
+        },
+        "purchase_stage": "consideration",
+        "location": {
+          "country": null,
+          "region": null,
+          "city": null,
+          "language": null,
+          "currency": null,
+          "shipping": null,
+          "location_specificity": "unknown"
+        },
+        "matching_products": [
+          {
+            "id": "bm-buyer-moments",
+            "name": "Buyer Moment Discovery",
+            "category": "commercial-context intelligence",
+            "description": "Evidence-backed discovery and ranking of customer situations that may deserve an advertising experiment.",
+            "price": null,
+            "currency": "USD",
+            "url": null,
+            "features": [
+              "buyer moments",
+              "supporting evidence",
+              "ranked opportunities",
+              "provenance"
+            ],
+            "service_regions": [],
+            "available": true,
+            "shipping_deadline_met": null,
+            "evidence": [
+              {
+                "id": "bm-e2",
+                "kind": "observed",
+                "text": "BuyerMoment generates and ranks evidence-backed Buyer Moments with supporting evidence and confidence.",
+                "source": "PRODUCT.md",
+                "source_record_id": "product-buyer-moments",
+                "provenance": [
+                  "PRODUCT.md"
+                ],
+                "confidence": 0.98
+              }
+            ]
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "id": "bm-e8",
+            "kind": "observed",
+            "text": "BuyerMoment is positioned as commercial-context intelligence for AI advertising, not a generic copywriter, ad network, or autonomous media buyer.",
+            "source": "PRODUCT.md",
+            "source_record_id": "product-positioning",
+            "provenance": [
+              "PRODUCT.md"
+            ],
+            "confidence": 0.98
+          },
+          {
+            "id": "bm-e1",
+            "kind": "observed",
+            "text": "The repository implements a deterministic ContextFit scorer with budget, feature, location, stage, and ad-relevance reasoning codes.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-contextfit",
+            "provenance": [
+              "BUILD_STATUS.md"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "bm-e3",
+            "kind": "observed",
+            "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-spend-safety",
+            "provenance": [
+              "BUILD_STATUS.md",
+              "policies/spend_safety.yaml"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "buyermoment-saas-marketer-context-inference",
+            "kind": "inference",
+            "text": "Candidate commercial situation: SaaS marketer translating customer situations into AI-ad context",
+            "source": "commercial_workflow",
+            "source_record_id": "saas-marketer-context",
+            "provenance": [
+              "bm-e8",
+              "bm-e1",
+              "bm-e3"
+            ],
+            "confidence": 0.65
+          }
+        ],
+        "confidence": 0.8782162162162163,
+        "score": {
+          "commerciality": 0.75,
+          "product_fit": 0.45135135135135135,
+          "semantic_product_fit": 0.45135135135135135,
+          "constraint_match": 0.79,
+          "location_fit": 0.72,
+          "purchase_stage": "consideration",
+          "ad_relevance": 0.73,
+          "commercial_actionability": 0.19254648648648648,
+          "offer_fit": 0.7,
+          "confidence": 0.8782162162162163,
+          "raw_confidence": 0.8782162162162163,
+          "calibrated_confidence": null,
+          "confidence_band": null,
+          "extracted_constraints": [],
+          "extracted_constraint_fields": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "language": null,
+            "shipping": null
+          },
+          "evidence": [
+            {
+              "id": "bm-e8",
+              "kind": "observed",
+              "text": "BuyerMoment is positioned as commercial-context intelligence for AI advertising, not a generic copywriter, ad network, or autonomous media buyer.",
+              "source": "PRODUCT.md",
+              "source_record_id": "product-positioning",
+              "provenance": [
+                "PRODUCT.md"
+              ],
+              "confidence": 0.98
+            },
+            {
+              "id": "bm-e1",
+              "kind": "observed",
+              "text": "The repository implements a deterministic ContextFit scorer with budget, feature, location, stage, and ad-relevance reasoning codes.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-contextfit",
+              "provenance": [
+                "BUILD_STATUS.md"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "bm-e3",
+              "kind": "observed",
+              "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-spend-safety",
+              "provenance": [
+                "BUILD_STATUS.md",
+                "policies/spend_safety.yaml"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "buyermoment-saas-marketer-context-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: SaaS marketer translating customer situations into AI-ad context",
+              "source": "commercial_workflow",
+              "source_record_id": "saas-marketer-context",
+              "provenance": [
+                "bm-e8",
+                "bm-e1",
+                "bm-e3"
+              ],
+              "confidence": 0.65
+            },
+            {
+              "id": "bm-e2",
+              "kind": "observed",
+              "text": "BuyerMoment generates and ranks evidence-backed Buyer Moments with supporting evidence and confidence.",
+              "source": "PRODUCT.md",
+              "source_record_id": "product-buyer-moments",
+              "provenance": [
+                "PRODUCT.md"
+              ],
+              "confidence": 0.98
+            }
+          ],
+          "reason_codes": [
+            "BUYING_LANGUAGE"
+          ],
+          "overall": 0.6773378378378379
+        },
+        "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+      },
+      {
+        "id": "buyermoment-moment-evidence-to-experiment-bm-test-readiness",
+        "business_id": "buyermoment",
+        "title": "Marketer converting customer research into a test \u2014 TestReadiness and SpendDecision",
+        "problem": "Commercial potential, immediate test readiness, and unsupported inference can be conflated.",
+        "situation": "A marketer has website, product, and customer evidence and wants to know which situation is actionable now.",
+        "desired_outcome": "See evidence, inference, risks, and human approval requirements before creating a small test.",
+        "constraints": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "shipping": null,
+          "language": null
+        },
+        "purchase_stage": "consideration",
+        "location": {
+          "country": null,
+          "region": null,
+          "city": null,
+          "language": null,
+          "currency": null,
+          "shipping": null,
+          "location_specificity": "unknown"
+        },
+        "matching_products": [
+          {
+            "id": "bm-test-readiness",
+            "name": "TestReadiness and SpendDecision",
+            "category": "advertising experiment safety",
+            "description": "Separates commercial potential from readiness to justify a human-approved experiment.",
+            "price": null,
+            "currency": "USD",
+            "url": null,
+            "features": [
+              "commercial potential",
+              "test readiness",
+              "evidence strength",
+              "ambiguity",
+              "TEST",
+              "WATCH",
+              "ABSTAIN",
+              "BLOCK"
+            ],
+            "service_regions": [],
+            "available": true,
+            "shipping_deadline_met": null,
+            "evidence": [
+              {
+                "id": "bm-e3",
+                "kind": "observed",
+                "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+                "source": "BUILD_STATUS.md",
+                "source_record_id": "build-status-spend-safety",
+                "provenance": [
+                  "BUILD_STATUS.md",
+                  "policies/spend_safety.yaml"
+                ],
+                "confidence": 0.99
+              }
+            ]
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "id": "bm-e9",
+            "kind": "observed",
+            "text": "Human approval remains mandatory and live advertising is not launched by the current product.",
+            "source": "docs/REAL_PILOT_GATE.md",
+            "source_record_id": "pilot-gate-human-approval",
+            "provenance": [
+              "docs/REAL_PILOT_GATE.md"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "bm-e3",
+            "kind": "observed",
+            "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-spend-safety",
+            "provenance": [
+              "BUILD_STATUS.md",
+              "policies/spend_safety.yaml"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "bm-e4",
+            "kind": "observed",
+            "text": "The product architecture includes a Business Analyzer to produce commercial contexts from business evidence.",
+            "source": "ARCHITECTURE.md",
+            "source_record_id": "architecture-analyzer",
+            "provenance": [
+              "ARCHITECTURE.md"
+            ],
+            "confidence": 0.98
+          },
+          {
+            "id": "buyermoment-evidence-to-experiment-inference",
+            "kind": "inference",
+            "text": "Candidate commercial situation: Marketer converting customer research into a test",
+            "source": "commercial_workflow",
+            "source_record_id": "evidence-to-experiment",
+            "provenance": [
+              "bm-e3",
+              "bm-e4",
+              "bm-e9"
+            ],
+            "confidence": 0.65
+          }
+        ],
+        "confidence": 0.8620000000000001,
+        "score": {
+          "commerciality": 0.75,
+          "product_fit": 0.43999999999999995,
+          "semantic_product_fit": 0.43999999999999995,
+          "constraint_match": 0.79,
+          "location_fit": 0.72,
+          "purchase_stage": "consideration",
+          "ad_relevance": 0.73,
+          "commercial_actionability": 0.18770399999999998,
+          "offer_fit": 0.7,
+          "confidence": 0.8620000000000001,
+          "raw_confidence": 0.8620000000000001,
+          "calibrated_confidence": null,
+          "confidence_band": null,
+          "extracted_constraints": [],
+          "extracted_constraint_fields": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "language": null,
+            "shipping": null
+          },
+          "evidence": [
+            {
+              "id": "bm-e9",
+              "kind": "observed",
+              "text": "Human approval remains mandatory and live advertising is not launched by the current product.",
+              "source": "docs/REAL_PILOT_GATE.md",
+              "source_record_id": "pilot-gate-human-approval",
+              "provenance": [
+                "docs/REAL_PILOT_GATE.md"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "bm-e3",
+              "kind": "observed",
+              "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-spend-safety",
+              "provenance": [
+                "BUILD_STATUS.md",
+                "policies/spend_safety.yaml"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "bm-e4",
+              "kind": "observed",
+              "text": "The product architecture includes a Business Analyzer to produce commercial contexts from business evidence.",
+              "source": "ARCHITECTURE.md",
+              "source_record_id": "architecture-analyzer",
+              "provenance": [
+                "ARCHITECTURE.md"
+              ],
+              "confidence": 0.98
+            },
+            {
+              "id": "buyermoment-evidence-to-experiment-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: Marketer converting customer research into a test",
+              "source": "commercial_workflow",
+              "source_record_id": "evidence-to-experiment",
+              "provenance": [
+                "bm-e3",
+                "bm-e4",
+                "bm-e9"
+              ],
+              "confidence": 0.65
+            },
+            {
+              "id": "bm-e3",
+              "kind": "observed",
+              "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-spend-safety",
+              "provenance": [
+                "BUILD_STATUS.md",
+                "policies/spend_safety.yaml"
+              ],
+              "confidence": 0.99
+            }
+          ],
+          "reason_codes": [
+            "BUYING_LANGUAGE"
+          ],
+          "overall": 0.6745
+        },
+        "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+      },
+      {
+        "id": "buyermoment-moment-saas-marketer-context-bm-test-readiness",
+        "business_id": "buyermoment",
+        "title": "SaaS marketer translating customer situations into AI-ad context \u2014 TestReadiness and SpendDecision",
+        "problem": "The team has product and customer evidence but lacks a disciplined way to rank which commercial contexts deserve an experiment.",
+        "situation": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.",
+        "desired_outcome": "Prioritize a small set of evidence-backed contexts and turn them into reviewable experiment hypotheses.",
+        "constraints": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "shipping": null,
+          "language": null
+        },
+        "purchase_stage": "consideration",
+        "location": {
+          "country": null,
+          "region": null,
+          "city": null,
+          "language": null,
+          "currency": null,
+          "shipping": null,
+          "location_specificity": "unknown"
+        },
+        "matching_products": [
+          {
+            "id": "bm-test-readiness",
+            "name": "TestReadiness and SpendDecision",
+            "category": "advertising experiment safety",
+            "description": "Separates commercial potential from readiness to justify a human-approved experiment.",
+            "price": null,
+            "currency": "USD",
+            "url": null,
+            "features": [
+              "commercial potential",
+              "test readiness",
+              "evidence strength",
+              "ambiguity",
+              "TEST",
+              "WATCH",
+              "ABSTAIN",
+              "BLOCK"
+            ],
+            "service_regions": [],
+            "available": true,
+            "shipping_deadline_met": null,
+            "evidence": [
+              {
+                "id": "bm-e3",
+                "kind": "observed",
+                "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+                "source": "BUILD_STATUS.md",
+                "source_record_id": "build-status-spend-safety",
+                "provenance": [
+                  "BUILD_STATUS.md",
+                  "policies/spend_safety.yaml"
+                ],
+                "confidence": 0.99
+              }
+            ]
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "id": "bm-e8",
+            "kind": "observed",
+            "text": "BuyerMoment is positioned as commercial-context intelligence for AI advertising, not a generic copywriter, ad network, or autonomous media buyer.",
+            "source": "PRODUCT.md",
+            "source_record_id": "product-positioning",
+            "provenance": [
+              "PRODUCT.md"
+            ],
+            "confidence": 0.98
+          },
+          {
+            "id": "bm-e1",
+            "kind": "observed",
+            "text": "The repository implements a deterministic ContextFit scorer with budget, feature, location, stage, and ad-relevance reasoning codes.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-contextfit",
+            "provenance": [
+              "BUILD_STATUS.md"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "bm-e3",
+            "kind": "observed",
+            "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-spend-safety",
+            "provenance": [
+              "BUILD_STATUS.md",
+              "policies/spend_safety.yaml"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "buyermoment-saas-marketer-context-inference",
+            "kind": "inference",
+            "text": "Candidate commercial situation: SaaS marketer translating customer situations into AI-ad context",
+            "source": "commercial_workflow",
+            "source_record_id": "saas-marketer-context",
+            "provenance": [
+              "bm-e8",
+              "bm-e1",
+              "bm-e3"
+            ],
+            "confidence": 0.65
+          }
+        ],
+        "confidence": 0.8241621621621622,
+        "score": {
+          "commerciality": 0.75,
+          "product_fit": 0.4135135135135135,
+          "semantic_product_fit": 0.4135135135135135,
+          "constraint_match": 0.79,
+          "location_fit": 0.72,
+          "purchase_stage": "consideration",
+          "ad_relevance": 0.73,
+          "commercial_actionability": 0.17640486486486487,
+          "offer_fit": 0.7,
+          "confidence": 0.8241621621621622,
+          "raw_confidence": 0.8241621621621622,
+          "calibrated_confidence": null,
+          "confidence_band": null,
+          "extracted_constraints": [],
+          "extracted_constraint_fields": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "language": null,
+            "shipping": null
+          },
+          "evidence": [
+            {
+              "id": "bm-e8",
+              "kind": "observed",
+              "text": "BuyerMoment is positioned as commercial-context intelligence for AI advertising, not a generic copywriter, ad network, or autonomous media buyer.",
+              "source": "PRODUCT.md",
+              "source_record_id": "product-positioning",
+              "provenance": [
+                "PRODUCT.md"
+              ],
+              "confidence": 0.98
+            },
+            {
+              "id": "bm-e1",
+              "kind": "observed",
+              "text": "The repository implements a deterministic ContextFit scorer with budget, feature, location, stage, and ad-relevance reasoning codes.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-contextfit",
+              "provenance": [
+                "BUILD_STATUS.md"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "bm-e3",
+              "kind": "observed",
+              "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-spend-safety",
+              "provenance": [
+                "BUILD_STATUS.md",
+                "policies/spend_safety.yaml"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "buyermoment-saas-marketer-context-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: SaaS marketer translating customer situations into AI-ad context",
+              "source": "commercial_workflow",
+              "source_record_id": "saas-marketer-context",
+              "provenance": [
+                "bm-e8",
+                "bm-e1",
+                "bm-e3"
+              ],
+              "confidence": 0.65
+            },
+            {
+              "id": "bm-e3",
+              "kind": "observed",
+              "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-spend-safety",
+              "provenance": [
+                "BUILD_STATUS.md",
+                "policies/spend_safety.yaml"
+              ],
+              "confidence": 0.99
+            }
+          ],
+          "reason_codes": [
+            "BUYING_LANGUAGE"
+          ],
+          "overall": 0.6678783783783784
+        },
+        "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+      },
+      {
+        "id": "buyermoment-moment-measurement-learning-bm-buyer-moments",
+        "business_id": "buyermoment",
+        "title": "Advertiser linking context hypotheses to outcomes \u2014 Buyer Moment Discovery",
+        "problem": "A campaign result is hard to interpret if the original Buyer Moment, score, offer, and experiment version are not preserved.",
+        "situation": "An advertiser wants to learn whether commercial-context quality predicts useful experiment outcomes.",
+        "desired_outcome": "Keep an immutable lineage from Buyer Moment to experiment to manually imported outcome.",
+        "constraints": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "shipping": null,
+          "language": null
+        },
+        "purchase_stage": "consideration",
+        "location": {
+          "country": null,
+          "region": null,
+          "city": null,
+          "language": null,
+          "currency": null,
+          "shipping": null,
+          "location_specificity": "unknown"
+        },
+        "matching_products": [
+          {
+            "id": "bm-buyer-moments",
+            "name": "Buyer Moment Discovery",
+            "category": "commercial-context intelligence",
+            "description": "Evidence-backed discovery and ranking of customer situations that may deserve an advertising experiment.",
+            "price": null,
+            "currency": "USD",
+            "url": null,
+            "features": [
+              "buyer moments",
+              "supporting evidence",
+              "ranked opportunities",
+              "provenance"
+            ],
+            "service_regions": [],
+            "available": true,
+            "shipping_deadline_met": null,
+            "evidence": [
+              {
+                "id": "bm-e2",
+                "kind": "observed",
+                "text": "BuyerMoment generates and ranks evidence-backed Buyer Moments with supporting evidence and confidence.",
+                "source": "PRODUCT.md",
+                "source_record_id": "product-buyer-moments",
+                "provenance": [
+                  "PRODUCT.md"
+                ],
+                "confidence": 0.98
+              }
+            ]
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "id": "bm-e10",
+            "kind": "observed",
+            "text": "The repository has no real advertiser interviews, accepted external experiments, live campaigns, or campaign outcomes recorded yet.",
+            "source": "Phase 6 state",
+            "source_record_id": "phase6-external-validation",
+            "provenance": [
+              "current repository state"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "bm-e5",
+            "kind": "observed",
+            "text": "The MVP includes a ChatGPT Ads hypothesis package generator and JSON export; it does not claim a live platform integration.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-experiment-export",
+            "provenance": [
+              "BUILD_STATUS.md"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "bm-e6",
+            "kind": "observed",
+            "text": "The repository contains CCB-1 real-data normalization, hidden splits, calibration reports, and failure taxonomy artifacts.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-benchmark",
+            "provenance": [
+              "BUILD_STATUS.md",
+              "CCB1_CARD.md"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "buyermoment-measurement-learning-inference",
+            "kind": "inference",
+            "text": "Candidate commercial situation: Advertiser linking context hypotheses to outcomes",
+            "source": "commercial_workflow",
+            "source_record_id": "measurement-learning",
+            "provenance": [
+              "bm-e5",
+              "bm-e6",
+              "bm-e10"
+            ],
+            "confidence": 0.65
+          }
+        ],
+        "confidence": 0.81825,
+        "score": {
+          "commerciality": 0.75,
+          "product_fit": 0.409375,
+          "semantic_product_fit": 0.409375,
+          "constraint_match": 0.79,
+          "location_fit": 0.72,
+          "purchase_stage": "consideration",
+          "ad_relevance": 0.73,
+          "commercial_actionability": 0.17463937499999999,
+          "offer_fit": 0.7,
+          "confidence": 0.81825,
+          "raw_confidence": 0.81825,
+          "calibrated_confidence": null,
+          "confidence_band": null,
+          "extracted_constraints": [],
+          "extracted_constraint_fields": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "language": null,
+            "shipping": null
+          },
+          "evidence": [
+            {
+              "id": "bm-e10",
+              "kind": "observed",
+              "text": "The repository has no real advertiser interviews, accepted external experiments, live campaigns, or campaign outcomes recorded yet.",
+              "source": "Phase 6 state",
+              "source_record_id": "phase6-external-validation",
+              "provenance": [
+                "current repository state"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "bm-e5",
+              "kind": "observed",
+              "text": "The MVP includes a ChatGPT Ads hypothesis package generator and JSON export; it does not claim a live platform integration.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-experiment-export",
+              "provenance": [
+                "BUILD_STATUS.md"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "bm-e6",
+              "kind": "observed",
+              "text": "The repository contains CCB-1 real-data normalization, hidden splits, calibration reports, and failure taxonomy artifacts.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-benchmark",
+              "provenance": [
+                "BUILD_STATUS.md",
+                "CCB1_CARD.md"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "buyermoment-measurement-learning-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: Advertiser linking context hypotheses to outcomes",
+              "source": "commercial_workflow",
+              "source_record_id": "measurement-learning",
+              "provenance": [
+                "bm-e5",
+                "bm-e6",
+                "bm-e10"
+              ],
+              "confidence": 0.65
+            },
+            {
+              "id": "bm-e2",
+              "kind": "observed",
+              "text": "BuyerMoment generates and ranks evidence-backed Buyer Moments with supporting evidence and confidence.",
+              "source": "PRODUCT.md",
+              "source_record_id": "product-buyer-moments",
+              "provenance": [
+                "PRODUCT.md"
+              ],
+              "confidence": 0.98
+            }
+          ],
+          "reason_codes": [
+            "BUYING_LANGUAGE"
+          ],
+          "overall": 0.6668437500000001
+        },
+        "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+      },
+      {
+        "id": "buyermoment-moment-saas-marketer-context-bm-business-analyzer",
+        "business_id": "buyermoment",
+        "title": "SaaS marketer translating customer situations into AI-ad context \u2014 Business Analyzer",
+        "problem": "The team has product and customer evidence but lacks a disciplined way to rank which commercial contexts deserve an experiment.",
+        "situation": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.",
+        "desired_outcome": "Prioritize a small set of evidence-backed contexts and turn them into reviewable experiment hypotheses.",
+        "constraints": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "shipping": null,
+          "language": null
+        },
+        "purchase_stage": "consideration",
+        "location": {
+          "country": null,
+          "region": null,
+          "city": null,
+          "language": null,
+          "currency": null,
+          "shipping": null,
+          "location_specificity": "unknown"
+        },
+        "matching_products": [
+          {
+            "id": "bm-business-analyzer",
+            "name": "Business Analyzer",
+            "category": "evidence ingestion",
+            "description": "Turns business, product, and customer evidence into a structured basis for Buyer Moment discovery.",
+            "price": null,
+            "currency": "USD",
+            "url": null,
+            "features": [
+              "business evidence",
+              "product catalog",
+              "offers",
+              "provenance",
+              "unknowns"
+            ],
+            "service_regions": [],
+            "available": true,
+            "shipping_deadline_met": null,
+            "evidence": [
+              {
+                "id": "bm-e4",
+                "kind": "observed",
+                "text": "The product architecture includes a Business Analyzer to produce commercial contexts from business evidence.",
+                "source": "ARCHITECTURE.md",
+                "source_record_id": "architecture-analyzer",
+                "provenance": [
+                  "ARCHITECTURE.md"
+                ],
+                "confidence": 0.98
+              }
+            ]
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "id": "bm-e8",
+            "kind": "observed",
+            "text": "BuyerMoment is positioned as commercial-context intelligence for AI advertising, not a generic copywriter, ad network, or autonomous media buyer.",
+            "source": "PRODUCT.md",
+            "source_record_id": "product-positioning",
+            "provenance": [
+              "PRODUCT.md"
+            ],
+            "confidence": 0.98
+          },
+          {
+            "id": "bm-e1",
+            "kind": "observed",
+            "text": "The repository implements a deterministic ContextFit scorer with budget, feature, location, stage, and ad-relevance reasoning codes.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-contextfit",
+            "provenance": [
+              "BUILD_STATUS.md"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "bm-e3",
+            "kind": "observed",
+            "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+            "source": "BUILD_STATUS.md",
+            "source_record_id": "build-status-spend-safety",
+            "provenance": [
+              "BUILD_STATUS.md",
+              "policies/spend_safety.yaml"
+            ],
+            "confidence": 0.99
+          },
+          {
+            "id": "buyermoment-saas-marketer-context-inference",
+            "kind": "inference",
+            "text": "Candidate commercial situation: SaaS marketer translating customer situations into AI-ad context",
+            "source": "commercial_workflow",
+            "source_record_id": "saas-marketer-context",
+            "provenance": [
+              "bm-e8",
+              "bm-e1",
+              "bm-e3"
+            ],
+            "confidence": 0.65
+          }
+        ],
+        "confidence": 0.7971351351351352,
+        "score": {
+          "commerciality": 0.75,
+          "product_fit": 0.39459459459459456,
+          "semantic_product_fit": 0.39459459459459456,
+          "constraint_match": 0.79,
+          "location_fit": 0.72,
+          "purchase_stage": "consideration",
+          "ad_relevance": 0.73,
+          "commercial_actionability": 0.16833405405405405,
+          "offer_fit": 0.7,
+          "confidence": 0.7971351351351352,
+          "raw_confidence": 0.7971351351351352,
+          "calibrated_confidence": null,
+          "confidence_band": null,
+          "extracted_constraints": [],
+          "extracted_constraint_fields": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "language": null,
+            "shipping": null
+          },
+          "evidence": [
+            {
+              "id": "bm-e8",
+              "kind": "observed",
+              "text": "BuyerMoment is positioned as commercial-context intelligence for AI advertising, not a generic copywriter, ad network, or autonomous media buyer.",
+              "source": "PRODUCT.md",
+              "source_record_id": "product-positioning",
+              "provenance": [
+                "PRODUCT.md"
+              ],
+              "confidence": 0.98
+            },
+            {
+              "id": "bm-e1",
+              "kind": "observed",
+              "text": "The repository implements a deterministic ContextFit scorer with budget, feature, location, stage, and ad-relevance reasoning codes.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-contextfit",
+              "provenance": [
+                "BUILD_STATUS.md"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "bm-e3",
+              "kind": "observed",
+              "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.",
+              "source": "BUILD_STATUS.md",
+              "source_record_id": "build-status-spend-safety",
+              "provenance": [
+                "BUILD_STATUS.md",
+                "policies/spend_safety.yaml"
+              ],
+              "confidence": 0.99
+            },
+            {
+              "id": "buyermoment-saas-marketer-context-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: SaaS marketer translating customer situations into AI-ad context",
+              "source": "commercial_workflow",
+              "source_record_id": "saas-marketer-context",
+              "provenance": [
+                "bm-e8",
+                "bm-e1",
+                "bm-e3"
+              ],
+              "confidence": 0.65
+            },
+            {
+              "id": "bm-e4",
+              "kind": "observed",
+              "text": "The product architecture includes a Business Analyzer to produce commercial contexts from business evidence.",
+              "source": "ARCHITECTURE.md",
+              "source_record_id": "architecture-analyzer",
+              "provenance": [
+                "ARCHITECTURE.md"
+              ],
+              "confidence": 0.98
+            }
+          ],
+          "reason_codes": [
+            "BUYING_LANGUAGE"
+          ],
+          "overall": 0.6631486486486486
+        },
+        "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+      }
+    ],
+    "rejected_moments": [],
+    "evidence_gaps": [
+      "number of paying customers",
+      "revenue",
+      "conversion rate",
+      "ROI",
+      "campaign performance",
+      "willingness to pay",
+      "whether advertisers can control context-hint experiments sufficiently"
+    ],
+    "risks": [
+      "No campaign outcome evidence exists yet.",
+      "Commercial situations are hypotheses until validated with an advertiser or campaign."
+    ]
+  },
+  "experiments": [
+    {
+      "experiment_id": "adexp-buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+      "business_id": "buyermoment",
+      "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+      "platform": "chatgpt_ads",
+      "status": "PENDING_APPROVAL",
+      "hypothesis": "The situation 'A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.' will respond to a context-led explanation of Buyer Moment Discovery.",
+      "audience_or_context_strategy": {
+        "commercial_context": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.",
+        "context_hints": [
+          "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel."
+        ],
+        "search_terms": [],
+        "notes": [
+          "Context hints are natural situations, not exact-match keywords.",
+          "Hypothesis only; no performance claim."
+        ]
+      },
+      "offer": {
+        "offer_id": null,
+        "description": "Evaluate Buyer Moment Discovery against the stated situation.",
+        "landing_page": null
+      },
+      "creative": {
+        "headline": "Buyer Moment Discovery for SaaS marketer translating customer situations into AI-ad context \u2014 Buyer Moment Discovery",
+        "body": "See whether Buyer Moment Discovery fits the problem and constraints described in this Buyer Moment.",
+        "cta": "Review the fit"
+      },
+      "budget": {
+        "planned_total": null,
+        "planned_daily": null,
+        "currency": "USD"
+      },
+      "measurement": {
+        "primary_conversion": "pilot_request",
+        "secondary_events": [
+          "landing_page_view",
+          "qualified_cta_click"
+        ],
+        "tracking_parameters": {
+          "bm_buyer_moment": "buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+          "bm_experiment": "adexp-buyermoment-moment-saas-marketer-context-bm-buyer-moments"
+        }
+      },
+      "contextfit_score": 0.6773378378378379,
+      "test_readiness": 0.6076452702702703,
+      "commercial_potential": 0.6813378378378379,
+      "spend_decision": "ABSTAIN",
+      "approval": {
+        "required": true,
+        "approved": false,
+        "approved_by": null,
+        "approved_at": null
+      },
+      "contextfit_version": "phase6",
+      "policy_version": "phase5-v1",
+      "experiment_version": "1",
+      "provenance": {
+        "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-buyer-moments",
+        "product_id": "bm-buyer-moments",
+        "evidence_ids": [
+          "bm-e8",
+          "bm-e1",
+          "bm-e3",
+          "buyermoment-saas-marketer-context-inference"
+        ],
+        "human_approval_required": true
+      },
+      "created_at": "2026-09-22T06:46:12.844203Z"
+    },
+    {
+      "experiment_id": "adexp-buyermoment-moment-evidence-to-experiment-bm-test-readiness",
+      "business_id": "buyermoment",
+      "buyer_moment_id": "buyermoment-moment-evidence-to-experiment-bm-test-readiness",
+      "platform": "chatgpt_ads",
+      "status": "PENDING_APPROVAL",
+      "hypothesis": "The situation 'A marketer has website, product, and customer evidence and wants to know which situation is actionable now.' will respond to a context-led explanation of TestReadiness and SpendDecision.",
+      "audience_or_context_strategy": {
+        "commercial_context": "A marketer has website, product, and customer evidence and wants to know which situation is actionable now.",
+        "context_hints": [
+          "A marketer has website, product, and customer evidence and wants to know which situation is actionable now."
+        ],
+        "search_terms": [],
+        "notes": [
+          "Context hints are natural situations, not exact-match keywords.",
+          "Hypothesis only; no performance claim."
+        ]
+      },
+      "offer": {
+        "offer_id": null,
+        "description": "Evaluate TestReadiness and SpendDecision against the stated situation.",
+        "landing_page": null
+      },
+      "creative": {
+        "headline": "TestReadiness and SpendDecision for Marketer converting customer research into a test \u2014 TestReadiness and SpendDecision",
+        "body": "See whether TestReadiness and SpendDecision fits the problem and constraints described in this Buyer Moment.",
+        "cta": "Review the fit"
+      },
+      "budget": {
+        "planned_total": null,
+        "planned_daily": null,
+        "currency": "USD"
+      },
+      "measurement": {
+        "primary_conversion": "pilot_request",
+        "secondary_events": [
+          "landing_page_view",
+          "qualified_cta_click"
+        ],
+        "tracking_parameters": {
+          "bm_buyer_moment": "buyermoment-moment-evidence-to-experiment-bm-test-readiness",
+          "bm_experiment": "adexp-buyermoment-moment-evidence-to-experiment-bm-test-readiness"
+        }
+      },
+      "contextfit_score": 0.6745,
+      "test_readiness": 0.692875,
+      "commercial_potential": 0.6784999999999999,
+      "spend_decision": "ABSTAIN",
+      "approval": {
+        "required": true,
+        "approved": false,
+        "approved_by": null,
+        "approved_at": null
+      },
+      "contextfit_version": "phase6",
+      "policy_version": "phase5-v1",
+      "experiment_version": "1",
+      "provenance": {
+        "buyer_moment_id": "buyermoment-moment-evidence-to-experiment-bm-test-readiness",
+        "product_id": "bm-test-readiness",
+        "evidence_ids": [
+          "bm-e9",
+          "bm-e3",
+          "bm-e4",
+          "buyermoment-evidence-to-experiment-inference"
+        ],
+        "human_approval_required": true
+      },
+      "created_at": "2026-09-22T06:46:12.844372Z"
+    },
+    {
+      "experiment_id": "adexp-buyermoment-moment-saas-marketer-context-bm-test-readiness",
+      "business_id": "buyermoment",
+      "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-test-readiness",
+      "platform": "chatgpt_ads",
+      "status": "PENDING_APPROVAL",
+      "hypothesis": "The situation 'A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.' will respond to a context-led explanation of TestReadiness and SpendDecision.",
+      "audience_or_context_strategy": {
+        "commercial_context": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.",
+        "context_hints": [
+          "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel."
+        ],
+        "search_terms": [],
+        "notes": [
+          "Context hints are natural situations, not exact-match keywords.",
+          "Hypothesis only; no performance claim."
+        ]
+      },
+      "offer": {
+        "offer_id": null,
+        "description": "Evaluate TestReadiness and SpendDecision against the stated situation.",
+        "landing_page": null
+      },
+      "creative": {
+        "headline": "TestReadiness and SpendDecision for SaaS marketer translating customer situations into AI-ad context \u2014 TestReadiness and SpendDecision",
+        "body": "See whether TestReadiness and SpendDecision fits the problem and constraints described in this Buyer Moment.",
+        "cta": "Review the fit"
+      },
+      "budget": {
+        "planned_total": null,
+        "planned_daily": null,
+        "currency": "USD"
+      },
+      "measurement": {
+        "primary_conversion": "pilot_request",
+        "secondary_events": [
+          "landing_page_view",
+          "qualified_cta_click"
+        ],
+        "tracking_parameters": {
+          "bm_buyer_moment": "buyermoment-moment-saas-marketer-context-bm-test-readiness",
+          "bm_experiment": "adexp-buyermoment-moment-saas-marketer-context-bm-test-readiness"
+        }
+      },
+      "contextfit_score": 0.6678783783783784,
+      "test_readiness": 0.6000777027027027,
+      "commercial_potential": 0.6718783783783784,
+      "spend_decision": "ABSTAIN",
+      "approval": {
+        "required": true,
+        "approved": false,
+        "approved_by": null,
+        "approved_at": null
+      },
+      "contextfit_version": "phase6",
+      "policy_version": "phase5-v1",
+      "experiment_version": "1",
+      "provenance": {
+        "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-test-readiness",
+        "product_id": "bm-test-readiness",
+        "evidence_ids": [
+          "bm-e8",
+          "bm-e1",
+          "bm-e3",
+          "buyermoment-saas-marketer-context-inference"
+        ],
+        "human_approval_required": true
+      },
+      "created_at": "2026-09-22T06:46:12.844531Z"
+    },
+    {
+      "experiment_id": "adexp-buyermoment-moment-measurement-learning-bm-buyer-moments",
+      "business_id": "buyermoment",
+      "buyer_moment_id": "buyermoment-moment-measurement-learning-bm-buyer-moments",
+      "platform": "chatgpt_ads",
+      "status": "PENDING_APPROVAL",
+      "hypothesis": "The situation 'An advertiser wants to learn whether commercial-context quality predicts useful experiment outcomes.' will respond to a context-led explanation of Buyer Moment Discovery.",
+      "audience_or_context_strategy": {
+        "commercial_context": "An advertiser wants to learn whether commercial-context quality predicts useful experiment outcomes.",
+        "context_hints": [
+          "An advertiser wants to learn whether commercial-context quality predicts useful experiment outcomes."
+        ],
+        "search_terms": [],
+        "notes": [
+          "Context hints are natural situations, not exact-match keywords.",
+          "Hypothesis only; no performance claim."
+        ]
+      },
+      "offer": {
+        "offer_id": null,
+        "description": "Evaluate Buyer Moment Discovery against the stated situation.",
+        "landing_page": null
+      },
+      "creative": {
+        "headline": "Buyer Moment Discovery for Advertiser linking context hypotheses to outcomes \u2014 Buyer Moment Discovery",
+        "body": "See whether Buyer Moment Discovery fits the problem and constraints described in this Buyer Moment.",
+        "cta": "Review the fit"
+      },
+      "budget": {
+        "planned_total": null,
+        "planned_daily": null,
+        "currency": "USD"
+      },
+      "measurement": {
+        "primary_conversion": "pilot_request",
+        "secondary_events": [
+          "landing_page_view",
+          "qualified_cta_click"
+        ],
+        "tracking_parameters": {
+          "bm_buyer_moment": "buyermoment-moment-measurement-learning-bm-buyer-moments",
+          "bm_experiment": "adexp-buyermoment-moment-measurement-learning-bm-buyer-moments"
+        }
+      },
+      "contextfit_score": 0.6668437500000001,
+      "test_readiness": 0.5867500000000001,
+      "commercial_potential": 0.67084375,
+      "spend_decision": "ABSTAIN",
+      "approval": {
+        "required": true,
+        "approved": false,
+        "approved_by": null,
+        "approved_at": null
+      },
+      "contextfit_version": "phase6",
+      "policy_version": "phase5-v1",
+      "experiment_version": "1",
+      "provenance": {
+        "buyer_moment_id": "buyermoment-moment-measurement-learning-bm-buyer-moments",
+        "product_id": "bm-buyer-moments",
+        "evidence_ids": [
+          "bm-e10",
+          "bm-e5",
+          "bm-e6",
+          "buyermoment-measurement-learning-inference"
+        ],
+        "human_approval_required": true
+      },
+      "created_at": "2026-09-22T06:46:12.844679Z"
+    },
+    {
+      "experiment_id": "adexp-buyermoment-moment-saas-marketer-context-bm-business-analyzer",
+      "business_id": "buyermoment",
+      "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-business-analyzer",
+      "platform": "chatgpt_ads",
+      "status": "PENDING_APPROVAL",
+      "hypothesis": "The situation 'A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.' will respond to a context-led explanation of Business Analyzer.",
+      "audience_or_context_strategy": {
+        "commercial_context": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.",
+        "context_hints": [
+          "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel."
+        ],
+        "search_terms": [],
+        "notes": [
+          "Context hints are natural situations, not exact-match keywords.",
+          "Hypothesis only; no performance claim."
+        ]
+      },
+      "offer": {
+        "offer_id": null,
+        "description": "Evaluate Business Analyzer against the stated situation.",
+        "landing_page": null
+      },
+      "creative": {
+        "headline": "Business Analyzer for SaaS marketer translating customer situations into AI-ad context \u2014 Business Analyzer",
+        "body": "See whether Business Analyzer fits the problem and constraints described in this Buyer Moment.",
+        "cta": "Review the fit"
+      },
+      "budget": {
+        "planned_total": null,
+        "planned_daily": null,
+        "currency": "USD"
+      },
+      "measurement": {
+        "primary_conversion": "pilot_request",
+        "secondary_events": [
+          "landing_page_view",
+          "qualified_cta_click"
+        ],
+        "tracking_parameters": {
+          "bm_buyer_moment": "buyermoment-moment-saas-marketer-context-bm-business-analyzer",
+          "bm_experiment": "adexp-buyermoment-moment-saas-marketer-context-bm-business-analyzer"
+        }
+      },
+      "contextfit_score": 0.6631486486486486,
+      "test_readiness": 0.5962939189189189,
+      "commercial_potential": 0.6671486486486486,
+      "spend_decision": "ABSTAIN",
+      "approval": {
+        "required": true,
+        "approved": false,
+        "approved_by": null,
+        "approved_at": null
+      },
+      "contextfit_version": "phase6",
+      "policy_version": "phase5-v1",
+      "experiment_version": "1",
+      "provenance": {
+        "buyer_moment_id": "buyermoment-moment-saas-marketer-context-bm-business-analyzer",
+        "product_id": "bm-business-analyzer",
+        "evidence_ids": [
+          "bm-e8",
+          "bm-e1",
+          "bm-e3",
+          "buyermoment-saas-marketer-context-inference"
+        ],
+        "human_approval_required": true
+      },
+      "created_at": "2026-09-22T06:46:12.844820Z"
+    }
+  ],
+  "human_approval_required": true
+}

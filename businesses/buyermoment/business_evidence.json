@@ -1,0 +1,110 @@
+{
+  "business": {
+    "id": "buyermoment",
+    "name": "BuyerMoment",
+    "category": "b2b-saas",
+    "website": "",
+    "description": "Commercial-context intelligence and experimentation software for AI advertising.",
+    "products": [
+      {
+        "id": "bm-contextfit",
+        "name": "ContextFit Scorer",
+        "category": "commercial-context intelligence",
+        "description": "Provider-neutral scoring of commerciality, product fit, constraints, location fit, purchase stage, and ad relevance.",
+        "price": null,
+        "currency": "USD",
+        "features": ["commerciality", "product fit", "constraint matching", "location fit", "purchase stage", "ad relevance"],
+        "service_regions": [],
+        "available": true,
+        "shipping_deadline_met": null,
+        "evidence": [{"id": "bm-e1", "kind": "observed", "text": "The repository implements a deterministic ContextFit scorer with budget, feature, location, stage, and ad-relevance reasoning codes.", "source": "BUILD_STATUS.md", "source_record_id": "build-status-contextfit", "provenance": ["BUILD_STATUS.md"], "confidence": 0.99}]
+      },
+      {
+        "id": "bm-buyer-moments",
+        "name": "Buyer Moment Discovery",
+        "category": "commercial-context intelligence",
+        "description": "Evidence-backed discovery and ranking of customer situations that may deserve an advertising experiment.",
+        "price": null,
+        "currency": "USD",
+        "features": ["buyer moments", "supporting evidence", "ranked opportunities", "provenance"],
+        "service_regions": [],
+        "available": true,
+        "shipping_deadline_met": null,
+        "evidence": [{"id": "bm-e2", "kind": "observed", "text": "BuyerMoment generates and ranks evidence-backed Buyer Moments with supporting evidence and confidence.", "source": "PRODUCT.md", "source_record_id": "product-buyer-moments", "provenance": ["PRODUCT.md"], "confidence": 0.98}]
+      },
+      {
+        "id": "bm-test-readiness",
+        "name": "TestReadiness and SpendDecision",
+        "category": "advertising experiment safety",
+        "description": "Separates commercial potential from readiness to justify a human-approved experiment.",
+        "price": null,
+        "currency": "USD",
+        "features": ["commercial potential", "test readiness", "evidence strength", "ambiguity", "TEST", "WATCH", "ABSTAIN", "BLOCK"],
+        "service_regions": [],
+        "available": true,
+        "shipping_deadline_met": null,
+        "evidence": [{"id": "bm-e3", "kind": "observed", "text": "SpendDecision supports TEST, WATCH, ABSTAIN, and BLOCK, with human approval required.", "source": "BUILD_STATUS.md", "source_record_id": "build-status-spend-safety", "provenance": ["BUILD_STATUS.md", "policies/spend_safety.yaml"], "confidence": 0.99}]
+      },
+      {
+        "id": "bm-business-analyzer",
+        "name": "Business Analyzer",
+        "category": "evidence ingestion",
+        "description": "Turns business, product, and customer evidence into a structured basis for Buyer Moment discovery.",
+        "price": null,
+        "currency": "USD",
+        "features": ["business evidence", "product catalog", "offers", "provenance", "unknowns"],
+        "service_regions": [],
+        "available": true,
+        "shipping_deadline_met": null,
+        "evidence": [{"id": "bm-e4", "kind": "observed", "text": "The product architecture includes a Business Analyzer to produce commercial contexts from business evidence.", "source": "ARCHITECTURE.md", "source_record_id": "architecture-analyzer", "provenance": ["ARCHITECTURE.md"], "confidence": 0.98}]
+      },
+      {
+        "id": "bm-experiment-lab",
+        "name": "Experiment Lab",
+        "category": "advertising experimentation",
+        "description": "Produces structured hypothesis packages, context hints, creative candidates, measurement plans, and export artifacts.",
+        "price": null,
+        "currency": "USD",
+        "features": ["hypothesis", "context hints", "creative candidates", "measurement plan", "JSON export"],
+        "service_regions": [],
+        "available": true,
+        "shipping_deadline_met": null,
+        "evidence": [{"id": "bm-e5", "kind": "observed", "text": "The MVP includes a ChatGPT Ads hypothesis package generator and JSON export; it does not claim a live platform integration.", "source": "BUILD_STATUS.md", "source_record_id": "build-status-experiment-export", "provenance": ["BUILD_STATUS.md"], "confidence": 0.99}]
+      },
+      {
+        "id": "bm-benchmark-lab",
+        "name": "Benchmark and Evidence Lab",
+        "category": "measurement and evaluation",
+        "description": "Maintains CCB-1 benchmark assets, hidden evaluation, failure taxonomies, and calibration evidence.",
+        "price": null,
+        "currency": "USD",
+        "features": ["CCB-1", "hidden benchmark", "calibration", "failure taxonomy", "regression evaluation"],
+        "service_regions": [],
+        "available": true,
+        "shipping_deadline_met": null,
+        "evidence": [{"id": "bm-e6", "kind": "observed", "text": "The repository contains CCB-1 real-data normalization, hidden splits, calibration reports, and failure taxonomy artifacts.", "source": "BUILD_STATUS.md", "source_record_id": "build-status-benchmark", "provenance": ["BUILD_STATUS.md", "CCB1_CARD.md"], "confidence": 0.99}]
+      }
+    ],
+    "offers": [{
+      "id": "bm-design-partner-analysis",
+      "name": "B2B SaaS BuyerMoment analysis",
+      "description": "A structured evidence review that produces ranked Buyer Moments and human-approved experiment hypotheses for a B2B SaaS advertiser.",
+      "discount_percent": null,
+      "eligibility": "B2B SaaS design partners during commercial validation.",
+      "evidence": [{"id": "bm-e7", "kind": "inference", "text": "The Phase 7 strategy selects B2B SaaS advertisers and agencies as the initial design-partner audience.", "source": "phase7_strategy_decision", "source_record_id": "phase7-initial-market", "provenance": ["user-provided Phase 7 strategy"], "confidence": 0.95}]
+    }],
+    "evidence": [
+      {"id": "bm-e8", "kind": "observed", "text": "BuyerMoment is positioned as commercial-context intelligence for AI advertising, not a generic copywriter, ad network, or autonomous media buyer.", "source": "PRODUCT.md", "source_record_id": "product-positioning", "provenance": ["PRODUCT.md"], "confidence": 0.98},
+      {"id": "bm-e9", "kind": "observed", "text": "Human approval remains mandatory and live advertising is not launched by the current product.", "source": "docs/REAL_PILOT_GATE.md", "source_record_id": "pilot-gate-human-approval", "provenance": ["docs/REAL_PILOT_GATE.md"], "confidence": 0.99},
+      {"id": "bm-e10", "kind": "observed", "text": "The repository has no real advertiser interviews, accepted external experiments, live campaigns, or campaign outcomes recorded yet.", "source": "Phase 6 state", "source_record_id": "phase6-external-validation", "provenance": ["current repository state"], "confidence": 0.99}
+    ]
+  },
+  "target_customer_hypotheses": [
+    {"id": "saas-marketer-context", "label": "SaaS marketer translating customer situations into AI-ad context", "situation": "A B2B SaaS marketer is deciding which customer situations are specific enough to test in an AI advertising channel.", "problem": "The team has product and customer evidence but lacks a disciplined way to rank which commercial contexts deserve an experiment.", "desired_outcome": "Prioritize a small set of evidence-backed contexts and turn them into reviewable experiment hypotheses.", "evidence_ids": ["bm-e8", "bm-e1", "bm-e3"], "origin": "provided_strategy"},
+    {"id": "agency-ai-ads", "label": "Agency packaging AI-ad strategy for a SaaS client", "situation": "An agency is preparing an AI-ad strategy for a B2B SaaS client and needs a traceable path from evidence to experiment.", "problem": "A client-facing recommendation can become generic copy unless the customer situation, product fit, and uncertainty remain visible.", "desired_outcome": "Deliver a defensible opportunity report and an exportable experiment package without claiming performance.", "evidence_ids": ["bm-e2", "bm-e5", "bm-e9"], "origin": "provided_strategy"},
+    {"id": "saas-growth-team", "label": "Growth team exploring intent beyond search keywords", "situation": "A B2B SaaS growth team is exploring conversational advertising beyond conventional keyword campaigns.", "problem": "The team needs a platform-neutral way to describe context, product fit, constraints, and downstream business outcomes.", "desired_outcome": "Compare context-led hypotheses against later campaign outcomes without reading private conversations.", "evidence_ids": ["bm-e8", "bm-e5", "bm-e10"], "origin": "provided_strategy"},
+    {"id": "evidence-to-experiment", "label": "Marketer converting customer research into a test", "situation": "A marketer has website, product, and customer evidence and wants to know which situation is actionable now.", "problem": "Commercial potential, immediate test readiness, and unsupported inference can be conflated.", "desired_outcome": "See evidence, inference, risks, and human approval requirements before creating a small test.", "evidence_ids": ["bm-e3", "bm-e4", "bm-e9"], "origin": "provided_strategy"},
+    {"id": "measurement-learning", "label": "Advertiser linking context hypotheses to outcomes", "situation": "An advertiser wants to learn whether commercial-context quality predicts useful experiment outcomes.", "problem": "A campaign result is hard to interpret if the original Buyer Moment, score, offer, and experiment version are not preserved.", "desired_outcome": "Keep an immutable lineage from Buyer Moment to experiment to manually imported outcome.", "evidence_ids": ["bm-e5", "bm-e6", "bm-e10"], "origin": "provided_strategy"}
+  ],
+  "unknowns": ["number of paying customers", "revenue", "conversion rate", "ROI", "campaign performance", "willingness to pay", "whether advertisers can control context-hint experiments sufficiently"]
+}

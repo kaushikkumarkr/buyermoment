@@ -27,3 +27,4 @@ shadow_reviews/private/
 shadow_reviews/*.jsonl
 !shadow_reviews/README.md
 !shadow_reviews/schema.json
+data/phase7/experiment_ledger.sqlite3

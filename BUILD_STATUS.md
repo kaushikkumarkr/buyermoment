@@ -35,6 +35,34 @@
 
 - No live advertising or Phase 5 Azure generation is authorized. The next safe step is an independent blinded human shadow review and a reviewed purchase-stage/adversarial gold tranche.
 
+## Phase 7 in progress — commercial validation
+
+- Branch: `phase7/commercial-validation`.
+- Frozen Phase 6 baseline recorded in `reports/phase7_baseline.md`; existing benchmark artifacts were not deleted or rewritten.
+- BuyerMoment dogfood evidence package created at `businesses/buyermoment/business_evidence.json` from repository/product evidence only. Unknowns remain explicit; no customers, revenue, ROI, or campaign results were invented.
+- Deterministic evidence-to-candidate workflow generated 30 raw Buyer Moments and a five-candidate opportunity report. Every candidate retains observed repository evidence plus separate inference evidence.
+- Added platform-neutral `AdExperiment`, `CampaignOutcome`, `CommercialContextOutcome`, `PilotRequest`, design-partner feedback, and a portable SQLite experiment ledger.
+- Added immutable Buyer Moment → experiment → outcome lineage checks and manual CSV outcome import. The repository contains no real campaign outcomes yet.
+- Added ChatGPT Ads manual/export adapter: JSON package plus context-hint CSV; no undocumented API, private ChatGPT conversation access, or autonomous launch.
+- Added Google AI Max future outcome schema without OAuth or campaign-management code.
+- Added B2B SaaS design-partner report/feedback workflow, privacy policy, playbook, pilot preparation, and thesis kill criteria.
+- Added a minimal landing-page pilot-request CTA; requests are validated and stored in the local ignored ledger only after a user submits the form.
+
+### Phase 7 measured status
+
+- Internal businesses analyzed: `1` (BuyerMoment dogfood).
+- Raw candidates: `30`; supported candidates: `30`; top report candidates: `5`.
+- Experiment packages generated: `5`; current TEST candidates: `0` because the dogfood package has no verified price or immediate buyer evidence.
+- External B2B SaaS businesses, interviews, accepted experiments, live campaigns, and real outcomes: `0`.
+- Human approval required: `true` for every generated experiment.
+
+### Phase 7 limitations
+
+- No external design partner has yet submitted data or feedback.
+- ChatGPT Ads export is explicitly a human-review package and requires mapping to the current Ads Manager template; no live integration is claimed.
+- The pilot request endpoint is intentionally minimal and stores local runtime data in the ignored SQLite ledger; production deployment needs authenticated private storage, consent/retention controls, and abuse protection.
+- No campaign result or revenue claims exist.
+
 ## Phase 6 in progress
 
 - Created `phase6/blinded-shadow-state` from the clean Phase 5 commit.
