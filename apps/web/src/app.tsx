@@ -1,0 +1,62 @@
+import { useMemo, useState } from 'react'
+import { ArrowUpRight, BarChart3, Beaker, ChevronDown, CircleHelp, Database, Download, FileCheck2, FlaskConical, Gauge, Globe2, Layers3, LibraryBig, Menu, Plus, Search, ShieldCheck, Sparkles, Target, X } from 'lucide-react'
+import { businesses, buildExperiment, type Business, type EvidenceKind, type Moment } from './data'
+
+const kindLabel: Record<EvidenceKind, string> = { observed: 'Observed evidence', inference: 'Model inference', hypothesis: 'Hypothesis', result: 'Campaign result' }
+
+function scoreColor(score: number) { return score >= 0.8 ? 'high' : score >= 0.65 ? 'medium' : 'low' }
+
+function ScoreBar({ label, value }: { label: string; value: number }) {
+  return <div className="score-row"><div><span>{label}</span><b>{Math.round(value * 100)}</b></div><div className="score-track"><span style={{ width: `${value * 100}%` }} /></div></div>
+}
+
+function App() {
+  const [business, setBusiness] = useState<Business>(businesses[0])
+  const [selectedId, setSelectedId] = useState(business.moments[0].id)
+  const [showAnalyzer, setShowAnalyzer] = useState(false)
+  const [showBusinessMenu, setShowBusinessMenu] = useState(false)
+  const [experiment, setExperiment] = useState<ReturnType<typeof buildExperiment> | null>(null)
+  const [evidenceFilter, setEvidenceFilter] = useState<'all' | EvidenceKind>('all')
+  const selected = useMemo(() => business.moments.find((item) => item.id === selectedId) ?? business.moments[0], [business, selectedId])
+
+  function changeBusiness(next: Business) { setBusiness(next); setSelectedId(next.moments[0].id); setExperiment(null) }
+
+  return <div className="app-shell">
+    {/* THESIS: BuyerMoment is an intelligence workbench, not a campaign dashboard. OWN-WORLD: warm paper surfaces, ink typography, violet signals, coral hypotheses. STORY: trace a ranked moment back to evidence, then commit only to a labeled experiment. FIRST VIEWPORT: ranked moments left, evidence trail center, experiment intent right. FORM: Signal Board, assigned grounded candidate 3, seed 466a05a4. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md */}
+    <aside className="sidebar">
+      <div className="brand-lockup"><span className="brand-mark">bm</span><span>BuyerMoment</span></div>
+      <div className="workspace-picker"><span className="workspace-dot" /> NeonPing workspace <ChevronDown size={14} /></div>
+      <nav aria-label="Primary navigation">
+        <p className="nav-label">Workspace</p>
+        <button className="nav-item active"><Layers3 size={17} /> Buyer moments <span className="nav-count">6</span></button>
+        <button className="nav-item"><Target size={17} /> Experiments <span className="nav-count muted">0</span></button>
+        <button className="nav-item"><Database size={17} /> Evidence store</button>
+        <p className="nav-label">Lab</p>
+        <button className="nav-item"><Gauge size={17} /> Benchmark / model lab</button>
+        <button className="nav-item"><LibraryBig size={17} /> Dataset lineage</button>
+      </nav>
+      <div className="sidebar-bottom"><button className="nav-item"><CircleHelp size={17} /> Documentation</button><div className="user-chip"><span className="avatar">KK</span><div><b>Kaushik Kumar</b><small>Owner</small></div><ChevronDown size={14} /></div></div>
+    </aside>
+
+    <main className="main-shell">
+      <header className="topbar"><div className="breadcrumb"><span className="mobile-menu"><Menu size={18} /></span><span className="crumb-muted">Buyer moments</span><span>/</span><span className="business-menu-wrap"><button className="business-switcher" onClick={() => setShowBusinessMenu((current) => !current)}>{business.name}<ChevronDown size={14} /></button>{showBusinessMenu && <div className="business-menu">{businesses.map((item) => <button key={item.id} className={item.id === business.id ? 'selected' : ''} onClick={() => { changeBusiness(item); setShowBusinessMenu(false) }}>{item.name}<small>{item.category}</small></button>)}</div>}</span><span>/</span><span>Signal board</span></div><div className="top-actions"><div className="sync-status"><span /> Evidence synced · 2m ago</div><button className="icon-button" aria-label="Search"><Search size={18} /></button><button className="avatar avatar-button" aria-label="Open account">KK</button></div></header>
+      <section className="page-intro"><div><div className="eyebrow"><Sparkles size={14} /> COMMERCIAL CONTEXT INTELLIGENCE</div><h1>Buyer moments, with<br /><em>the trail intact.</em></h1><p className="intro-copy">Ranked opportunities grounded in your business evidence. Follow the signal from customer situation to experiment hypothesis.</p></div><div className="intro-actions"><button className="button secondary" onClick={() => setShowAnalyzer(true)}><Plus size={17} /> Analyze business</button><div className="version-chip"><span className="version-pulse" /> CCB-1 v0.1 <span className="chip-divider" /> Baseline</div></div></section>
+
+      {showAnalyzer && <div className="analyzer-strip"><div><FileCheck2 size={20} /><div><b>Analyzer is ready for new evidence</b><span>Drop a URL, product export, or customer evidence to create a new evidence-backed workspace.</span></div></div><div className="analyzer-actions"><button className="button small secondary" onClick={() => setShowAnalyzer(false)}>Use demo data</button><button className="button small primary" onClick={() => setShowAnalyzer(false)}>Upload evidence <ArrowUpRight size={15} /></button></div></div>}
+
+      <section className="stats-grid"><div className="stat-block"><span>Candidate moments</span><strong>{business.moments.length}</strong><small><span className="green-dot" /> evidence-backed</small></div><div className="stat-block"><span>High context fit</span><strong>{business.moments.filter((moment) => moment.score >= 0.8).length}</strong><small>above 80 / 100</small></div><div className="stat-block"><span>Evidence gaps</span><strong>2</strong><small className="amber-text">review before test</small></div><div className="stat-block"><span>Last benchmark</span><strong className="mono-value">v0.1.0</strong><small>hidden split held back</small></div></section>
+
+      <section className="board-header"><div><div className="section-kicker">RANKED SIGNALS <span>·</span> {business.category}</div><h2>Moments worth investigating</h2></div><div className="board-tools"><button className="filter-button"><BarChart3 size={15} /> Score <ChevronDown size={14} /></button><button className="filter-button"><Globe2 size={15} /> All locations <ChevronDown size={14} /></button></div></section>
+      <section className="signal-board">
+        <div className="moment-list">{business.moments.map((moment, index) => <button key={moment.id} className={`moment-card ${selected.id === moment.id ? 'selected' : ''}`} onClick={() => { setSelectedId(moment.id); setExperiment(null) }}><div className="moment-card-top"><span className="rank">0{index + 1}</span><span className={`fit-pill ${scoreColor(moment.score)}`}>{Math.round(moment.score * 100)} fit</span></div><h3>{moment.title}</h3><p>{moment.situation}</p><div className="moment-meta"><span className="stage-pill">{moment.stage}</span><span>{moment.location}</span></div><div className="moment-foot"><span>{moment.product.name}</span><ArrowUpRight size={14} /></div></button>)}</div>
+        <article className="detail-panel"><div className="detail-head"><div><div className="section-kicker">BUYER MOMENT <span>·</span> {selected.id}</div><h2>{selected.title}</h2></div><div className={`large-fit ${scoreColor(selected.score)}`}><strong>{Math.round(selected.score * 100)}</strong><span>context fit</span></div></div><p className="detail-lede">{selected.problem}</p><div className="tag-row">{selected.constraints.map((constraint) => <span className="constraint-tag" key={constraint}>{constraint}</span>)}<span className="constraint-tag location-tag"><Globe2 size={13} /> {selected.location}</span></div><div className="score-box"><div className="score-box-head"><span>ContextFit score breakdown</span><span className="confidence"><ShieldCheck size={14} /> {Math.round(selected.confidence * 100)}% confidence</span></div><ScoreBar label="Commerciality" value={selected.commerciality} /><ScoreBar label="Product fit" value={selected.productFit} /><ScoreBar label="Constraint match" value={selected.constraintMatch} /><ScoreBar label="Location fit" value={selected.locationFit} /><ScoreBar label="Ad relevance" value={selected.adRelevance} /></div><div className="evidence-section"><div className="evidence-head"><div><h3>Evidence trail</h3><span>Every inference stays attached to its source.</span></div><button className="text-button"><ArrowUpRight size={14} /> View source set</button></div><div className="evidence-tabs">{(['all', 'observed', 'inference', 'hypothesis'] as const).map((filter) => <button key={filter} className={evidenceFilter === filter ? 'active' : ''} onClick={() => setEvidenceFilter(filter)}>{filter === 'all' ? 'All signals' : kindLabel[filter]}</button>)}</div><div className="evidence-list">{selected.evidence.filter((item) => evidenceFilter === 'all' || item.kind === evidenceFilter).map((item) => <div className="evidence-item" key={item.id}><span className={`evidence-icon ${item.kind}`}><span /></span><div><div className="evidence-item-top"><b>{kindLabel[item.kind]}</b><span>{Math.round(item.confidence * 100)}% confidence</span></div><p>{item.text}</p><small>{item.source}</small></div></div>)}</div></div></article>
+        <aside className={`experiment-panel ${experiment ? 'has-experiment' : ''}`}><div className="experiment-kicker"><FlaskConical size={15} /> EXPERIMENT LAB</div>{experiment ? <><div className="generated-label"><span className="green-dot" /> Draft package generated</div><h2>Make the hypothesis testable.</h2><p className="experiment-hypothesis">{experiment.hypothesis}</p><div className="experiment-spec"><div><span>Channel</span><b>{experiment.channel}</b></div><div><span>Target product</span><b>{experiment.targetProduct}</b></div><div><span>Success metric</span><b>{experiment.successMetric}</b></div><div><span>Stop rule</span><b>{experiment.stopRule}</b></div></div><div className="copy-preview"><span>Title candidates</span><p>{experiment.copy[0]}</p><p>{experiment.copy[1]}</p></div><div className="experiment-actions"><button className="button primary full" onClick={() => downloadExperiment(experiment, selected)}><Download size={16} /> Export JSON</button><button className="button secondary full" onClick={() => setExperiment(null)}>Back to moment</button></div><div className="hypothesis-note"><Beaker size={15} /><span>Hypothesis only. No performance claim has been made.</span></div></> : <><div className="panel-orbit"><div className="orbit-core"><FlaskConical size={24} /></div><span className="orbit-dot dot-one" /><span className="orbit-dot dot-two" /><span className="orbit-line" /></div><h2>Turn this moment into a clean test.</h2><p>Generate a structured experiment package with context hints, copy candidates, measurement plan, and QA checks.</p><div className="experiment-preview"><div><span>Selected signal</span><b>{selected.title}</b></div><div><span>Test channel</span><b>ChatGPT Ads <span className="ready-dot" /> adapter ready</b></div></div><button className="button primary full" onClick={() => setExperiment(buildExperiment(selected))}><Sparkles size={16} /> Generate experiment</button><span className="panel-footnote">This creates a hypothesis package. It does not launch a campaign.</span></>}</aside>
+      </section>
+      <footer className="page-footer"><span><span className="green-dot" /> All systems nominal</span><span>Private workspace</span><span>Data lineage enabled</span><span className="footer-right">Built around evidence before inference.</span></footer>
+    </main>
+  </div>
+}
+
+function downloadExperiment(experiment: ReturnType<typeof buildExperiment>, moment: Moment) { const blob = new Blob([JSON.stringify({ ...experiment, buyerMoment: moment }, null, 2)], { type: 'application/json' }); const url = URL.createObjectURL(blob); const anchor = document.createElement('a'); anchor.href = url; anchor.download = `${experiment.id}.json`; anchor.click(); URL.revokeObjectURL(url) }
+
+export default App

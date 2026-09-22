@@ -1,0 +1,12 @@
+.git
+node_modules
+dist
+__pycache__
+.pytest_cache
+.venv
+data/raw
+data/augmented
+data/train
+data/validation
+data/hidden_test
+
