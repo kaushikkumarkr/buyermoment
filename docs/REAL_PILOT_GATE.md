@@ -26,3 +26,7 @@ Phase 4 is `NO-GO` for real advertiser spend. The expanded adversarial v2 set co
 ## Phase 5 decision
 
 Phase 5 is `SHADOW-GO` only for an offline, human-reviewed shadow workflow; live advertiser spend remains `NO-GO`. The stricter policy produced 1.0000 TEST precision and 0.0000 Waste-Risk Rate on the current held-out adversarial and TEST-vs-WATCH controls, but TEST coverage is low, the harder multi-turn stress set reached only 0.6944 stage accuracy with 0.1053 stale-context error, and the existing demo review was a non-blinded proxy with 0.0889 agreement. No campaign or revenue outcome is claimed. Human approval remains mandatory.
+
+## Phase 6 decision
+
+Phase 6 remains `NO-GO` for live spend. The blinded packet workflow is implemented and five synthetic/demo evidence packages with 50 deduplicated packets are prepared, but independent human submissions are still pending, so exact agreement, blinded TEST precision, human-spend agreement, and severe-disagreement rate are unavailable. The explicit state representation reaches 1.0 memory accuracy and 0.0 stale assertion error on authored controls, while stateful stage accuracy remains 0.625 and Phase 6 counterfactual direction correctness is 0.60. No live advertising was launched.

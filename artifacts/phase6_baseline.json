@@ -1,0 +1,27 @@
+{
+  "phase": 6,
+  "branch_parent": "36e4688",
+  "phase5_baseline": {
+    "clean_hidden_purchase_stage_accuracy": 0.872,
+    "clean_hidden_relevance_f1": 0.7388,
+    "clean_hidden_ndcg": 0.8502,
+    "clean_hidden_mrr": 0.8244,
+    "adversarial_hidden_test_precision": 1.0,
+    "adversarial_hidden_test_recall": 0.3,
+    "adversarial_hidden_waste_risk_rate": 0.0,
+    "adversarial_hidden_hard_negative_fpr": 0.0,
+    "test_vs_watch_hidden_test_precision": 1.0,
+    "test_vs_watch_hidden_test_coverage": 0.1667,
+    "phase5_multiturn_stage_accuracy": 0.6944,
+    "phase5_multiturn_stale_context_error": 0.1053,
+    "phase5_counterfactual_consistency": 0.8,
+    "phase5_shadow_proxy_agreement": 0.0889
+  },
+  "phase6_runs": {
+    "backend_tests": "9 passed",
+    "lint": "passed",
+    "evaluation_cli": "passed",
+    "clean_hidden_and_adversarial": "rerun to /tmp; Phase 5 artifacts preserved"
+  },
+  "status": "frozen Phase 5 comparison; no campaign outcome claim"
+}

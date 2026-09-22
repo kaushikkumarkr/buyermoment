@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["packet_id", "decision", "would_spend_real_money", "confidence", "reason"],
+  "properties": {
+    "packet_id": {"type": "string"},
+    "decision": {"enum": ["TEST", "WATCH", "ABSTAIN", "BLOCK"]},
+    "would_spend_real_money": {"enum": ["yes", "maybe", "no"]},
+    "confidence": {"enum": ["low", "medium", "high"]},
+    "reason": {"type": "string", "minLength": 1},
+    "category": {"type": "string"},
+    "reviewer_id": {"type": "string"}
+  }
+}

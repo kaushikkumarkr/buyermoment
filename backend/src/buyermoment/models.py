@@ -165,6 +165,27 @@ class TestReadiness(BaseModel):
     evidence: list[Evidence] = Field(default_factory=list)
 
 
+class ConversationState(BaseModel):
+    """Auditable current-state representation for multi-turn contexts."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    conversation_id: str
+    turn_id: int = Field(ge=1)
+    current_purchase_stage: PurchaseStage
+    active_constraints: dict[str, Any] = Field(default_factory=dict)
+    resolved_constraints: list[str] = Field(default_factory=list)
+    buyer_identity: str | None = None
+    recipient: str | None = None
+    location: LocationContext = Field(default_factory=LocationContext)
+    purchase_timing: str | None = None
+    current_product_interest: list[str] = Field(default_factory=list)
+    commerciality: float = Field(default=0.5, ge=0, le=1)
+    state_revision_reason: str = "initial_state"
+    evidence: list[Evidence] = Field(default_factory=list)
+    provenance: list[str] = Field(default_factory=list)
+
+
 class SpendDecision(BaseModel):
     model_config = ConfigDict(extra="forbid")
 

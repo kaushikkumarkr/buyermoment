@@ -20,6 +20,7 @@ Microsoft’s Foundry sponsorship guidance says startup credits apply when Micro
 | 2026-09-22 | Phase 4 robustness evaluation | existing deployments only | 300 local adversarial controls, 300 local journey turns, 150 local counterfactual controls | No Azure model call, Batch job, deployment, or resource change; local deterministic policy and scorer produced durable benchmark artifacts | No Phase 4 Azure spend; posted dollar cost remains unavailable |
 | 2026-09-22 | Phase 5 targeted augmentation preparation | none | 60 prompt-manifest rows derived from 10 false-TEST controls | Manifest only; no Azure request, Batch job, model deployment, or resource change | No Phase 5 Azure model spend; dollar cost remains unposted |
 | 2026-09-22 | Phase 5 local safety evaluation | none | 300 adversarial controls, 360 multi-turn turns, 60 counterfactuals, 45 shadow candidates | Deterministic scorer/policy only | No Phase 5 Azure model spend; dollar cost remains unposted |
+| 2026-09-22 | Phase 6 state and shadow preparation | none | 576 local state turns, 100 counterfactuals, 5 evidence packages, 43 blinded packet manifests | Local deterministic state/policy and packet preparation; no Azure request, Batch job, deployment, or resource change | No Phase 6 Azure model spend; dollar cost remains unposted |
 
 No 100-record Azure run or Batch workload has been submitted. The deterministic 500-row Stage A control and 500 hard negatives were generated locally at no model-token cost.
 

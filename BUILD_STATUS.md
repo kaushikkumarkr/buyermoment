@@ -35,6 +35,15 @@
 
 - No live advertising or Phase 5 Azure generation is authorized. The next safe step is an independent blinded human shadow review and a reviewed purchase-stage/adversarial gold tranche.
 
+## Phase 6 in progress
+
+- Created `phase6/blinded-shadow-state` from the clean Phase 5 commit.
+- Added a blinded packet protocol, private review boundary, JSON review schema, CLI submission tool, post-submission join/scoring, Cohen's kappa, severe-disagreement, reviewer-confidence, and disagreement-category metrics.
+- Prepared five evidence packages and 50 deduplicated review packets (10 per business, with 30 shadow-dev and 20 shadow-holdout). The three existing businesses and two additional verticals are explicitly synthetic/demo evidence; no private customer data is committed. Independent human submissions: 0, so agreement metrics remain unavailable.
+- Added an explicit validated `ConversationState` with latest budget/location/recipient/product/timing revision handling, state revision reasons, and stateful scoring. On 96 manually authored journeys / 576 turns: stateful stage accuracy 0.625, transition accuracy 0.55, explicit constraint/identity memory 1.0, intent-reversal actionability 1.0, stale assertion error 0.0. These are authored controls, not external validation.
+- Added 100 Phase 6 counterfactual controls: direction correctness 0.60, reason-code correctness 0.60, unaffected-score stability 1.0. Shipping, conditional, negative, and product variants remain weaknesses.
+- Phase 6 gate: `NO-GO` for live spend and pending independent shadow review. Human approval remains mandatory.
+
 ## Blocked
 
 - Azure model dollar cost is not reported because the run metadata captured tokens only for the bounded comparison sample and no dated price sheet is embedded.

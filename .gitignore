@@ -23,3 +23,7 @@ data/hidden_test/*
 !data/validation/.gitkeep
 !data/hidden_test/.gitkeep
 artifacts/
+shadow_reviews/private/
+shadow_reviews/*.jsonl
+!shadow_reviews/README.md
+!shadow_reviews/schema.json
