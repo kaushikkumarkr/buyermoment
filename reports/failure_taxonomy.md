@@ -1,0 +1,51 @@
+# Failure taxonomy counts
+
+{
+  "failure_counts": {
+    "wrong_purchase_stage": 56,
+    "false_commercial_intent": 16,
+    "location_failure": 8,
+    "missed_hard_constraint": 14
+  },
+  "examples": {
+    "wrong_purchase_stage": [
+      "adversarial:mixed_locations:00:00",
+      "adversarial:negative_sentiment:00:04",
+      "adversarial:unavailable_geography:00:05",
+      "adversarial:comparison_no_purchase:00:09",
+      "adversarial:beneficiary_location:00:11",
+      "adversarial:service_travel:00:12",
+      "adversarial:support_keyword:00:13",
+      "adversarial:mixed_locations:01:00",
+      "adversarial:negative_sentiment:01:04",
+      "adversarial:unavailable_geography:01:05"
+    ],
+    "false_commercial_intent": [
+      "adversarial:negative_sentiment:00:04",
+      "adversarial:comparison_no_purchase:00:09",
+      "adversarial:negative_sentiment:01:04",
+      "adversarial:comparison_no_purchase:01:09",
+      "adversarial:negative_sentiment:02:04",
+      "adversarial:comparison_no_purchase:02:09",
+      "adversarial:negative_sentiment:03:04",
+      "adversarial:comparison_no_purchase:03:09",
+      "adversarial:negative_sentiment:04:04",
+      "adversarial:comparison_no_purchase:04:09"
+    ],
+    "location_failure": [
+      "adversarial:unavailable_geography:00:05",
+      "adversarial:unavailable_geography:01:05",
+      "adversarial:unavailable_geography:02:05",
+      "adversarial:unavailable_geography:03:05",
+      "adversarial:unavailable_geography:04:05",
+      "adversarial:unavailable_geography:05:05",
+      "adversarial:unavailable_geography:06:05",
+      "adversarial:unavailable_geography:07:05"
+    ]
+  },
+  "source": [
+    "adversarial_benchmark.json",
+    "constraint_breakdown.json"
+  ],
+  "status": "measured taxonomy counts; categories are assigned by deterministic benchmark mismatch rules"
+}

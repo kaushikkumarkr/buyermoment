@@ -1,6 +1,6 @@
 {
   "version": "CCB-1 v0.1",
-  "created_at": "2026-09-22T04:09:26.673319+00:00",
+  "created_at": "2026-09-22T04:53:23.610009+00:00",
   "source_datasets": [
     "Google ConvApparel",
     "Amazon ESCI",
@@ -159,24 +159,25 @@
     "hard_negatives": 500,
     "controlled_constraint_location_records": 140,
     "gold_records": 0,
-    "train": 345460,
-    "validation": 39785,
-    "hidden_test": 35094
+    "train": 348974,
+    "validation": 38175,
+    "hidden_test": 33190
   },
   "split_manifest": {
     "seed": 20260921,
     "input_records_after_dedupe": 420339,
     "duplicate_records_dropped": 40,
-    "groups": 25522,
+    "groups_before_context_merge": 23027,
+    "groups": 13261,
     "record_counts": {
-      "train": 345460,
-      "hidden_test": 35094,
-      "validation": 39785
+      "train": 348974,
+      "hidden_test": 33190,
+      "validation": 38175
     },
     "group_counts": {
-      "train": 20440,
-      "hidden_test": 2511,
-      "validation": 2571
+      "train": 10722,
+      "hidden_test": 1257,
+      "validation": 1282
     },
     "group_leakage_check": true
   },

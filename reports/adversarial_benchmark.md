@@ -1,0 +1,204 @@
+# Adversarial benchmark
+
+{
+  "benchmark": "Phase 3 adversarial CCB-1 benchmark",
+  "record_count": 120,
+  "template_types": {
+    "mixed_locations": 8,
+    "future_location": 8,
+    "third_party": 8,
+    "existing_owner": 8,
+    "negative_sentiment": 8,
+    "unavailable_geography": 8,
+    "currency_mismatch": 8,
+    "shipping_constraint": 8,
+    "research_keywords": 8,
+    "comparison_no_purchase": 8,
+    "delayed_purchase": 8,
+    "beneficiary_location": 8,
+    "service_travel": 8,
+    "support_keyword": 8,
+    "complaint_keyword": 8
+  },
+  "metrics": {
+    "commercial_intent": {
+      "count": 120,
+      "tp": 40,
+      "fp": 16,
+      "fn": 24,
+      "tn": 40,
+      "precision": 0.7142857142857143,
+      "recall": 0.625,
+      "f1": 0.6666666666666666
+    },
+    "purchase_stage": {
+      "accuracy": 0.5333333333333333,
+      "macro_f1": 0.5357142857142858,
+      "count": 120
+    },
+    "location_fit": {
+      "count": 16,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 16,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "hard_negative_false_positive_rate": 0.2857142857142857,
+    "by_adversarial_type": {
+      "mixed_locations": {
+        "count": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "future_location": {
+        "count": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "third_party": {
+        "count": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "existing_owner": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "negative_sentiment": {
+        "count": 8,
+        "tp": 0,
+        "fp": 8,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null
+      },
+      "unavailable_geography": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null
+      },
+      "currency_mismatch": {
+        "count": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "shipping_constraint": {
+        "count": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "research_keywords": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "comparison_no_purchase": {
+        "count": 8,
+        "tp": 0,
+        "fp": 8,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null
+      },
+      "delayed_purchase": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "beneficiary_location": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null
+      },
+      "service_travel": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null
+      },
+      "support_keyword": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "complaint_keyword": {
+        "count": 8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    }
+  },
+  "status": "measured_on_manual_phase3_controls; separate from hidden CCB-1 split"
+}

@@ -7,11 +7,11 @@ from .models import CommercialContext, Constraints, Evidence, Product, ScoreResu
 
 
 STAGE_TERMS: dict[str, tuple[str, ...]] = {
-    "transactional": ("buy", "order", "purchase", "checkout", "ship", "today", "need by"),
-    "consideration": ("best", "recommend", "under $", "worth", "looking for", "need"),
-    "comparison": ("compare", "versus", "vs", "difference", "alternative"),
-    "exploration": ("options", "ideas", "what should", "explore", "looking into"),
-    "informational": ("history", "how does", "research", "academic", "learn", "clean"),
+    "transactional": ("buy", "order", "purchase", "checkout", "where can i buy", "ship today", "arrive by", "need by", "delivery this week", "start the pilot"),
+    "consideration": ("best", "recommend", "under $", "worth", "looking for", "i need", "need a", "for my team"),
+    "comparison": ("compare", "versus", " vs ", "difference", "alternative", "which one"),
+    "exploration": ("options", "ideas", "what should", "explore", "looking into", "can different", "what to look for"),
+    "informational": ("history", "how does", "research", "academic", "learn", "clean", "already own", "how do i use", "why is my", "why does", "why do", "what does", "for a paper", "not buying"),
 }
 
 
@@ -19,14 +19,23 @@ STAGE_TERMS: dict[str, tuple[str, ...]] = {
 class ParsedConstraints:
     budget: float | None
     required: list[str]
+    excluded: list[str]
+    compatibility: list[str]
     geography: str | None
     timing: str | None
+    language: str | None
+    currency: str | None
+    shipping: str | None
 
 
 def _parse_constraints(text: str) -> ParsedConstraints:
     lowered = text.lower()
     match = re.search(r"(?:under|below|less than|budget of)\s*\$?\s*(\d+(?:\.\d+)?)", lowered)
     budget = float(match.group(1)) if match else None
+    currency_match = re.search(r"\b(CAD|USD|EUR|GBP)\b|([$€£])", text, re.IGNORECASE)
+    currency = {"$": "USD", "€": "EUR", "£": "GBP"}.get(currency_match.group(2) if currency_match and currency_match.lastindex and currency_match.lastindex >= 2 else "", None) if currency_match else None
+    if currency_match and currency_match.group(1):
+        currency = currency_match.group(1).upper()
     geo_match = re.search(r"\b(?:in|near|around|for)\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)", text)
     geography = geo_match.group(1) if geo_match else None
     timing = next((term for term in ("today", "this week", "tomorrow", "before Friday") if term in lowered), None)
@@ -34,15 +43,43 @@ def _parse_constraints(text: str) -> ParsedConstraints:
     for feature in ("waterproof", "slip-resistant", "fragrance-free", "sensitive skin", "12-hour", "SOC 2", "fast shipping"):
         if feature in lowered:
             required.append(feature)
-    return ParsedConstraints(budget, required, geography, timing)
+    excluded = []
+    for match in re.finditer(r"(?:not|without|excluding)\s+([a-z][a-z -]{2,30})", lowered):
+        value = match.group(1).strip(" .,")
+        if value and value not in {"buying", "myself", "one"}:
+            excluded.append(value)
+    compatibility = [match.group(1).strip() for match in re.finditer(r"(?:works with|compatible with|integrates with)\s+([a-z0-9][a-z0-9 .+-]{2,30})", lowered)]
+    language_match = re.search(r"\b(?:in|for)\s+(english|spanish|french|german)\b", lowered)
+    language = language_match.group(1) if language_match else None
+    shipping = "including shipping" if "including shipping" in lowered else ("ships to destination" if "ships to" in lowered else None)
+    return ParsedConstraints(budget, required, excluded, compatibility, geography, timing, language, currency, shipping)
 
 
 def infer_stage(text: str) -> str:
     lowered = text.lower()
+    if "can't buy" in lowered or "cannot buy" in lowered:
+        return "exploration"
+    if any(term in lowered for term in ("already own", "already purchased", "how do i clean", "how do i use", "return this")):
+        return "informational"
     for stage in ("transactional", "consideration", "comparison", "exploration", "informational"):
         if any(term in lowered for term in STAGE_TERMS[stage]):
             return stage
     return "exploration"
+
+
+def infer_stage_with_history(text: str, previous_stage: str | None = None) -> str:
+    """Classify the current turn while retaining only evidence that is explicit in the turn.
+
+    History is used as a tie-breaker, never as permission to invent buying intent.
+    """
+    current = infer_stage(text)
+    lowered = text.lower()
+    if current == "exploration" and previous_stage in {"consideration", "comparison"}:
+        if any(term in lowered for term in ("these options", "those", "the two", "which one")):
+            return "comparison"
+    if current == "consideration" and previous_stage == "informational" and not any(term in lowered for term in ("need", "looking for", "under $", "budget")):
+        return "exploration"
+    return current
 
 
 def build_context(context_text: str, *, source: str = "user_input", context_id: str = "ctx-generated") -> CommercialContext:
@@ -57,7 +94,7 @@ def build_context(context_text: str, *, source: str = "user_input", context_id: 
         problem="Need inferred from customer language; verify against source evidence.",
         desired_outcome="Find a suitable solution with the stated constraints.",
         use_case="Customer context supplied for scoring.",
-        constraints=Constraints(budget=parsed.budget, required_features=parsed.required, geography=parsed.geography, timing=parsed.timing),
+        constraints=Constraints(budget=parsed.budget, currency=parsed.currency, required_features=parsed.required, excluded_features=parsed.excluded, compatibility=parsed.compatibility, geography=parsed.geography, timing=parsed.timing, language=parsed.language, shipping=parsed.shipping),
         purchase_stage=stage,
         urgency=urgency,
         commerciality=commerciality,
@@ -109,12 +146,16 @@ def score(context: CommercialContext, product: Product, offer_fit: float = 0.7) 
     return ScoreResult(
         commerciality=context.commerciality,
         product_fit=product_fit,
+        semantic_product_fit=product_fit,
         constraint_match=constraint_match,
         location_fit=location_fit,
         purchase_stage=context.purchase_stage,
         ad_relevance=ad_relevance,
+        offer_fit=offer_fit,
         confidence=confidence,
+        raw_confidence=confidence,
         extracted_constraints=[feature for feature in context.constraints.required_features if feature],
+        extracted_constraint_fields={"budget": context.constraints.budget, "currency": context.constraints.currency, "required_features": context.constraints.required_features, "excluded_features": context.constraints.excluded_features, "compatibility": context.constraints.compatibility, "timing": context.constraints.timing, "geography": context.constraints.geography, "language": context.constraints.language, "shipping": context.constraints.shipping},
         evidence=evidence,
         reason_codes=reasons,
         overall=overall,

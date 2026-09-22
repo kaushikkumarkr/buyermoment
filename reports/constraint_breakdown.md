@@ -1,0 +1,108 @@
+# Constraint breakdown
+
+{
+  "benchmark": "Phase 3 constraint extraction breakdown",
+  "metrics": {
+    "numeric_budget": {
+      "tp": 100,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 100,
+      "status": "measured"
+    },
+    "required_feature": {
+      "tp": 86,
+      "fp": 0,
+      "fn": 14,
+      "precision": 1.0,
+      "recall": 0.86,
+      "f1": 0.924731182795699,
+      "count": 100,
+      "status": "measured"
+    },
+    "excluded_feature": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "count": 0,
+      "status": "not_computed"
+    },
+    "compatibility": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "count": 0,
+      "status": "not_computed"
+    },
+    "timing": {
+      "tp": 100,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 100,
+      "status": "measured"
+    },
+    "geography": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "count": 0,
+      "status": "not_computed"
+    },
+    "language": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "count": 0,
+      "status": "not_computed"
+    },
+    "currency": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "count": 0,
+      "status": "not_computed"
+    },
+    "shipping": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "count": 0,
+      "status": "not_computed"
+    },
+    "location_serviceability": {
+      "tp": 20,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 40,
+      "status": "measured on controlled explicit serviceability controls"
+    }
+  },
+  "status": "measured only for constraint types with explicit canonical labels; missing types are not fabricated"
+}

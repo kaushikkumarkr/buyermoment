@@ -20,9 +20,13 @@ The ESCI slice is an explicit cost/storage boundary for v0.1, not a claim to rep
 
 Normalization uses source-provided joins only. Missing fields remain missing. Every generated row carries `metadata.parent_record_id`, evidence, provenance, and transformation history. All source records and their variants are assigned together using a stable source-aware group split. The hidden split is not included in Git; only its counts and checksum metadata are committed.
 
+Phase 3 adds 120 separately held-out adversarial controls and 100 six-turn manually authored journeys. No records have been promoted to human-reviewed gold.
+
 ## Synthetic augmentation
 
 Augmentation creates controlled conversational variants (high purchase intent, comparison, exploration, informational, and existing-owner support) from real parents. Hard negatives deliberately retain product keywords while changing the commercial meaning (buy, research, support, complaint, comparison). These labels are controlled targets for pipeline checks, not human ground truth. Azure generation is implemented behind a provider interface; Stage A produced 500 accepted Azure variants and is retained as controlled transformation data, never as observed customer behavior. A five-parent same-input comparison across two Azure-direct models is recorded in `artifacts/model_comparison_v0_1.json`; its token-overlap signal is only a guardrail proxy.
+
+Phase 3 split audit: zero cross-split source-group leakage, zero cross-split exact normalized-context collisions, and zero hidden-example matches in tracked files. Exact normalized-context collisions are merged into one split group before assignment.
 
 ## Limitations and risks
 

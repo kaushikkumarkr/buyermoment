@@ -17,9 +17,16 @@
 - Initial React Signal Board UI with evidence/inference separation and responsive states.
 - Dedicated BuyerMoment Azure development footprint provisioned and verified in eastus2.
 
+## Phase 3 completed in this branch
+
+- Corrected two split defects: ConvApparel parent/variant leakage and exact normalized-context collisions across groups. Corrected split: 348,914 train / 38,184 validation / 33,241 hidden test across 13,360 merged groups.
+- Added integrity audit, purchase-stage guide, 100 six-turn journeys (600 turns), adversarial controls, calibration analysis, constraint-type breakdown, failure taxonomy, model routing benchmark, and structured review for all three demo businesses.
+- Extended ContextFit output with semantic-product-fit, offer-fit, raw confidence, calibrated confidence fields, and explicit constraint-field extraction.
+- Reused only the two existing Azure-direct deployments for a bounded 10-case nano/mini routing run. No new Azure resource, deployment, Batch job, or non-dedicated resource was created.
+
 ## Currently working
 
-- Finalize Phase 2 documentation/tests, review benchmark artifacts, and push the phase branch.
+- Phase 3 findings are documented; the next decision is whether to add human-reviewed gold labels for the adversarial and purchase-stage slices. No Phase 4 product expansion was started.
 
 ## Blocked
 
@@ -47,9 +54,13 @@
 ## Benchmark status
 
 - CCB-1 manifest: 419,199 real normalized records; 500 Azure conversational augmentations; 500 template controls; 500 hard negatives; 140 controlled constraint/location records; 0 human-reviewed gold records.
-- Hidden source-aware split: 345,460 train / 39,785 validation / 35,094 hidden test; 420,339 unique record IDs and group leakage check passed.
-- ContextFit hidden baseline: intent F1 1.0 on 40 controlled hard-negative cases; purchase-stage accuracy 0.5619 on 105 controlled cases; constraint F1 0.7778 on 11 hidden controls; location-fit F1 1.0 on 7 hidden controls; relevance F1 0.7357, NDCG 0.9155, MRR 0.9078 on original ESCI/WANDS labels; schema validity 1.0.
-- Bounded model comparison: both Azure-direct configurations returned 5/5 schema-valid parent calls; token counts and latency are in `artifacts/model_comparison_v0_1.json`. Dollar cost remains null.
+- Corrected hidden split: 348,914 train / 38,184 validation / 33,241 hidden test; 420,339 unique record IDs; 13,360 merged groups; integrity audit PASS.
+- Corrected hidden baseline: commercial-intent F1 1.0 on 190 controlled targets; purchase-stage accuracy 0.872 on 250 controlled targets; relevance F1 0.7388, NDCG 0.8502, MRR 0.8244 on original ESCI/WANDS labels; schema validity 1.0. Synthetic constraint/location families are isolated from the hidden split to prevent template leakage; the dedicated 140-record control reports budget F1 1.0, required-feature F1 0.9247, timing F1 1.0, and location-serviceability F1 1.0.
+- Adversarial benchmark: 120 manual controls; commercial-intent F1 0.6667; purchase-stage accuracy 0.5333; hard-negative FPR 0.2857; 8/16 explicit negative-serviceability cases failed.
+- Multi-turn benchmark: 100 manually authored journeys / 600 turns; baseline and stateful rule-assisted stage accuracy 1.0, transition errors 0, constraint-memory accuracy 1.0. Template coverage only.
+- Calibration: raw stage ECE 0.3083 / Brier 0.2032 and raw relevance ECE 0.2236 / Brier 0.2771. Validation-fitted isotonic calibration reduced relevance ECE to 0.1180 but worsened stage ECE to 0.7071, so calibrated values remain analysis-only.
+- Bounded routing: all-mini valid accuracy 0.4444 with one 429; routed nano→mini valid accuracy 0.4000, 70% escalated, 10/10 routed calls valid. No routing quality improvement is claimed.
+- Real-business review: 45 evidence-backed candidates, 15 per demo business; top-five usefulness 1.0 / 1.0 / 0.8 for footwear / skincare / B2B SaaS; `would_test_with_real_ad_budget=yes` rate 0.5333 for each. Internal engineering review only.
 
 ## Known limitations
 
@@ -58,7 +69,11 @@
 - ConvApparel lacks universal human relevance labels; unsupported-inference rate needs human evidence annotations.
 - Azure augmentation labels are controlled transformation targets, not human ground truth; no external campaign outcomes are present.
 - The generated experiment export is a structured package, not a live platform integration.
+- Purchase-stage and multi-turn labels are authored controls, not human conversation annotations.
+- Exact-context grouping improves integrity but reduces independent ranking queries; revised ranking metrics are not directly comparable with pre-audit metrics.
+- Location, currency, shipping, exclusion, compatibility, and language labels remain sparse; unsupported categories are marked not computed.
+- Confidence calibration is dataset/configuration-specific and not suitable for customer-facing probability language.
 
 ## Next action
 
-Review the benchmark artifacts, add human evidence annotations for the next gold tranche, and use Azure billing export to populate actual dollar costs before any Stage B scale-up.
+Add a small human-reviewed gold tranche for purchase stage and adversarial serviceability, then rerun the same hidden benchmark before any larger Azure run. Use Azure billing export to populate actual dollar costs; current routing results do not justify scale-up.

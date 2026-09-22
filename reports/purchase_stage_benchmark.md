@@ -1,0 +1,87 @@
+# Purchase-stage benchmark
+
+{
+  "benchmark": "Phase 3 purchase-stage and multi-turn benchmark",
+  "turn_count": 600,
+  "conversation_count": 100,
+  "baseline": {
+    "accuracy": 1.0,
+    "per_stage": {
+      "comparison": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "consideration": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "exploration": {
+        "count": 200,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "informational": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "transactional": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "stateful_rule_assisted": {
+    "accuracy": 1.0,
+    "per_stage": {
+      "comparison": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "consideration": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "exploration": {
+        "count": 200,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "informational": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "transactional": {
+        "count": 100,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "confusion_matrix": {
+    "comparison->comparison": 100,
+    "consideration->consideration": 100,
+    "exploration->exploration": 200,
+    "informational->informational": 100,
+    "transactional->transactional": 100
+  },
+  "stage_transition_errors": 0,
+  "constraint_memory_accuracy": 1.0,
+  "status": "measured_on_manual_phase3_journey_templates; not human customer outcome data"
+}

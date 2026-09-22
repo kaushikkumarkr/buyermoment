@@ -132,12 +132,18 @@ class ScoreResult(BaseModel):
 
     commerciality: float = Field(ge=0, le=1)
     product_fit: float = Field(ge=0, le=1)
+    semantic_product_fit: float = Field(default=0.5, ge=0, le=1)
     constraint_match: float = Field(ge=0, le=1)
     location_fit: float = Field(ge=0, le=1)
     purchase_stage: PurchaseStage
     ad_relevance: float = Field(ge=0, le=1)
+    offer_fit: float = Field(default=0.7, ge=0, le=1)
     confidence: float = Field(ge=0, le=1)
+    raw_confidence: float | None = Field(default=None, ge=0, le=1)
+    calibrated_confidence: float | None = Field(default=None, ge=0, le=1)
+    confidence_band: Literal["LOW", "MEDIUM", "HIGH"] | None = None
     extracted_constraints: list[str] = Field(default_factory=list)
+    extracted_constraint_fields: dict[str, Any] = Field(default_factory=dict)
     evidence: list[Evidence] = Field(default_factory=list)
     reason_codes: list[str] = Field(default_factory=list)
     overall: float = Field(ge=0, le=1)
