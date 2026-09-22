@@ -30,6 +30,11 @@
       "records": 175751,
       "sha256": "f993ee7714b2056d37b3416323cd64e1d378896ea55f8ab3a042374ccc877108"
     },
+    "google_convapparel_v2": {
+      "path": "data/ccb1/normalized/google_convapparel_v2.jsonl",
+      "records": 141168,
+      "sha256": "3f4a497807301ba7b93c277efe7608027346ce06e69baa77eff27b5a5d4945b6"
+    },
     "wayfair_wands": {
       "path": "data/ccb1/normalized/wayfair_wands.jsonl",
       "records": 233448,
@@ -63,6 +68,18 @@
     }
   },
   "normalized_total": 419199,
+  "evaluation_only_additions": {
+    "google_convapparel_v2": {
+      "raw": {
+        "archive_sha256": "14001121fa81149ae20cc5b2aa962b5e5077af55b3ac14657211007b75ca8fa4",
+        "conversations": 3534,
+        "turns": 11764,
+        "recommendation_rows": 141168
+      },
+      "normalized_records": 141168,
+      "reason_not_in_ccb1_v0_1_split": "evaluation-only until human-data/commercial rights review; not mixed into the v0.1 train/validation/hidden split"
+    }
+  },
   "splits": {
     "train": {
       "records": 348974,

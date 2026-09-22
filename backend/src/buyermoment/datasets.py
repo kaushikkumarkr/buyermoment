@@ -12,12 +12,14 @@ from .models import CommercialContextRecord, Evidence
 
 LICENSES = {
     "google_convapparel": "CC BY 4.0; Google ConvApparel dataset card and attribution must be preserved.",
+    "google_convapparel_v2": "CC BY 4.0; Google ConvApparel V2 dataset card and attribution must be preserved.",
     "amazon_esci": "Apache-2.0; preserve LICENSE/NOTICE and original Exact/Substitute/Complement/Irrelevant labels.",
     "wayfair_wands": "MIT; preserve the upstream license and original product-relevance labels.",
 }
 
 SOURCE_VERSIONS = {
     "google_convapparel": "Hugging Face main release; version captured in source_manifest.json",
+    "google_convapparel_v2": "Hugging Face ConvApparel_V2.zip; version captured in source_manifest.json",
     "amazon_esci": "amazon-research/esci-code main release; version captured in source_manifest.json",
     "wayfair_wands": "wayfair/WANDS main release; version captured in source_manifest.json",
 }
@@ -115,7 +117,7 @@ def normalize_esci(examples_path: Path, products_path: Path, destination: Path, 
     return _write_records(records, destination) | {"dataset": "amazon_esci", "source_rows": int(len(merged))}
 
 
-def normalize_convapparel(zip_path: Path, destination: Path, *, max_records: int | None = None) -> dict[str, Any]:
+def normalize_convapparel(zip_path: Path, destination: Path, *, max_records: int | None = None, dataset: str = "google_convapparel") -> dict[str, Any]:
     with zipfile.ZipFile(zip_path) as archive:
         json_names = [name for name in archive.namelist() if name.lower().endswith(".json") and not name.endswith("/")]
         if not json_names:
@@ -131,9 +133,9 @@ def normalize_convapparel(zip_path: Path, destination: Path, *, max_records: int
                 continue
             for recommendation in turn.get("recommendations", []) or [None]:
                 item_id = _text((recommendation or {}).get("item_id"))
-                record_id = f"convapparel:{conversation.get('task_id', 'unknown')}:{conversation_index}:{turn_index}:{item_id or 'no-item'}"
+                record_id = f"{dataset}:{conversation.get('task_id', 'unknown')}:{conversation_index}:{turn_index}:{item_id or 'no-item'}"
                 records.append(CommercialContextRecord(
-                    record_id=record_id, source_dataset="google_convapparel", source_record_id=record_id, source_license=LICENSES["google_convapparel"], source_version=SOURCE_VERSIONS["google_convapparel"], context_text=context_text, original_query=context_text, product_id=item_id, product_title=_text((recommendation or {}).get("title")), product_description=_text((recommendation or {}).get("description")), product_attributes={"features": (recommendation or {}).get("features"), "image_url": (recommendation or {}).get("image_url")}, evidence=[Evidence(id=f"{record_id}:utterance", kind="observed", text=context_text, source="google_convapparel.conversation", source_record_id=record_id)], provenance=["google/ConvApparel conversation turn and recommendation"], transformation_history=["one record per user turn and recommended item", "preserved turn/session ratings in metadata", "no product relevance label inferred"], metadata={"task_id": conversation.get("task_id"), "version": conversation.get("version"), "turn_ratings": turn.get("ratings"), "session_ratings": conversation.get("ratings")}, split="unassigned"))
+                    record_id=record_id, source_dataset=dataset, source_record_id=record_id, source_license=LICENSES[dataset], source_version=SOURCE_VERSIONS[dataset], context_text=context_text, original_query=context_text, product_id=item_id, product_title=_text((recommendation or {}).get("title")), product_description=_text((recommendation or {}).get("description")), product_attributes={"features": (recommendation or {}).get("features"), "image_url": (recommendation or {}).get("image_url")}, evidence=[Evidence(id=f"{record_id}:utterance", kind="observed", text=context_text, source=f"{dataset}.conversation", source_record_id=record_id)], provenance=[f"google/ConvApparel {dataset} conversation turn and recommendation"], transformation_history=["one record per user turn and recommended item", "preserved turn/session ratings in metadata", "no product relevance label inferred"], metadata={"task_id": conversation.get("task_id"), "version": conversation.get("version"), "dataset_variant": dataset, "turn_ratings": turn.get("ratings"), "session_ratings": conversation.get("ratings")}, split="unassigned"))
                 if max_records and len(records) >= max_records:
-                    return _write_records(records[:max_records], destination) | {"dataset": "google_convapparel"}
-    return _write_records(records, destination) | {"dataset": "google_convapparel"}
+                    return _write_records(records[:max_records], destination) | {"dataset": dataset}
+    return _write_records(records, destination) | {"dataset": dataset}

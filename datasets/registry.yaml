@@ -44,13 +44,13 @@ datasets:
     publisher: Google Research
     source_url: https://huggingface.co/datasets/google/ConvApparel
     version_date: ConvApparel_V2.zip on dataset main branch
-    checksum: not downloaded
+    checksum: 14001121fa81149ae20cc5b2aa962b5e5077af55b3ac14657211007b75ca8fa4; normalized 3f4a497807301ba7b93c277efe7608027346ce06e69baa77eff27b5a5d4945b6
     license: CC BY 4.0 on the current dataset card; human-data and publication terms require verification
     attribution_requirement: preserve dataset-card attribution and citation
     training_status: REVIEW_REQUIRED
     evaluation_status: EVAL_ONLY
     commercial_review_status: REVIEW_REQUIRED
-    notes: Available artifact is not in the current raw cache. Do not fetch or train until terms are reviewed and checksum is recorded.
+    notes: Archived and normalized as evaluation-only, but excluded from CCB-1 v0.1 splits. Do not train weights until human-data/commercial terms are reviewed.
 
   - name: Schema-Guided Dialogue (SGD)
     publisher: Google Research

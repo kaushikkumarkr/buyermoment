@@ -1,0 +1,14 @@
+{
+  "version": "buyer-moment-foundation-v0.1",
+  "created_from": "phase8/intelligence-v1",
+  "datasets": [
+    {"name": "Amazon ESCI", "version": "git 7916cdf6ab75a462e77f20ab40428a10923998d5", "license": "Apache-2.0", "checksum": "see data/ccb1/source_manifest.json", "raw_count": 2621288, "normalized_count": 10000, "train": 8566, "validation": 1060, "hidden_test": 1044, "use_policy": "TRAIN_ALLOWED for original labels; CCB-1 slice only", "transformations": ["source-key join", "canonical label mapping", "source-aware split"]},
+    {"name": "Wayfair WANDS", "version": "source manifest snapshot", "license": "MIT", "checksum": "see data/ccb1/source_manifest.json", "raw_count": 233448, "normalized_count": 233448, "train": 196069, "validation": 21054, "hidden_test": 16490, "use_policy": "TRAIN_ALLOWED subject to attribution", "transformations": ["query/product join", "preserved original labels", "source-aware split"]},
+    {"name": "Google ConvApparel V1", "version": "Hugging Face main", "license": "CC BY 4.0 card; review required for training", "checksum": "fb177b2d1c037b6f46b849a2dcd28fceaa496dded076a124644ce59d0a10b6fc", "raw_count": 175751, "normalized_count": 175751, "train": 144199, "validation": 16061, "hidden_test": 15656, "use_policy": "EVAL_ONLY pending human-data/commercial review", "transformations": ["one row per turn/recommendation", "preserved ratings metadata", "relevance unknown unless source-labelled"]},
+    {"name": "Google ConvApparel V2", "version": "Hugging Face ConvApparel_V2.zip", "license": "CC BY 4.0 card; review required for training", "checksum": "14001121fa81149ae20cc5b2aa962b5e5077af55b3ac14657211007b75ca8fa4", "raw_count": 141168, "normalized_count": 141168, "train": 0, "validation": 0, "hidden_test": 0, "use_policy": "EVAL_ONLY; excluded from CCB-1 v0.1 split", "transformations": ["one row per turn/recommendation", "preserved ratings metadata", "relevance unknown unless source-labelled"]},
+    {"name": "CCB-B2B silver", "version": "v0.1", "license": "project-authored controlled scenarios", "checksum": "data/ccb_b2b/manifest.json", "raw_count": 22, "normalized_count": 22, "train": 0, "validation": 0, "hidden_test": 0, "use_policy": "review queue only; not gold", "transformations": ["manual controlled scenarios", "explicit silver tier", "pending human review"]}
+  ],
+  "new_dataset_status": {"ConvApparel V2": "REVIEW_REQUIRED_ARCHIVED_EVAL_ONLY", "SGD": "EVAL_ONLY_REVIEW_REQUIRED", "SGD-X": "EVAL_ONLY_REVIEW_REQUIRED", "Taskmaster": "EVAL_ONLY_REVIEW_REQUIRED", "Contextual Product QA": "EVAL_ONLY_REVIEW_REQUIRED", "KuaiSearch-Lite": "REVIEW_REQUIRED_NOT_DOWNLOADED"},
+  "model_artifacts": ["models/product_fit/product_fit_tfidf.joblib"],
+  "azure_phase8_inference_calls": 0
+}

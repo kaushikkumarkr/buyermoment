@@ -45,6 +45,12 @@
       "path": "data/ccb1/raw/google_convapparel/ConvApparel.zip",
       "url": "https://huggingface.co/datasets/google/ConvApparel/resolve/main/ConvApparel.zip?download=true",
       "sha256": "fb177b2d1c037b6f46b849a2dcd28fceaa496dded076a124644ce59d0a10b6fc"
+    },
+    {
+      "dataset": "google_convapparel_v2",
+      "path": "data/ccb1/raw/google_convapparel/ConvApparel_V2.zip",
+      "url": "https://huggingface.co/datasets/google/ConvApparel/resolve/main/ConvApparel_V2.zip?download=true",
+      "sha256": "14001121fa81149ae20cc5b2aa962b5e5077af55b3ac14657211007b75ca8fa4"
     }
   ],
   "git_revisions": {
@@ -53,9 +59,13 @@
       "revision": "7916cdf6ab75a462e77f20ab40428a10923998d5"
     }
   },
-  "updated_at": "2026-09-22T04:04:23.769168+00:00",
+  "updated_at": "2026-09-22T17:47:34.714710+00:00",
   "license_references": {
     "google_convapparel": {
+      "license": "CC BY 4.0",
+      "reference": "https://huggingface.co/datasets/google/ConvApparel"
+    },
+    "google_convapparel_v2": {
       "license": "CC BY 4.0",
       "reference": "https://huggingface.co/datasets/google/ConvApparel"
     },

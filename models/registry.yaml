@@ -1,0 +1,19 @@
+version: 1
+models:
+  - name: product_fit_tfidf_v1
+    task: binary product relevance / ProductFit ranking
+    version: 1.0.0
+    base_model: sklearn TfidfVectorizer + LogisticRegression
+    base_model_license: BSD-3-Clause (scikit-learn dependency)
+    training_datasets:
+      - Amazon ESCI
+    dataset_versions:
+      - git revision 7916cdf6ab75a462e77f20ab40428a10923998d5; CCB-1 train split
+    training_config: scripts/benchmark_product_fit.py
+    metrics: artifacts/product_fit_benchmark.json
+    ood_metrics: reports/product_fit_ood.md
+    latency: recorded by benchmark command when deployed; not yet production-measured
+    runtime: Python CPU / scikit-learn
+    artifact_hash: recorded in artifacts/product_fit_benchmark.json
+    status: CANDIDATE
+    notes: Original human ESCI labels only. WANDS is OOD evaluation and is not used for training.

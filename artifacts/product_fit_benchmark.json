@@ -1,0 +1,65 @@
+{
+  "version": "product-fit-tfidf-v1",
+  "training": {
+    "dataset": "Amazon ESCI original labels",
+    "records": 8096,
+    "labels": {
+      "0": 2786,
+      "1": 5310
+    },
+    "features": "word TF-IDF unigrams/bigrams over query + product title + description",
+    "classifier": "balanced logistic regression",
+    "source_split": "CCB-1 train only"
+  },
+  "datasets": {
+    "esci_hidden": {
+      "learned_tfidf_logistic": {
+        "records": 844,
+        "positive_rate": 0.5864928909952607,
+        "precision": 0.7558441558441559,
+        "recall": 0.5878787878787879,
+        "f1": 0.6613636363636364,
+        "groups": 27,
+        "ndcg": 0.8139553906761334,
+        "mrr": 0.7409171075837742
+      },
+      "lexical_overlap": {
+        "records": 844,
+        "positive_rate": 0.5864928909952607,
+        "precision": 0.6957236842105263,
+        "recall": 0.8545454545454545,
+        "f1": 0.7669990933816863,
+        "groups": 27,
+        "ndcg": 0.8606663117079245,
+        "mrr": 0.8407407407407406
+      }
+    },
+    "wands_ood": {
+      "learned_tfidf_logistic": {
+        "records": 9027,
+        "positive_rate": 0.33433034230641406,
+        "precision": 0.4595484477892756,
+        "recall": 0.3237243207422134,
+        "f1": 0.3798600311041991,
+        "groups": 32,
+        "ndcg": 0.7682617126807435,
+        "mrr": 0.6554543406114977
+      },
+      "lexical_overlap": {
+        "records": 9027,
+        "positive_rate": 0.33433034230641406,
+        "precision": 0.3102801233078676,
+        "recall": 0.7670642809807819,
+        "f1": 0.44183605305849794,
+        "groups": 32,
+        "ndcg": 0.9435564094466844,
+        "mrr": 0.9231770833333333
+      }
+    }
+  },
+  "model_artifact": {
+    "path": "models/product_fit/product_fit_tfidf.joblib",
+    "sha256": "61232cb125ef3b3db6b6b1466ae0d627b654f292d4d05412a1084f0e73ef2053"
+  },
+  "production_decision": "CANDIDATE_ONLY; not promoted to hybrid_v1 without comparison to legacy ContextFit and safety regression checks"
+}

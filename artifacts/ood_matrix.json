@@ -1,0 +1,15 @@
+{
+  "version": "phase8-ood-matrix-v1",
+  "status": "PARTIAL; only rights-cleared/current local sources measured",
+  "matrix": [
+    {"train_domain": "ESCI", "test_domain": "ESCI hidden", "module": "product_fit_tfidf_v1", "f1": 0.6613636364, "ndcg": 0.8139553907, "mrr": 0.7409171076, "status": "measured"},
+    {"train_domain": "ESCI", "test_domain": "WANDS hidden OOD", "module": "product_fit_tfidf_v1", "f1": 0.3798600311, "ndcg": 0.7682617127, "mrr": 0.6554543406, "status": "measured"},
+    {"train_domain": "ESCI", "test_domain": "WANDS hidden OOD", "module": "lexical_overlap_baseline", "f1": 0.4418360531, "ndcg": 0.9435564094, "mrr": 0.9231770833, "status": "measured"},
+    {"train_domain": "ConvApparel V1", "test_domain": "ConvApparel V1 hidden", "module": "legacy_contextfit", "status": "existing_phase2_6_artifacts; no new run"},
+    {"train_domain": "dialogue controls", "test_domain": "Phase 6 authored state journeys", "module": "ConversationState", "stage_accuracy": 0.625, "stale_context_error": 0.0, "status": "measured_control_only"},
+    {"train_domain": "B2B silver", "test_domain": "B2B human-reviewed holdout", "module": "commercial_intent", "status": "not_available; zero human-reviewed records"},
+    {"train_domain": "SGD/SGD-X", "test_domain": "dialogue OOD", "module": "dialogue_state", "status": "deferred_rights_review"},
+    {"train_domain": "Taskmaster", "test_domain": "dialogue OOD", "module": "dialogue_state", "status": "deferred_rights_review"}
+  ],
+  "interpretation": "ESCI-only model improvement was not credible because the learned candidate lost to lexical ranking on both within-source and WANDS OOD metrics. No B2B generalization or advertising outcome claim is made."
+}

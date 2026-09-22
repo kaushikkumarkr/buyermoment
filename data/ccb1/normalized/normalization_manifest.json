@@ -17,5 +17,11 @@
     "destination": "data/ccb1/normalized/google_convapparel.jsonl",
     "sha256": "f993ee7714b2056d37b3416323cd64e1d378896ea55f8ab3a042374ccc877108",
     "dataset": "google_convapparel"
+  },
+  {
+    "records": 141168,
+    "destination": "data/ccb1/normalized/google_convapparel_v2.jsonl",
+    "sha256": "3f4a497807301ba7b93c277efe7608027346ce06e69baa77eff27b5a5d4945b6",
+    "dataset": "google_convapparel_v2"
   }
 ]

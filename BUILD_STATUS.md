@@ -35,6 +35,24 @@
 
 - No live advertising or Phase 5 Azure generation is authorized. The next safe step is an independent blinded human shadow review and a reviewed purchase-stage/adversarial gold tranche.
 
+## Phase 8 — intelligence hardening
+
+- Branch: `phase8/intelligence-v1`; audit checkpoint: `4fb6e4c`.
+- Required pre-training gates completed: repository baseline recorded, Azure inventory recorded, dataset-rights registry added, and CCB-1 coverage audited.
+- Azure Phase 8 inference calls: `0`; no new Azure resource/deployment/compute was created. Remaining startup credit and expiry are unverified; posted usage fields were null.
+- CCB-1 coverage audit confirms `419,199` v0.1 normalized records: ESCI `10,000/2,621,288` example rows, WANDS `233,448/233,448` labels, ConvApparel V1 `175,751/175,751` turn-recommendation rows. ConvApparel V2 is separately archived/normalized as `141,168` evaluation-only rows and excluded from the v0.1 split pending rights review.
+- Dataset rights registry is at `datasets/registry.yaml`; `REVIEW_REQUIRED` sources are not used to train model weights.
+- Added candidate CPU ProductFit TF-IDF/logistic model and WANDS OOD benchmark. The candidate lost to the lexical baseline and remains `CANDIDATE`, not production.
+- Added CCB-B2B schema and 22-record silver review queue across 11 categories; human-reviewed records and gold holdout remain `0`.
+- Added deterministic evidence-grounding candidate and explicit hybrid router feature flag; no learned module is promoted by default.
+
+### Phase 8 gate status
+
+- BuyerMoment Intelligence v1: `NOT FROZEN`.
+- B2B intelligence gate: `MORE_B2B_REVIEW_REQUIRED`.
+- Live advertising: `NO-GO`.
+- Real campaign outcomes: `0`.
+
 ## Phase 7 in progress — commercial validation
 
 - Branch: `phase7/commercial-validation`.

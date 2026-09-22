@@ -21,6 +21,7 @@ Microsoft’s Foundry sponsorship guidance says startup credits apply when Micro
 | 2026-09-22 | Phase 5 targeted augmentation preparation | none | 60 prompt-manifest rows derived from 10 false-TEST controls | Manifest only; no Azure request, Batch job, model deployment, or resource change | No Phase 5 Azure model spend; dollar cost remains unposted |
 | 2026-09-22 | Phase 5 local safety evaluation | none | 300 adversarial controls, 360 multi-turn turns, 60 counterfactuals, 45 shadow candidates | Deterministic scorer/policy only | No Phase 5 Azure model spend; dollar cost remains unposted |
 | 2026-09-22 | Phase 6 state and shadow preparation | none | 576 local state turns, 100 counterfactuals, 5 evidence packages, 43 blinded packet manifests | Local deterministic state/policy and packet preparation; no Azure request, Batch job, deployment, or resource change | No Phase 6 Azure model spend; dollar cost remains unposted |
+| 2026-09-22 | Phase 8 intelligence hardening | none | local rights/coverage audits, 141,168-row ConvApparel V2 evaluation-only normalization, 8,096-row local ProductFit candidate, 22 B2B silver controls | No Azure inference, Batch job, deployment, or resource change | No Phase 8 Azure model spend; remaining credit/expiry and posted dollar amount unverified |
 
 No 100-record Azure run or Batch workload has been submitted. The deterministic 500-row Stage A control and 500 hard negatives were generated locally at no model-token cost.
 

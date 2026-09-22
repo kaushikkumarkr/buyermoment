@@ -16,9 +16,11 @@ WANDS_URLS = {
     "label.csv": "https://raw.githubusercontent.com/wayfair/WANDS/main/dataset/label.csv",
 }
 CONV_URL = "https://huggingface.co/datasets/google/ConvApparel/resolve/main/ConvApparel.zip?download=true"
+CONV_V2_URL = "https://huggingface.co/datasets/google/ConvApparel/resolve/main/ConvApparel_V2.zip?download=true"
 ESCI_REPO = "https://github.com/amazon-research/esci-code.git"
 LICENSE_REFERENCES = {
     "google_convapparel": {"license": "CC BY 4.0", "reference": "https://huggingface.co/datasets/google/ConvApparel"},
+    "google_convapparel_v2": {"license": "CC BY 4.0", "reference": "https://huggingface.co/datasets/google/ConvApparel"},
     "amazon_esci": {"license": "Apache-2.0", "reference": "https://github.com/amazon-research/esci-code"},
     "wayfair_wands": {"license": "MIT", "reference": "https://github.com/wayfair/WANDS"},
 }
@@ -55,6 +57,12 @@ def fetch_convapparel(manifest: dict) -> None:
     manifest["files"].append({"dataset": "google_convapparel", "path": str(target), "url": CONV_URL, "sha256": sha256(target)})
 
 
+def fetch_convapparel_v2(manifest: dict) -> None:
+    target = ROOT / "google_convapparel" / "ConvApparel_V2.zip"
+    download(CONV_V2_URL, target)
+    manifest["files"].append({"dataset": "google_convapparel_v2", "path": str(target), "url": CONV_V2_URL, "sha256": sha256(target)})
+
+
 def fetch_esci(manifest: dict) -> None:
     repo = ROOT / "amazon_esci" / "esci-code"
     if not repo.exists():
@@ -70,7 +78,7 @@ def fetch_esci(manifest: dict) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Fetch official CCB-1 source artifacts into ignored raw storage.")
-    parser.add_argument("--dataset", choices=["all", "google_convapparel", "amazon_esci", "wayfair_wands"], default="all")
+    parser.add_argument("--dataset", choices=["all", "google_convapparel", "google_convapparel_v2", "amazon_esci", "wayfair_wands"], default="all")
     args = parser.parse_args()
     ROOT.mkdir(parents=True, exist_ok=True)
     manifest_path = Path("data/ccb1/source_manifest.json")
@@ -83,6 +91,8 @@ def main() -> None:
         fetch_wands(manifest)
     if args.dataset in ("all", "google_convapparel"):
         fetch_convapparel(manifest)
+    if args.dataset == "google_convapparel_v2":
+        fetch_convapparel_v2(manifest)
     if args.dataset in ("all", "amazon_esci"):
         fetch_esci(manifest)
     deduped: dict[tuple[str, str], dict] = {(item.get("dataset", ""), item.get("path", "")): item for item in manifest["files"]}

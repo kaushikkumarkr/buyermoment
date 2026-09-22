@@ -1,0 +1,137 @@
+{
+  "summary": {
+    "cases": 6,
+    "accuracy": 0.5,
+    "status": "authored deterministic controls; not external evidence-grounding performance"
+  },
+  "rows": [
+    {
+      "id": 1,
+      "claim": "ContextFit records budget and product fit.",
+      "expected": "SUPPORTED",
+      "assessment": {
+        "label": "SUPPORTED",
+        "raw_score": 1.0,
+        "matched_terms": [
+          "and",
+          "budget",
+          "contextfit",
+          "fit",
+          "product",
+          "records"
+        ],
+        "evidence_ids": [
+          "grounding:1:0"
+        ],
+        "reason_codes": [
+          "DIRECT_TERM_SUPPORT"
+        ],
+        "method": "deterministic_token_support_v1"
+      }
+    },
+    {
+      "id": 2,
+      "claim": "The product has a verified $99 price and SOC 2 support.",
+      "expected": "PARTIAL",
+      "assessment": {
+        "label": "PARTIAL",
+        "raw_score": 0.625,
+        "matched_terms": [
+          "has",
+          "price",
+          "product",
+          "the",
+          "verified"
+        ],
+        "evidence_ids": [
+          "grounding:2:0"
+        ],
+        "reason_codes": [
+          "PARTIAL_TERM_SUPPORT"
+        ],
+        "method": "deterministic_token_support_v1"
+      }
+    },
+    {
+      "id": 3,
+      "claim": "BuyerMoment has proven ROI.",
+      "expected": "UNSUPPORTED",
+      "assessment": {
+        "label": "PARTIAL",
+        "raw_score": 0.5,
+        "matched_terms": [
+          "has",
+          "roi"
+        ],
+        "evidence_ids": [
+          "grounding:3:0"
+        ],
+        "reason_codes": [
+          "PARTIAL_TERM_SUPPORT"
+        ],
+        "method": "deterministic_token_support_v1"
+      }
+    },
+    {
+      "id": 4,
+      "claim": "The experiment requires human approval.",
+      "expected": "SUPPORTED",
+      "assessment": {
+        "label": "PARTIAL",
+        "raw_score": 0.4,
+        "matched_terms": [
+          "approval",
+          "human"
+        ],
+        "evidence_ids": [
+          "grounding:4:0"
+        ],
+        "reason_codes": [
+          "PARTIAL_TERM_SUPPORT"
+        ],
+        "method": "deterministic_token_support_v1"
+      }
+    },
+    {
+      "id": 5,
+      "claim": "The service ships to Canada tomorrow.",
+      "expected": "UNSUPPORTED",
+      "assessment": {
+        "label": "PARTIAL",
+        "raw_score": 0.4,
+        "matched_terms": [
+          "service",
+          "the"
+        ],
+        "evidence_ids": [
+          "grounding:5:0"
+        ],
+        "reason_codes": [
+          "PARTIAL_TERM_SUPPORT"
+        ],
+        "method": "deterministic_token_support_v1"
+      }
+    },
+    {
+      "id": 6,
+      "claim": "The business has public pricing and Slack integration.",
+      "expected": "PARTIAL",
+      "assessment": {
+        "label": "PARTIAL",
+        "raw_score": 0.375,
+        "matched_terms": [
+          "integration",
+          "slack",
+          "the"
+        ],
+        "evidence_ids": [
+          "grounding:6:0"
+        ],
+        "reason_codes": [
+          "PARTIAL_TERM_SUPPORT"
+        ],
+        "method": "deterministic_token_support_v1"
+      }
+    }
+  ]
+}

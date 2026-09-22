@@ -42,7 +42,7 @@ def parquet_row_count(path: Path) -> int | None:
 
 def convapparel_stats(path: Path) -> dict[str, Any]:
     with zipfile.ZipFile(path) as archive:
-        member = next(name for name in archive.namelist() if name.endswith("ConvApparel.json"))
+        member = next(name for name in archive.namelist() if name.lower().endswith(".json") and not name.startswith("__MACOSX"))
         payload = json.loads(archive.read(member))
     conversations = payload.get("conversations", [])
     turns = sum(len(item.get("turns", [])) for item in conversations)
@@ -60,7 +60,7 @@ def convapparel_stats(path: Path) -> dict[str, Any]:
 
 def normalized_stats() -> dict[str, Any]:
     result: dict[str, Any] = {}
-    for source in ("amazon_esci", "google_convapparel", "wayfair_wands"):
+    for source in ("amazon_esci", "google_convapparel", "google_convapparel_v2", "wayfair_wands"):
         path = CCB1 / "normalized" / f"{source}.jsonl"
         result[source] = {
             "path": str(path.relative_to(ROOT)),
@@ -107,8 +107,10 @@ def main() -> None:
         },
         "google_convapparel": convapparel_stats(conv_path),
     }
+    v2_path = CCB1 / "raw" / "google_convapparel" / "ConvApparel_V2.zip"
     normalized = normalized_stats()
     counts = {source: item["records"] for source, item in normalized.items()}
+    ccb1_sources = ("amazon_esci", "google_convapparel", "wayfair_wands")
     result = {
         "version": "phase8-ccb1-coverage-audit-v1",
         "generated_from_commit": "8d8ad25",
@@ -140,7 +142,14 @@ def main() -> None:
                 "reason": "all V1 recommendation rows normalized; relevance remains unknown where source is unlabeled",
             },
         },
-        "normalized_total": sum(counts.values()),
+        "normalized_total": sum(counts[source] for source in ccb1_sources),
+        "evaluation_only_additions": {
+            "google_convapparel_v2": {
+                "raw": convapparel_stats(v2_path) if v2_path.exists() else None,
+                "normalized_records": counts.get("google_convapparel_v2"),
+                "reason_not_in_ccb1_v0_1_split": "evaluation-only until human-data/commercial rights review; not mixed into the v0.1 train/validation/hidden split",
+            }
+        },
         "splits": split_stats(),
         "augmentation_counts": {
             "azure_controlled": 500,
