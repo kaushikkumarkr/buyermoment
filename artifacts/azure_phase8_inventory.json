@@ -1,0 +1,58 @@
+{
+  "inventory_date": "2026-09-22",
+  "subscription": {
+    "id": "97be63b6-5dd8-45f4-87da-0bc4d87ac24a",
+    "name": "Azure subscription 1",
+    "tenant_id": "071ac031-a58a-460a-b2c5-7b815b9b4f6c"
+  },
+  "scope": "rg-buyermoment-dev",
+  "resource_group": {
+    "name": "rg-buyermoment-dev",
+    "location": "eastus2",
+    "provisioning_state": "Succeeded",
+    "tags": {
+      "costOwner": "BuyerMoment",
+      "creditGuardrail": "startup-credit",
+      "environment": "dev",
+      "managedBy": "buyerMoment-iac",
+      "product": "BuyerMoment"
+    }
+  },
+  "resources": [
+    {"name": "buyermoment-foundry-260921", "type": "Microsoft.CognitiveServices/accounts", "sku": "S0", "location": "eastus2"},
+    {"name": "acrbuymoment260921", "type": "Microsoft.ContainerRegistry/registries", "sku": "Basic", "location": "eastus2"},
+    {"name": "stbuyermoment260921", "type": "Microsoft.Storage/storageAccounts", "sku": "Standard_LRS", "location": "eastus2"},
+    {"name": "kv-buyermoment-260921", "type": "Microsoft.KeyVault/vaults", "location": "eastus2"},
+    {"name": "law-buyermoment-260921", "type": "Microsoft.OperationalInsights/workspaces", "location": "eastus2"},
+    {"name": "cae-buyermoment-dev", "type": "Microsoft.App/managedEnvironments", "location": "eastus2"}
+  ],
+  "foundry": {
+    "endpoint": "https://buyermoment-foundry-260921.cognitiveservices.azure.com/",
+    "public_network_access": "Enabled",
+    "deployments": [
+      {"name": "buyermoment-bulk-generator", "model": "gpt-5.4-nano", "version": "2026-03-17", "sku": "GlobalStandard", "capacity": 10, "state": "Succeeded"},
+      {"name": "buyermoment-extractor", "model": "gpt-5.4-mini", "version": "2026-03-17", "sku": "GlobalStandard", "capacity": 10, "state": "Succeeded"}
+    ],
+    "phase8_inference_started": false,
+    "billing_eligibility": "Not re-verified from a price sheet in this inventory; no Phase 8 inference is authorized until Direct from Azure / sponsorship coverage is independently confirmed."
+  },
+  "posted_usage": {
+    "query_window": "2026-09-01 through 2026-09-22",
+    "filtered_resources": 5,
+    "records": [
+      {"service": "Microsoft.ContainerRegistry", "resource": "acrbuymoment260921", "pretax_cost": null},
+      {"service": "Microsoft.CognitiveServices", "resource": "buyermoment-foundry-260921", "pretax_cost": null},
+      {"service": "Microsoft.CognitiveServices", "resource": "buyermoment-foundry-260921", "pretax_cost": null},
+      {"service": "Microsoft.CognitiveServices", "resource": "buyermoment-foundry-260921", "pretax_cost": null},
+      {"service": "Microsoft.CognitiveServices", "resource": "buyermoment-foundry-260921", "pretax_cost": null}
+    ],
+    "interpretation": "Azure CLI consumption usage is preview data and returned null quantity, date, currency, and pretaxCost fields for the filtered records; posted dollar spend is unavailable from this query."
+  },
+  "startup_credit": {
+    "remaining_known_credit": null,
+    "expiration_date": null,
+    "status": "UNVERIFIED",
+    "reason": "The available subscription/consumption queries did not expose sponsorship balance or expiry. No credit amount is inferred from historical conversation context."
+  },
+  "safety_decision": "No resource was created, modified, invoked, scaled, or deleted during this inventory. Unrelated resource groups were not modified."
+}

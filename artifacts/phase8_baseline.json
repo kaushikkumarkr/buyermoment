@@ -1,0 +1,39 @@
+{
+  "phase": "8",
+  "branch": "phase8/intelligence-v1",
+  "parent_commit": "8d8ad25",
+  "repository_validation": {
+    "backend_tests": {"passed": 15, "failed": 0},
+    "ruff": "PASS",
+    "evaluation_cli": "PASS_SMOKE_ONLY",
+    "frontend_typecheck": "PASS",
+    "frontend_production_build": "PASS"
+  },
+  "preserved_metrics": {
+    "clean_hidden_purchase_stage_accuracy": 0.872,
+    "clean_hidden_relevance_f1": 0.7388,
+    "clean_hidden_ndcg": 0.8502,
+    "clean_hidden_mrr": 0.8244,
+    "phase5_hidden_test_precision": 1.0,
+    "phase5_test_coverage": 0.167,
+    "phase6_multiturn_stage_accuracy": 0.625,
+    "phase6_stale_context_error": 0.0,
+    "phase6_constraint_identity_memory": 1.0,
+    "phase6_intent_reversal_actionability": 1.0,
+    "phase6_counterfactual_direction_correctness": 0.6,
+    "phase6_counterfactual_reason_correctness": 0.6,
+    "independent_human_reviews": 0,
+    "live_advertising_gate": "NO-GO"
+  },
+  "phase7_commercial_baseline": {
+    "businesses_analyzed": 1,
+    "raw_buyer_moments": 30,
+    "supported_candidates": 30,
+    "top_report_candidates": 5,
+    "experiment_packages": 5,
+    "external_design_partners": 0,
+    "live_campaigns": 0,
+    "real_campaign_outcomes": 0
+  },
+  "note": "Controlled benchmark and dogfood status only; no real advertising or revenue claims."
+}

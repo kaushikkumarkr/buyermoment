@@ -1,0 +1,113 @@
+version: 1
+policy: >-
+  This registry records source terms and project handling decisions; it is not legal
+  advice or a commercial license determination. REVIEW_REQUIRED blocks training
+  weights until a human reviews the source terms and intended use.
+datasets:
+  - name: Amazon ESCI
+    publisher: Amazon Science
+    source_url: https://github.com/amazon-research/esci-code
+    version_date: git revision 7916cdf6ab75a462e77f20ab40428a10923998d5
+    checksum: see data/ccb1/source_manifest.json
+    license: Apache-2.0; upstream LICENSE and NOTICE retained
+    attribution_requirement: preserve Apache attribution and NOTICE
+    training_status: TRAIN_ALLOWED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Original Exact/Substitute/Complement/Irrelevant labels are authoritative. CCB-1 currently materializes a 10,000-row slice.
+
+  - name: Wayfair WANDS
+    publisher: Wayfair
+    source_url: https://github.com/wayfair/WANDS
+    version_date: repository snapshot recorded in data/ccb1/source_manifest.json
+    checksum: see data/ccb1/source_manifest.json
+    license: MIT
+    attribution_requirement: preserve MIT license and original relevance labels
+    training_status: TRAIN_ALLOWED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Original Exact/Partial/Irrelevant labels are retained; Partial is not silently mapped to Exact.
+
+  - name: Google ConvApparel V1
+    publisher: Google Research
+    source_url: https://huggingface.co/datasets/google/ConvApparel
+    version_date: Hugging Face main release; V1 archive checksum in source manifest
+    checksum: see data/ccb1/source_manifest.json
+    license: CC BY 4.0 on the current dataset card; associated publication materials require verification
+    attribution_requirement: preserve dataset-card attribution and citation
+    training_status: REVIEW_REQUIRED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Human conversation data. V1 is present; rows are used for dialogue/recommendation evaluation, not universal relevance ground truth.
+
+  - name: Google ConvApparel V2
+    publisher: Google Research
+    source_url: https://huggingface.co/datasets/google/ConvApparel
+    version_date: ConvApparel_V2.zip on dataset main branch
+    checksum: not downloaded
+    license: CC BY 4.0 on the current dataset card; human-data and publication terms require verification
+    attribution_requirement: preserve dataset-card attribution and citation
+    training_status: REVIEW_REQUIRED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Available artifact is not in the current raw cache. Do not fetch or train until terms are reviewed and checksum is recorded.
+
+  - name: Schema-Guided Dialogue (SGD)
+    publisher: Google Research
+    source_url: https://github.com/google-research-datasets/dstc8-schema-guided-dialogue
+    version_date: repository release; exact download revision pending
+    checksum: not downloaded
+    license: CC BY-SA 4.0
+    attribution_requirement: attribution and ShareAlike obligations apply; preserve LICENSE.txt
+    training_status: REVIEW_REQUIRED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Dialogue-state evaluation source; not B2B SaaS ground truth.
+
+  - name: Schema-Guided Dialogue eXtended (SGD-X)
+    publisher: Google Research
+    source_url: https://github.com/google-research-datasets/dstc8-schema-guided-dialogue
+    version_date: repository release; exact download revision pending
+    checksum: not downloaded
+    license: CC BY-SA 4.0
+    attribution_requirement: attribution and ShareAlike obligations apply; preserve LICENSE.txt
+    training_status: REVIEW_REQUIRED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Schema-variation robustness evaluation; not B2B SaaS ground truth.
+
+  - name: Taskmaster
+    publisher: Google Research
+    source_url: https://github.com/google-research-datasets/Taskmaster
+    version_date: repository release; exact subset/revision pending
+    checksum: not downloaded
+    license: CC BY 4.0 for the published Taskmaster data; verify per-subset notice
+    attribution_requirement: attribution and citation required
+    training_status: REVIEW_REQUIRED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Task-oriented dialogue mechanics only; domains are not B2B SaaS.
+
+  - name: Amazon Contextual Product QA (ePQA/hetPQA/xPQA)
+    publisher: Amazon Science
+    source_url: https://github.com/amazon-science/contextual-product-qa
+    version_date: repository release; exact subset/revision pending
+    checksum: not downloaded
+    license: CDLA Permissive 1.0 Sharing
+    attribution_requirement: preserve LICENSE and dataset citation; review Sharing obligations
+    training_status: REVIEW_REQUIRED
+    evaluation_status: EVAL_ONLY
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Evidence ranking/grounding evaluation; do not use as advertising-outcome data.
+
+  - name: KuaiSearch-Lite
+    publisher: Kuaishou research authors
+    source_url: https://github.com/benchen4395/KuaiSearch
+    version_date: 2026 paper/repository release; exact data revision pending
+    checksum: not downloaded
+    license: exact dataset license not confirmed from the current public repository
+    attribution_requirement: preserve source citation and any dataset-specific terms
+    training_status: REVIEW_REQUIRED
+    evaluation_status: REVIEW_REQUIRED
+    commercial_review_status: REVIEW_REQUIRED
+    notes: Chinese ecommerce behavioral data; isolate from B2B production semantics until rights and domain limits are reviewed.

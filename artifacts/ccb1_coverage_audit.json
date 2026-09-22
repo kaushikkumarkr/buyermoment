@@ -1,0 +1,140 @@
+{
+  "version": "phase8-ccb1-coverage-audit-v1",
+  "generated_from_commit": "8d8ad25",
+  "raw": {
+    "amazon_esci": {
+      "examples": 2621288,
+      "products": 1814924,
+      "selected_normalization_cap": 10000
+    },
+    "wayfair_wands": {
+      "queries": 480,
+      "products": 42994,
+      "labels": 233448
+    },
+    "google_convapparel": {
+      "archive_sha256": "fb177b2d1c037b6f46b849a2dcd28fceaa496dded076a124644ce59d0a10b6fc",
+      "conversations": 4146,
+      "turns": 14736,
+      "recommendation_rows": 175751
+    }
+  },
+  "normalized": {
+    "amazon_esci": {
+      "path": "data/ccb1/normalized/amazon_esci.jsonl",
+      "records": 10000,
+      "sha256": "f5d43bd70d1f9a33e49497c40e5fab3f8963dbcfcc58928a64de88f43f37f548"
+    },
+    "google_convapparel": {
+      "path": "data/ccb1/normalized/google_convapparel.jsonl",
+      "records": 175751,
+      "sha256": "f993ee7714b2056d37b3416323cd64e1d378896ea55f8ab3a042374ccc877108"
+    },
+    "wayfair_wands": {
+      "path": "data/ccb1/normalized/wayfair_wands.jsonl",
+      "records": 233448,
+      "sha256": "14a721440a59da8cf11dd3337b319e43369faf45f3ce5bf0b89b91261b27e677"
+    }
+  },
+  "coverage": {
+    "amazon_esci": {
+      "record_basis": "examples parquet rows",
+      "raw_rows": 2621288,
+      "used_rows": 10000,
+      "dropped_or_not_materialized": 2611288,
+      "coverage_fraction": 0.0038149184675625113,
+      "reason": "explicit 10,000-row v0.1 storage/review cap"
+    },
+    "wayfair_wands": {
+      "record_basis": "label rows",
+      "raw_rows": 233448,
+      "used_rows": 233448,
+      "dropped_or_not_materialized": 0,
+      "coverage_fraction": 1.0,
+      "reason": "all downloaded label rows normalized"
+    },
+    "google_convapparel": {
+      "record_basis": "turn-recommendation rows",
+      "raw_rows": 175751,
+      "used_rows": 175751,
+      "dropped_or_not_materialized": 0,
+      "coverage_fraction": 1.0,
+      "reason": "all V1 recommendation rows normalized; relevance remains unknown where source is unlabeled"
+    }
+  },
+  "normalized_total": 419199,
+  "splits": {
+    "train": {
+      "records": 348974,
+      "by_source": {
+        "amazon_esci": 8566,
+        "ccb1_controlled": 140,
+        "google_convapparel": 144199,
+        "wayfair_wands": 196069
+      },
+      "labels": {
+        "amazon_esci:None": 470,
+        "amazon_esci:complement": 225,
+        "amazon_esci:exact": 3086,
+        "amazon_esci:irrelevant": 2786,
+        "amazon_esci:substitute": 1999,
+        "ccb1_controlled:None": 140,
+        "google_convapparel:None": 144199,
+        "wayfair_wands:None": 130,
+        "wayfair_wands:exact": 21024,
+        "wayfair_wands:irrelevant": 49845,
+        "wayfair_wands:unknown": 125070
+      }
+    },
+    "validation": {
+      "records": 38175,
+      "by_source": {
+        "amazon_esci": 1060,
+        "google_convapparel": 16061,
+        "wayfair_wands": 21054
+      },
+      "labels": {
+        "amazon_esci:complement": 47,
+        "amazon_esci:exact": 459,
+        "amazon_esci:irrelevant": 283,
+        "amazon_esci:substitute": 271,
+        "google_convapparel:None": 16061,
+        "wayfair_wands:None": 15,
+        "wayfair_wands:exact": 1572,
+        "wayfair_wands:irrelevant": 5347,
+        "wayfair_wands:unknown": 14120
+      }
+    },
+    "hidden_test": {
+      "records": 33190,
+      "by_source": {
+        "amazon_esci": 1044,
+        "google_convapparel": 15656,
+        "wayfair_wands": 16490
+      },
+      "labels": {
+        "amazon_esci:None": 200,
+        "amazon_esci:complement": 10,
+        "amazon_esci:exact": 341,
+        "amazon_esci:irrelevant": 349,
+        "amazon_esci:substitute": 144,
+        "google_convapparel:None": 15656,
+        "wayfair_wands:None": 20,
+        "wayfair_wands:exact": 3018,
+        "wayfair_wands:irrelevant": 6009,
+        "wayfair_wands:unknown": 7443
+      }
+    }
+  },
+  "augmentation_counts": {
+    "azure_controlled": 500,
+    "template_controls": 500,
+    "hard_negatives": 500,
+    "controlled_constraint_location": 140
+  },
+  "unresolved": [
+    "ConvApparel V2 is not present in the current raw archive.",
+    "ESCI full-release training/evaluation is not materialized in CCB-1 v0.1.",
+    "ConvApparel rows do not carry a universal human product-relevance label."
+  ]
+}
