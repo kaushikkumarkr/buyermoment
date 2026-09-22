@@ -1,0 +1,139 @@
+{
+  "benchmark": "Phase 4 abstention threshold analysis",
+  "table": [
+    {
+      "threshold": 0.5,
+      "validation": {
+        "threshold": 0.5,
+        "test_precision": 1.0,
+        "test_recall": 0.8,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.3333333333333333,
+        "coverage": 0.4
+      },
+      "hidden": {
+        "threshold": 0.5,
+        "test_precision": 0.5,
+        "test_recall": 0.3333333333333333,
+        "waste_risk_rate": 0.08333333333333333,
+        "abstain_rate": 0.2,
+        "coverage": 0.4
+      }
+    },
+    {
+      "threshold": 0.6,
+      "validation": {
+        "threshold": 0.6,
+        "test_precision": 1.0,
+        "test_recall": 0.8,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.3333333333333333,
+        "coverage": 0.4
+      },
+      "hidden": {
+        "threshold": 0.6,
+        "test_precision": 0.5,
+        "test_recall": 0.3333333333333333,
+        "waste_risk_rate": 0.08333333333333333,
+        "abstain_rate": 0.2,
+        "coverage": 0.4
+      }
+    },
+    {
+      "threshold": 0.68,
+      "validation": {
+        "threshold": 0.68,
+        "test_precision": 1.0,
+        "test_recall": 0.8,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.3333333333333333,
+        "coverage": 0.4
+      },
+      "hidden": {
+        "threshold": 0.68,
+        "test_precision": 0.5,
+        "test_recall": 0.3333333333333333,
+        "waste_risk_rate": 0.08333333333333333,
+        "abstain_rate": 0.2,
+        "coverage": 0.4
+      }
+    },
+    {
+      "threshold": 0.75,
+      "validation": {
+        "threshold": 0.75,
+        "test_precision": 1.0,
+        "test_recall": 0.8,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.3333333333333333,
+        "coverage": 0.4
+      },
+      "hidden": {
+        "threshold": 0.75,
+        "test_precision": 0.5,
+        "test_recall": 0.3333333333333333,
+        "waste_risk_rate": 0.08333333333333333,
+        "abstain_rate": 0.2,
+        "coverage": 0.4
+      }
+    },
+    {
+      "threshold": 0.8,
+      "validation": {
+        "threshold": 0.8,
+        "test_precision": 1.0,
+        "test_recall": 0.8,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.3333333333333333,
+        "coverage": 0.4
+      },
+      "hidden": {
+        "threshold": 0.8,
+        "test_precision": 0.5,
+        "test_recall": 0.3333333333333333,
+        "waste_risk_rate": 0.08333333333333333,
+        "abstain_rate": 0.2,
+        "coverage": 0.4
+      }
+    },
+    {
+      "threshold": 0.9,
+      "validation": {
+        "threshold": 0.9,
+        "test_precision": 1.0,
+        "test_recall": 0.8,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.3333333333333333,
+        "coverage": 0.4
+      },
+      "hidden": {
+        "threshold": 0.9,
+        "test_precision": 0.5,
+        "test_recall": 0.3333333333333333,
+        "waste_risk_rate": 0.08333333333333333,
+        "abstain_rate": 0.2,
+        "coverage": 0.4
+      }
+    },
+    {
+      "threshold": 0.95,
+      "validation": {
+        "threshold": 0.95,
+        "test_precision": 1.0,
+        "test_recall": 0.2,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.3333333333333333,
+        "coverage": 0.4
+      },
+      "hidden": {
+        "threshold": 0.95,
+        "test_precision": null,
+        "test_recall": 0.0,
+        "waste_risk_rate": 0.0,
+        "abstain_rate": 0.2,
+        "coverage": 0.4
+      }
+    }
+  ],
+  "interpretation": "Thresholds are compared on the manually authored validation/hidden adversarial controls. ScoreResult confidence is a raw heuristic, not a calibrated purchase-stage probability; no customer-facing probability is exposed."
+}

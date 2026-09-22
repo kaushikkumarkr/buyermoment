@@ -1,0 +1,45 @@
+{
+  "failure_count": 170,
+  "by_category": {
+    "research_only": 10,
+    "existing_support": 10,
+    "competitor_research": 10,
+    "future_intent": 10,
+    "conditional_intent": 10,
+    "location_mismatch": 10,
+    "mixed_commercial": 10,
+    "ambiguous_pronoun": 10,
+    "location_change": 10,
+    "sarcasm": 10,
+    "hypothetical": 10,
+    "professional_research": 10,
+    "unavailable_product": 10,
+    "team_comparison": 10,
+    "popular_research": 10,
+    "direct_gift": 10,
+    "research_then_buy": 10
+  },
+  "by_root_cause": {
+    "RESEARCH_ONLY": 40,
+    "EXISTING_OWNER_SUPPORT": 10,
+    "FUTURE_OR_CONDITIONAL_INTENT": 20,
+    "LOCATION_UNSERVICEABLE": 20,
+    "PLAUSIBLE_BUT_UNCERTAIN": 60,
+    "EVIDENCE_BACKED_COMMERCIAL_CONTEXT": 10,
+    "PRODUCT_UNAVAILABLE": 10
+  },
+  "stage_confusions": {
+    "informational -> transactional": 40,
+    "informational -> exploration": 30,
+    "exploration -> consideration": 10,
+    "exploration -> transactional": 20,
+    "consideration -> exploration": 20,
+    "transactional -> consideration": 10
+  },
+  "decision_confusions": {
+    "TEST -> WATCH": 30,
+    "ABSTAIN -> WATCH": 30,
+    "ABSTAIN -> TEST": 10
+  },
+  "method": "Every row is retained with expected/predicted fields; category counts are diagnostic, not model-quality labels."
+}

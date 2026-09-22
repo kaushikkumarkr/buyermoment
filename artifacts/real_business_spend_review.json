@@ -1,0 +1,4227 @@
+{
+  "summary": {
+    "candidate_count": 45,
+    "decision_distribution": {
+      "TEST": 16,
+      "ABSTAIN": 9,
+      "BLOCK": 6,
+      "WATCH": 14
+    },
+    "test_precision_against_yes_review": 1.0,
+    "test_recall_against_yes_review": 0.6666666666666666,
+    "unsupported_recommendation_rate": 0.0,
+    "would_test_agreement": 0.8222222222222222,
+    "human_approval_required_rate": 1.0,
+    "review_scope": "internal engineering review of demo catalog evidence; not customer, campaign, or revenue validation"
+  },
+  "candidates": [
+    {
+      "candidate_id": "northline-footwear:candidate:00",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "waterproof",
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 154.0,
+          "currency": "USD",
+          "required_features": [
+            "waterproof",
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:00-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:00-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:01",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in Canada.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5172413793103448,
+        "semantic_product_fit": 0.5172413793103448,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.4344827586206896,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "waterproof",
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 154.0,
+          "currency": "USD",
+          "required_features": [
+            "waterproof",
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "Canada",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:01-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7970353448275862
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.4344827586206896,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:01-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:02",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "waterproof",
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 154.0,
+          "currency": "USD",
+          "required_features": [
+            "waterproof",
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:02-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:02-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:03",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in Canada.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5172413793103448,
+        "semantic_product_fit": 0.5172413793103448,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.4344827586206896,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "waterproof",
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 154.0,
+          "currency": "USD",
+          "required_features": [
+            "waterproof",
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "Canada",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:03-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7970353448275862
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.4344827586206896,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:03-text",
+            "kind": "observed",
+            "text": "I am evaluating PeakShield GTX for hiking boots and need waterproof and slip-resistant under $154 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:04",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "I am researching the history of hiking boots, including PeakShield GTX, for a paper.",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.46799999999999997,
+        "semantic_product_fit": 0.46799999999999997,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.047915712,
+        "offer_fit": 0.7,
+        "confidence": 0.782,
+        "raw_confidence": 0.782,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:04-text",
+            "kind": "observed",
+            "text": "I am researching the history of hiking boots, including PeakShield GTX, for a paper.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.44420000000000004
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:04:research_only",
+            "kind": "inference",
+            "text": "I am researching the history of hiking boots, including PeakShield GTX, for a paper.",
+            "source": "spend_safety_policy",
+            "source_record_id": "northline-footwear:candidate:04",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.782,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:05",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "How do I use or maintain the PeakShield GTX I already own?",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.3913043478260869,
+        "semantic_product_fit": 0.3913043478260869,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.04006330434782608,
+        "offer_fit": 0.7,
+        "confidence": 0.6724347826086957,
+        "raw_confidence": 0.6724347826086957,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:05-text",
+            "kind": "observed",
+            "text": "How do I use or maintain the PeakShield GTX I already own?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.4250260869565218
+      },
+      "spend_decision": {
+        "decision": "BLOCK",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "EXISTING_OWNER_SUPPORT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:05:existing_owner_support",
+            "kind": "inference",
+            "text": "How do I use or maintain the PeakShield GTX I already own?",
+            "source": "spend_safety_policy",
+            "source_record_id": "northline-footwear:candidate:05",
+            "provenance": [
+              "EXISTING_OWNER_SUPPORT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6724347826086957,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:06",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "What should a buyer look for when exploring hiking boots options like PeakShield GTX?",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.44482758620689655,
+        "semantic_product_fit": 0.44482758620689655,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.24289721379310344,
+        "offer_fit": 0.7,
+        "confidence": 0.7488965517241379,
+        "raw_confidence": 0.7488965517241379,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:06-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring hiking boots options like PeakShield GTX?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7557318965517241
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.24289721379310344,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:06-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring hiking boots options like PeakShield GTX?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.7488965517241379,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:07",
+      "business_id": "northline-footwear",
+      "product_id": "northline-peakshield",
+      "context_text": "I cannot buy PeakShield GTX until next year; what should I learn about hiking boots now?",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.41666666666666663,
+        "semantic_product_fit": 0.41666666666666663,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.11612999999999997,
+        "offer_fit": 0.7,
+        "confidence": 0.7086666666666667,
+        "raw_confidence": 0.7086666666666667,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [
+            "buy peakshield gtx until next y"
+          ],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:07-text",
+            "kind": "observed",
+            "text": "I cannot buy PeakShield GTX until next year; what should I learn about hiking boots now?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p1",
+            "kind": "observed",
+            "text": "Product catalog lists waterproof construction, slip-resistant outsole, and $139 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5522666666666667
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "FUTURE_OR_CONDITIONAL_INTENT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:07:future_or_conditional_intent",
+            "kind": "inference",
+            "text": "I cannot buy PeakShield GTX until next year; what should I learn about hiking boots now?",
+            "source": "spend_safety_policy",
+            "source_record_id": "northline-footwear:candidate:07",
+            "provenance": [
+              "FUTURE_OR_CONDITIONAL_INTENT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.7086666666666667,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:08",
+      "business_id": "northline-footwear",
+      "product_id": "northline-ridgeline",
+      "context_text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5,
+        "semantic_product_fit": 0.5,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.42,
+        "offer_fit": 0.7,
+        "confidence": 0.9957142857142857,
+        "raw_confidence": 0.9957142857142857,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 134.0,
+          "currency": "USD",
+          "required_features": [
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:08-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7927249999999999
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.42,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:08-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9957142857142857,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:09",
+      "business_id": "northline-footwear",
+      "product_id": "northline-ridgeline",
+      "context_text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5,
+        "semantic_product_fit": 0.5,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.42,
+        "offer_fit": 0.7,
+        "confidence": 0.9957142857142857,
+        "raw_confidence": 0.9957142857142857,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 134.0,
+          "currency": "USD",
+          "required_features": [
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:09-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7927249999999999
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.42,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:09-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9957142857142857,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:10",
+      "business_id": "northline-footwear",
+      "product_id": "northline-ridgeline",
+      "context_text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5,
+        "semantic_product_fit": 0.5,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.42,
+        "offer_fit": 0.7,
+        "confidence": 0.9957142857142857,
+        "raw_confidence": 0.9957142857142857,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 134.0,
+          "currency": "USD",
+          "required_features": [
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:10-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7927249999999999
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.42,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:10-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9957142857142857,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:11",
+      "business_id": "northline-footwear",
+      "product_id": "northline-ridgeline",
+      "context_text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5,
+        "semantic_product_fit": 0.5,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.42,
+        "offer_fit": 0.7,
+        "confidence": 0.9957142857142857,
+        "raw_confidence": 0.9957142857142857,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 134.0,
+          "currency": "USD",
+          "required_features": [
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:11-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7927249999999999
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.42,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:11-text",
+            "kind": "observed",
+            "text": "I am evaluating Ridgeline Hiker for hiking boots and need slip-resistant and lightweight under $134 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9957142857142857,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:12",
+      "business_id": "northline-footwear",
+      "product_id": "northline-ridgeline",
+      "context_text": "I am researching the history of hiking boots, including Ridgeline Hiker, for a paper.",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.46799999999999997,
+        "semantic_product_fit": 0.46799999999999997,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.047915712,
+        "offer_fit": 0.7,
+        "confidence": 0.782,
+        "raw_confidence": 0.782,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:12-text",
+            "kind": "observed",
+            "text": "I am researching the history of hiking boots, including Ridgeline Hiker, for a paper.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.44420000000000004
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:12:research_only",
+            "kind": "inference",
+            "text": "I am researching the history of hiking boots, including Ridgeline Hiker, for a paper.",
+            "source": "spend_safety_policy",
+            "source_record_id": "northline-footwear:candidate:12",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.782,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:13",
+      "business_id": "northline-footwear",
+      "product_id": "northline-ridgeline",
+      "context_text": "How do I use or maintain the Ridgeline Hiker I already own?",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.3913043478260869,
+        "semantic_product_fit": 0.3913043478260869,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.04006330434782608,
+        "offer_fit": 0.7,
+        "confidence": 0.6724347826086957,
+        "raw_confidence": 0.6724347826086957,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:13-text",
+            "kind": "observed",
+            "text": "How do I use or maintain the Ridgeline Hiker I already own?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.4250260869565218
+      },
+      "spend_decision": {
+        "decision": "BLOCK",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "EXISTING_OWNER_SUPPORT"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:13:existing_owner_support",
+            "kind": "inference",
+            "text": "How do I use or maintain the Ridgeline Hiker I already own?",
+            "source": "spend_safety_policy",
+            "source_record_id": "northline-footwear:candidate:13",
+            "provenance": [
+              "EXISTING_OWNER_SUPPORT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6724347826086957,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "northline-footwear:candidate:14",
+      "business_id": "northline-footwear",
+      "product_id": "northline-ridgeline",
+      "context_text": "What should a buyer look for when exploring hiking boots options like Ridgeline Hiker?",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.44482758620689655,
+        "semantic_product_fit": 0.44482758620689655,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.24289721379310344,
+        "offer_fit": 0.7,
+        "confidence": 0.7488965517241379,
+        "raw_confidence": 0.7488965517241379,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:14-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring hiking boots options like Ridgeline Hiker?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7557318965517241
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.24289721379310344,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "northline-footwear:candidate:14-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring hiking boots options like Ridgeline Hiker?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "nf-p2",
+            "kind": "observed",
+            "text": "Product catalog lists lightweight build, traction, and $119 price.",
+            "source": "demo_catalog",
+            "source_record_id": "nf-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.7488965517241379,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:00",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 87.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:00-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:00-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:01",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in Canada.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5172413793103448,
+        "semantic_product_fit": 0.5172413793103448,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.4344827586206896,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 87.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "Canada",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:01-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7970353448275862
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.4344827586206896,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:01-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:02",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 87.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:02-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:02-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:03",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in Canada.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5172413793103448,
+        "semantic_product_fit": 0.5172413793103448,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.4344827586206896,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 87.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "Canada",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:03-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7970353448275862
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.4344827586206896,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:03-text",
+            "kind": "observed",
+            "text": "I am evaluating Calm Start Set for skincare and need fragrance-free and sensitive skin under $87 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:04",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "I am researching the history of skincare, including Calm Start Set, for a paper.",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.43999999999999995,
+        "semantic_product_fit": 0.43999999999999995,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.04504896,
+        "offer_fit": 0.7,
+        "confidence": 0.742,
+        "raw_confidence": 0.742,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:04-text",
+            "kind": "observed",
+            "text": "I am researching the history of skincare, including Calm Start Set, for a paper.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.43720000000000003
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:04:research_only",
+            "kind": "inference",
+            "text": "I am researching the history of skincare, including Calm Start Set, for a paper.",
+            "source": "spend_safety_policy",
+            "source_record_id": "kindred-skin:candidate:04",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.742,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:05",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "How do I use or maintain the Calm Start Set I already own?",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.38749999999999996,
+        "semantic_product_fit": 0.38749999999999996,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.039673799999999995,
+        "offer_fit": 0.7,
+        "confidence": 0.667,
+        "raw_confidence": 0.667,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:05-text",
+            "kind": "observed",
+            "text": "How do I use or maintain the Calm Start Set I already own?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.42407500000000004
+      },
+      "spend_decision": {
+        "decision": "BLOCK",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "EXISTING_OWNER_SUPPORT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:05:existing_owner_support",
+            "kind": "inference",
+            "text": "How do I use or maintain the Calm Start Set I already own?",
+            "source": "spend_safety_policy",
+            "source_record_id": "kindred-skin:candidate:05",
+            "provenance": [
+              "EXISTING_OWNER_SUPPORT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.667,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:06",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "What should a buyer look for when exploring skincare options like Calm Start Set?",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.4206896551724138,
+        "semantic_product_fit": 0.4206896551724138,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.2297167448275862,
+        "offer_fit": 0.7,
+        "confidence": 0.7144137931034483,
+        "raw_confidence": 0.7144137931034483,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:06-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring skincare options like Calm Start Set?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7496974137931034
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.2297167448275862,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:06-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring skincare options like Calm Start Set?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.7144137931034483,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:07",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-calm-set",
+      "context_text": "I cannot buy Calm Start Set until next year; what should I learn about skincare now?",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.3933333333333333,
+        "semantic_product_fit": 0.3933333333333333,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.10962672,
+        "offer_fit": 0.7,
+        "confidence": 0.6753333333333333,
+        "raw_confidence": 0.6753333333333333,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [
+            "buy calm start set until next y"
+          ],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:07-text",
+            "kind": "observed",
+            "text": "I cannot buy Calm Start Set until next year; what should I learn about skincare now?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p1",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free formulas and a $72 set price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5464333333333333
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "FUTURE_OR_CONDITIONAL_INTENT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:07:future_or_conditional_intent",
+            "kind": "inference",
+            "text": "I cannot buy Calm Start Set until next year; what should I learn about skincare now?",
+            "source": "spend_safety_policy",
+            "source_record_id": "kindred-skin:candidate:07",
+            "provenance": [
+              "FUTURE_OR_CONDITIONAL_INTENT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6753333333333333,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:08",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-barrier-cream",
+      "context_text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 49.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:08-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:08-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:09",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-barrier-cream",
+      "context_text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 49.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:09-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:09-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:10",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-barrier-cream",
+      "context_text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 49.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:10-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:10-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:11",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-barrier-cream",
+      "context_text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.525,
+        "semantic_product_fit": 0.525,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.441,
+        "offer_fit": 0.7,
+        "confidence": 1.0,
+        "raw_confidence": 1.0,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 49.0,
+          "currency": "USD",
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:11-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.798975
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_actionability": 0.441,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:11-text",
+            "kind": "observed",
+            "text": "I am evaluating Barrier Cloud Cream for moisturizer and need fragrance-free and sensitive skin under $49 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 1.0,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:12",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-barrier-cream",
+      "context_text": "I am researching the history of moisturizer, including Barrier Cloud Cream, for a paper.",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.43999999999999995,
+        "semantic_product_fit": 0.43999999999999995,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.04504896,
+        "offer_fit": 0.7,
+        "confidence": 0.742,
+        "raw_confidence": 0.742,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:12-text",
+            "kind": "observed",
+            "text": "I am researching the history of moisturizer, including Barrier Cloud Cream, for a paper.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.43720000000000003
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:12:research_only",
+            "kind": "inference",
+            "text": "I am researching the history of moisturizer, including Barrier Cloud Cream, for a paper.",
+            "source": "spend_safety_policy",
+            "source_record_id": "kindred-skin:candidate:12",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.742,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:13",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-barrier-cream",
+      "context_text": "How do I use or maintain the Barrier Cloud Cream I already own?",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.38749999999999996,
+        "semantic_product_fit": 0.38749999999999996,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.039673799999999995,
+        "offer_fit": 0.7,
+        "confidence": 0.667,
+        "raw_confidence": 0.667,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:13-text",
+            "kind": "observed",
+            "text": "How do I use or maintain the Barrier Cloud Cream I already own?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.42407500000000004
+      },
+      "spend_decision": {
+        "decision": "BLOCK",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "EXISTING_OWNER_SUPPORT"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:13:existing_owner_support",
+            "kind": "inference",
+            "text": "How do I use or maintain the Barrier Cloud Cream I already own?",
+            "source": "spend_safety_policy",
+            "source_record_id": "kindred-skin:candidate:13",
+            "provenance": [
+              "EXISTING_OWNER_SUPPORT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.667,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "kindred-skin:candidate:14",
+      "business_id": "kindred-skin",
+      "product_id": "kindred-barrier-cream",
+      "context_text": "What should a buyer look for when exploring moisturizer options like Barrier Cloud Cream?",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.4206896551724138,
+        "semantic_product_fit": 0.4206896551724138,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.2297167448275862,
+        "offer_fit": 0.7,
+        "confidence": 0.7144137931034483,
+        "raw_confidence": 0.7144137931034483,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:14-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring moisturizer options like Barrier Cloud Cream?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7496974137931034
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.2297167448275862,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "kindred-skin:candidate:14-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring moisturizer options like Barrier Cloud Cream?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "ks-p2",
+            "kind": "observed",
+            "text": "Product catalog lists fragrance-free ingredients and a $34 price.",
+            "source": "demo_catalog",
+            "source_record_id": "ks-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.7144137931034483,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:00",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5413793103448276,
+        "semantic_product_fit": 0.5413793103448276,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.35925931034482755,
+        "offer_fit": 0.7,
+        "confidence": 0.9548275862068966,
+        "raw_confidence": 0.9548275862068966,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 614.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:00-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7610698275862069
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.35925931034482755,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:00-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9548275862068966,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:01",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in Canada.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5333333333333333,
+        "semantic_product_fit": 0.5333333333333333,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.35391999999999996,
+        "offer_fit": 0.7,
+        "confidence": 0.9433333333333334,
+        "raw_confidence": 0.9433333333333334,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 614.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "Canada",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:01-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7590583333333333
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.35391999999999996,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:01-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9433333333333334,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:02",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in UK.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5413793103448276,
+        "semantic_product_fit": 0.5413793103448276,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.35925931034482755,
+        "offer_fit": 0.7,
+        "confidence": 0.9548275862068966,
+        "raw_confidence": 0.9548275862068966,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 614.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "UK",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:02-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in UK.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7610698275862069
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.35925931034482755,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:02-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in UK.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9548275862068966,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:03",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5413793103448276,
+        "semantic_product_fit": 0.5413793103448276,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.35925931034482755,
+        "offer_fit": 0.7,
+        "confidence": 0.9548275862068966,
+        "raw_confidence": 0.9548275862068966,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 614.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:03-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7610698275862069
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.35925931034482755,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:03-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Core for support analytics and need SOC 2 and conversation tagging under $614 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9548275862068966,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:04",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "I am researching the history of support analytics, including SignalDesk Core, for a paper.",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.46799999999999997,
+        "semantic_product_fit": 0.46799999999999997,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.047915712,
+        "offer_fit": 0.7,
+        "confidence": 0.782,
+        "raw_confidence": 0.782,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:04-text",
+            "kind": "observed",
+            "text": "I am researching the history of support analytics, including SignalDesk Core, for a paper.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.44420000000000004
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:04:research_only",
+            "kind": "inference",
+            "text": "I am researching the history of support analytics, including SignalDesk Core, for a paper.",
+            "source": "spend_safety_policy",
+            "source_record_id": "signaldesk:candidate:04",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.782,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:05",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "How do I use or maintain the SignalDesk Core I already own?",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.4217391304347826,
+        "semantic_product_fit": 0.4217391304347826,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.043179339130434785,
+        "offer_fit": 0.7,
+        "confidence": 0.7159130434782609,
+        "raw_confidence": 0.7159130434782609,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:05-text",
+            "kind": "observed",
+            "text": "How do I use or maintain the SignalDesk Core I already own?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.4326347826086957
+      },
+      "spend_decision": {
+        "decision": "BLOCK",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "EXISTING_OWNER_SUPPORT"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:05:existing_owner_support",
+            "kind": "inference",
+            "text": "How do I use or maintain the SignalDesk Core I already own?",
+            "source": "spend_safety_policy",
+            "source_record_id": "signaldesk:candidate:05",
+            "provenance": [
+              "EXISTING_OWNER_SUPPORT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.7159130434782609,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:06",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "What should a buyer look for when exploring support analytics options like SignalDesk Core?",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.44482758620689655,
+        "semantic_product_fit": 0.44482758620689655,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.24289721379310344,
+        "offer_fit": 0.7,
+        "confidence": 0.7488965517241379,
+        "raw_confidence": 0.7488965517241379,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:06-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring support analytics options like SignalDesk Core?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7557318965517241
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.24289721379310344,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:06-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring support analytics options like SignalDesk Core?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.7488965517241379,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:07",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-core",
+      "context_text": "I cannot buy SignalDesk Core until next year; what should I learn about support analytics now?",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.43999999999999995,
+        "semantic_product_fit": 0.43999999999999995,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.12263327999999998,
+        "offer_fit": 0.7,
+        "confidence": 0.742,
+        "raw_confidence": 0.742,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [
+            "buy signaldesk core until next"
+          ],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:07-text",
+            "kind": "observed",
+            "text": "I cannot buy SignalDesk Core until next year; what should I learn about support analytics now?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p1",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls, conversation tagging, and $599 monthly plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p1",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5581
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "FUTURE_OR_CONDITIONAL_INTENT"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:07:future_or_conditional_intent",
+            "kind": "inference",
+            "text": "I cannot buy SignalDesk Core until next year; what should I learn about support analytics now?",
+            "source": "spend_safety_policy",
+            "source_record_id": "signaldesk:candidate:07",
+            "provenance": [
+              "FUTURE_OR_CONDITIONAL_INTENT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.742,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:08",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-team",
+      "context_text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5172413793103448,
+        "semantic_product_fit": 0.5172413793103448,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.34324137931034476,
+        "offer_fit": 0.7,
+        "confidence": 0.920344827586207,
+        "raw_confidence": 0.920344827586207,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 314.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:08-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7550353448275862
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.34324137931034476,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:08-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.920344827586207,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:09",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-team",
+      "context_text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in Canada.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.51,
+        "semantic_product_fit": 0.51,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.338436,
+        "offer_fit": 0.7,
+        "confidence": 0.9099999999999999,
+        "raw_confidence": 0.9099999999999999,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 314.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "Canada",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:09-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.753225
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.338436,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:09-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9099999999999999,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:10",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-team",
+      "context_text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in US.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.5172413793103448,
+        "semantic_product_fit": 0.5172413793103448,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.34324137931034476,
+        "offer_fit": 0.7,
+        "confidence": 0.920344827586207,
+        "raw_confidence": 0.920344827586207,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 314.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "US",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:10-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7550353448275862
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.34324137931034476,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:10-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in US.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.920344827586207,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:11",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-team",
+      "context_text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in Canada.",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.51,
+        "semantic_product_fit": 0.51,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.338436,
+        "offer_fit": 0.7,
+        "confidence": 0.9099999999999999,
+        "raw_confidence": 0.9099999999999999,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": 314.0,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": "Canada",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:11-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.753225
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.338436,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:11-text",
+            "kind": "observed",
+            "text": "I am evaluating SignalDesk Team for support analytics and need SOC 2 and shared views under $314 with service in Canada.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.9099999999999999,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "USEFUL",
+        "would_test_with_real_ad_budget": "yes",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:12",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-team",
+      "context_text": "I am researching the history of support analytics, including SignalDesk Team, for a paper.",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.46799999999999997,
+        "semantic_product_fit": 0.46799999999999997,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.047915712,
+        "offer_fit": 0.7,
+        "confidence": 0.782,
+        "raw_confidence": 0.782,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:12-text",
+            "kind": "observed",
+            "text": "I am researching the history of support analytics, including SignalDesk Team, for a paper.",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.44420000000000004
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:12:research_only",
+            "kind": "inference",
+            "text": "I am researching the history of support analytics, including SignalDesk Team, for a paper.",
+            "source": "spend_safety_policy",
+            "source_record_id": "signaldesk:candidate:12",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.782,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:13",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-team",
+      "context_text": "How do I use or maintain the SignalDesk Team I already own?",
+      "contextfit": {
+        "commerciality": 0.18,
+        "product_fit": 0.3913043478260869,
+        "semantic_product_fit": 0.3913043478260869,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "informational",
+        "ad_relevance": 0.288,
+        "commercial_actionability": 0.04006330434782608,
+        "offer_fit": 0.7,
+        "confidence": 0.6724347826086957,
+        "raw_confidence": 0.6724347826086957,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:13-text",
+            "kind": "observed",
+            "text": "How do I use or maintain the SignalDesk Team I already own?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "NON_COMMERCIAL_INTENT"
+        ],
+        "overall": 0.4250260869565218
+      },
+      "spend_decision": {
+        "decision": "BLOCK",
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "EXISTING_OWNER_SUPPORT"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:13:existing_owner_support",
+            "kind": "inference",
+            "text": "How do I use or maintain the SignalDesk Team I already own?",
+            "source": "spend_safety_policy",
+            "source_record_id": "signaldesk:candidate:13",
+            "provenance": [
+              "EXISTING_OWNER_SUPPORT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6724347826086957,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    },
+    {
+      "candidate_id": "signaldesk:candidate:14",
+      "business_id": "signaldesk",
+      "product_id": "signaldesk-team",
+      "context_text": "What should a buyer look for when exploring support analytics options like SignalDesk Team?",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.44482758620689655,
+        "semantic_product_fit": 0.44482758620689655,
+        "constraint_match": 0.79,
+        "location_fit": 0.72,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.24289721379310344,
+        "offer_fit": 0.7,
+        "confidence": 0.7488965517241379,
+        "raw_confidence": 0.7488965517241379,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:14-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring support analytics options like SignalDesk Team?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7557318965517241
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_actionability": 0.24289721379310344,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN"
+        ],
+        "evidence": [
+          {
+            "id": "signaldesk:candidate:14-text",
+            "kind": "observed",
+            "text": "What should a buyer look for when exploring support analytics options like SignalDesk Team?",
+            "source": "demo business evidence",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "sd-p2",
+            "kind": "observed",
+            "text": "Product brief lists SOC 2 controls and shared views on the $299 plan.",
+            "source": "demo_catalog",
+            "source_record_id": "sd-p2",
+            "provenance": [],
+            "confidence": 0.98
+          }
+        ],
+        "confidence": 0.7488965517241379,
+        "human_approval_required": true,
+        "policy_version": "phase4-v1"
+      },
+      "review": {
+        "label": "PLAUSIBLE_BUT_WEAK",
+        "would_test_with_real_ad_budget": "maybe",
+        "reason": "Engineering review based only on catalog evidence; no campaign or revenue claim."
+      },
+      "human_approval_required": true
+    }
+  ]
+}
