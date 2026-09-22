@@ -28,6 +28,8 @@ Augmentation creates controlled conversational variants (high purchase intent, c
 
 Phase 3 split audit: zero cross-split source-group leakage, zero cross-split exact normalized-context collisions, and zero hidden-example matches in tracked files. Exact normalized-context collisions are merged into one split group before assignment.
 
+Phase 4 adds 300 separately held-out adversarial v2 controls across 30 categories: 150 validation records and 150 hidden records. They are manually authored controls with neutral paraphrase suffixes, not customer conversations or campaign outcomes. It also adds 50 six-turn difficult journeys (300 turns) and 150 one-feature counterfactual controls. These assets are evaluated separately from the CCB-1 real-data hidden split.
+
 ## Limitations and risks
 
 - ConvApparel does not provide a universal product-relevance label for every recommendation row; relevance remains unknown unless the source explicitly provides it.

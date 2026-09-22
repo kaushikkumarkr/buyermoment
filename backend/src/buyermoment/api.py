@@ -9,6 +9,7 @@ from .demo import demo_businesses
 from .experiments import export_experiment, generate_experiment
 from .models import CommercialContext, Experiment
 from .scoring import score
+from .spend_safety import spend_safety
 
 app = FastAPI(title="BuyerMoment API", version="0.1.0")
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173"], allow_methods=["*"], allow_headers=["*"])
@@ -40,6 +41,16 @@ def score_context(payload: dict) -> dict:
     if product is None:
         raise HTTPException(404, "Product not found")
     return score(context, product).model_dump(mode="json")
+
+
+@app.post("/api/spend-decision")
+def spend_decision(payload: dict) -> dict:
+    context = CommercialContext.model_validate(payload["context"])
+    product = next((item for business in demo_businesses() for item in business.products if item.id == payload.get("product_id")), None)
+    if product is None:
+        raise HTTPException(404, "Product not found")
+    contextfit = score(context, product)
+    return {"contextfit": contextfit.model_dump(mode="json"), "spend_decision": spend_safety(context, product, contextfit).model_dump(mode="json")}
 
 
 @app.post("/api/experiments", response_model=Experiment)

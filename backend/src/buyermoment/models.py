@@ -9,6 +9,7 @@ EvidenceKind = Literal["observed", "inference", "hypothesis", "result"]
 PurchaseStage = Literal["informational", "exploration", "comparison", "consideration", "transactional"]
 CommercialityLevel = Literal["none", "low", "medium", "high"]
 RelevanceLabel = Literal["exact", "substitute", "complement", "irrelevant", "unknown"]
+SpendDecisionLabel = Literal["TEST", "WATCH", "ABSTAIN", "BLOCK"]
 
 
 class Evidence(BaseModel):
@@ -90,6 +91,8 @@ class Product(BaseModel):
     url: str | None = None
     features: list[str] = Field(default_factory=list)
     service_regions: list[str] = Field(default_factory=list)
+    available: bool | None = None
+    shipping_deadline_met: bool | None = None
     evidence: list[Evidence] = Field(default_factory=list)
 
 
@@ -137,6 +140,7 @@ class ScoreResult(BaseModel):
     location_fit: float = Field(ge=0, le=1)
     purchase_stage: PurchaseStage
     ad_relevance: float = Field(ge=0, le=1)
+    commercial_actionability: float = Field(default=0.5, ge=0, le=1)
     offer_fit: float = Field(default=0.7, ge=0, le=1)
     confidence: float = Field(ge=0, le=1)
     raw_confidence: float | None = Field(default=None, ge=0, le=1)
@@ -147,6 +151,18 @@ class ScoreResult(BaseModel):
     evidence: list[Evidence] = Field(default_factory=list)
     reason_codes: list[str] = Field(default_factory=list)
     overall: float = Field(ge=0, le=1)
+
+
+class SpendDecision(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    decision: SpendDecisionLabel
+    commercial_actionability: float = Field(ge=0, le=1)
+    reason_codes: list[str] = Field(default_factory=list)
+    evidence: list[Evidence] = Field(default_factory=list)
+    confidence: float = Field(ge=0, le=1)
+    human_approval_required: bool = True
+    policy_version: str
 
 
 class BuyerMoment(BaseModel):

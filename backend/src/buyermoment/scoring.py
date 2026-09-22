@@ -30,7 +30,7 @@ class ParsedConstraints:
 
 def _parse_constraints(text: str) -> ParsedConstraints:
     lowered = text.lower()
-    match = re.search(r"(?:under|below|less than|budget of)\s*\$?\s*(\d+(?:\.\d+)?)", lowered)
+    match = re.search(r"(?:under|below|less than|budget of|budget is)\s*\$?\s*(\d+(?:\.\d+)?)", lowered)
     budget = float(match.group(1)) if match else None
     currency_match = re.search(r"\b(CAD|USD|EUR|GBP)\b|([$€£])", text, re.IGNORECASE)
     currency = {"$": "USD", "€": "EUR", "£": "GBP"}.get(currency_match.group(2) if currency_match and currency_match.lastindex and currency_match.lastindex >= 2 else "", None) if currency_match else None
@@ -72,8 +72,22 @@ def infer_stage_with_history(text: str, previous_stage: str | None = None) -> st
 
     History is used as a tie-breaker, never as permission to invent buying intent.
     """
-    current = infer_stage(text)
     lowered = text.lower()
+    if any(term in lowered for term in ("already bought", "already purchased", "how do i clean", "should i return", "return them")):
+        return "informational"
+    if "do not recommend" in lowered or "don't recommend" in lowered:
+        return "informational"
+    if any(term in lowered for term in ("hypothetically", "if money were no object")):
+        return "exploration"
+    if any(term in lowered for term in ("for a paper", "market report", "professional article", "will not purchase", "not purchasing")):
+        return "informational"
+    if "can i start" in lowered or "arrives" in lowered or "arrive by" in lowered:
+        return "transactional"
+    if "can we use" in lowered or "needs " in lowered or "we need " in lowered or "budget is" in lowered:
+        return "consideration"
+    if "what alternatives serve" in lowered:
+        return "exploration"
+    current = infer_stage(text)
     if current == "exploration" and previous_stage in {"consideration", "comparison"}:
         if any(term in lowered for term in ("these options", "those", "the two", "which one")):
             return "comparison"
@@ -143,6 +157,7 @@ def score(context: CommercialContext, product: Product, offer_fit: float = 0.7) 
         reasons.append("NON_COMMERCIAL_INTENT")
     evidence = [*context.evidence, *product.evidence]
     overall = min(1.0, commerciality_weight(context) * 0.3 + product_fit * 0.25 + constraint_match * 0.2 + location_fit * 0.1 + ad_relevance * 0.15)
+    commercial_actionability = min(1.0, context.commerciality * product_fit * constraint_match * location_fit)
     return ScoreResult(
         commerciality=context.commerciality,
         product_fit=product_fit,
@@ -151,6 +166,7 @@ def score(context: CommercialContext, product: Product, offer_fit: float = 0.7) 
         location_fit=location_fit,
         purchase_stage=context.purchase_stage,
         ad_relevance=ad_relevance,
+        commercial_actionability=commercial_actionability,
         offer_fit=offer_fit,
         confidence=confidence,
         raw_confidence=confidence,

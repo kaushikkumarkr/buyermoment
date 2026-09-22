@@ -26,7 +26,7 @@
 
 ## Currently working
 
-- Phase 3 findings are documented; the next decision is whether to add human-reviewed gold labels for the adversarial and purchase-stage slices. No Phase 4 product expansion was started.
+- Phase 4 findings are documented. The next safe step is human review of targeted adversarial/purchase-stage gold cases before any live pilot decision. No Phase 5 product expansion was started.
 
 ## Blocked
 
@@ -62,6 +62,18 @@
 - Bounded routing: all-mini valid accuracy 0.4444 with one 429; routed nano→mini valid accuracy 0.4000, 70% escalated, 10/10 routed calls valid. No routing quality improvement is claimed.
 - Real-business review: 45 evidence-backed candidates, 15 per demo business; top-five usefulness 1.0 / 1.0 / 0.8 for footwear / skincare / B2B SaaS; `would_test_with_real_ad_budget=yes` rate 0.5333 for each. Internal engineering review only.
 
+## Phase 4 completed in this branch
+
+- Added first-class `SpendDecision`: `TEST`, `WATCH`, `ABSTAIN`, and `BLOCK`, with versioned deterministic policy rules, commercial actionability, evidence, reason codes, and `human_approval_required=true`.
+- Added 300 adversarial v2 controls across 30 categories with source-aware validation/hidden separation, 50 six-turn difficult journeys (300 turns), and 150 one-feature counterfactual controls.
+- Revalidated the clean hidden benchmark after implementation changes: purchase-stage accuracy 0.8720, relevance F1 0.7388, NDCG 0.8502, MRR 0.8244, hard-negative FPR 0.0, schema validity 1.0.
+- Phase 4 adversarial v2: purchase-stage accuracy 0.5667, macro F1 0.6256, overall Waste-Risk Rate 0.0455, held-out Waste-Risk Rate 0.0833, held-out TEST precision 0.50, held-out hard-negative FPR 0.0833, block accuracy 1.0. These remain controlled benchmark results, not campaign outcomes.
+- Multi-turn controls: stage accuracy 1.0, transition accuracy 1.0, intent-reversal detection 1.0, constraint-memory accuracy 1.0, stale-context error rate 0.0. Coverage is manually authored and not external validation.
+- Counterfactual controls: direction consistency 1.0 and reason-code correctness 1.0 on 150 cases.
+- Real-business safety replay: 45 candidates; 16 TEST, 14 WATCH, 9 ABSTAIN, 6 BLOCK; TEST precision against the subjective `would_test=yes` review 1.0; human approval required 1.0.
+- Pilot gate: `NO-GO` for live advertiser spend. BuyerMoment remains human-approved decision support.
+- No new Azure resources, deployments, Batch jobs, or Phase 4 Azure model calls were made. Existing resources outside `rg-buyermoment-dev` were not modified.
+
 ## Known limitations
 
 - Demo UI currently uses local fixture data and does not persist uploads.
@@ -76,4 +88,4 @@
 
 ## Next action
 
-Add a small human-reviewed gold tranche for purchase stage and adversarial serviceability, then rerun the same hidden benchmark before any larger Azure run. Use Azure billing export to populate actual dollar costs; current routing results do not justify scale-up.
+Add a small human-reviewed gold tranche for purchase stage and adversarial serviceability, then rerun the same Phase 4 gate. Use Azure billing export to populate actual dollar costs; Phase 4 produced no new Azure model usage and does not justify scale-up.
