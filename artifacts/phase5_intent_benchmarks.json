@@ -1,0 +1,255 @@
+{
+  "third_party": {
+    "count": 8,
+    "hidden_count": 4,
+    "test_precision_recall": [
+      null,
+      0.0
+    ],
+    "watch_precision_recall": [
+      0.3333333333333333,
+      0.5
+    ],
+    "false_test_count": 0,
+    "decision_distribution": {
+      "TEST": 0,
+      "WATCH": 3,
+      "ABSTAIN": 1,
+      "BLOCK": 0
+    },
+    "results": [
+      {
+        "label": "TEST",
+        "split": "validation",
+        "context": "I need to buy size 9 work shoes for my mother and can order them today.",
+        "decision": "WATCH",
+        "test_readiness": 0.7938703703703704,
+        "ambiguity_score": 0.05,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "TEST",
+        "split": "validation",
+        "context": "Please order the fragrance-free gift set for my sister before Friday.",
+        "decision": "WATCH",
+        "test_readiness": 0.7056000000000001,
+        "ambiguity_score": 0.05,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "TEST",
+        "split": "hidden_test",
+        "context": "Our procurement team selected the CRM; I am buying it for my employer this month.",
+        "decision": "WATCH",
+        "test_readiness": 0.7263846153846153,
+        "ambiguity_score": 0.2,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "TEST",
+        "split": "hidden_test",
+        "context": "My child needs a replacement backpack for school and I am ready to buy it now.",
+        "decision": "WATCH",
+        "test_readiness": 0.7763846153846153,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "validation",
+        "context": "I am researching shoe brands for my client's market report.",
+        "decision": "ABSTAIN",
+        "test_readiness": 0.37449999999999994,
+        "ambiguity_score": 0.45,
+        "reason_codes": [
+          "RESEARCH_ONLY",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_HIGH"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "validation",
+        "context": "My employer asked me to collect CRM options; there is no purchase date.",
+        "decision": "WATCH",
+        "test_readiness": 0.7768333333333334,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "hidden_test",
+        "context": "I am comparing skincare gifts for someone else but I am only gathering ideas.",
+        "decision": "WATCH",
+        "test_readiness": 0.5603846153846155,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "hidden_test",
+        "context": "I might buy a backpack for my child next year if the school changes.",
+        "decision": "ABSTAIN",
+        "test_readiness": 0.7016000000000001,
+        "ambiguity_score": 0.3,
+        "reason_codes": [
+          "FUTURE_OR_CONDITIONAL_INTENT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      }
+    ]
+  },
+  "future_intent": {
+    "count": 7,
+    "hidden_count": 4,
+    "test_precision_recall": [
+      null,
+      0.0
+    ],
+    "watch_precision_recall": [
+      0.3333333333333333,
+      0.5
+    ],
+    "false_test_count": 0,
+    "decision_distribution": {
+      "TEST": 0,
+      "WATCH": 3,
+      "ABSTAIN": 1,
+      "BLOCK": 0
+    },
+    "results": [
+      {
+        "label": "TEST",
+        "split": "validation",
+        "context": "I need this delivered tomorrow and will place the order today.",
+        "decision": "WATCH",
+        "test_readiness": 0.7835,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "TEST",
+        "split": "hidden_test",
+        "context": "We are buying the CRM this Friday after the final approval.",
+        "decision": "WATCH",
+        "test_readiness": 0.7768333333333334,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "TEST",
+        "split": "hidden_test",
+        "context": "I need the skincare set this week for a trip and am ready to purchase.",
+        "decision": "WATCH",
+        "test_readiness": 0.7947,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "validation",
+        "context": "I might buy this next year.",
+        "decision": "ABSTAIN",
+        "test_readiness": 0.7085,
+        "ambiguity_score": 0.25,
+        "reason_codes": [
+          "FUTURE_OR_CONDITIONAL_INTENT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "validation",
+        "context": "I will need a CRM when we move next quarter, if the budget is approved.",
+        "decision": "WATCH",
+        "test_readiness": 0.6033333333333333,
+        "ambiguity_score": 0.25,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "hidden_test",
+        "context": "If I get promoted, I may buy the premium skincare set later.",
+        "decision": "ABSTAIN",
+        "test_readiness": 0.7201666666666667,
+        "ambiguity_score": 0.25,
+        "reason_codes": [
+          "FUTURE_OR_CONDITIONAL_INTENT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      },
+      {
+        "label": "WATCH",
+        "split": "hidden_test",
+        "context": "I am planning for a possible purchase someday and have no timing yet.",
+        "decision": "WATCH",
+        "test_readiness": 0.771,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ]
+      }
+    ]
+  },
+  "status": "manually authored controls; third-party purchase is distinct from third-party research; no campaign outcome claim"
+}

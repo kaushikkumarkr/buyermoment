@@ -153,10 +153,26 @@ class ScoreResult(BaseModel):
     overall: float = Field(ge=0, le=1)
 
 
+class TestReadiness(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    commercial_potential: float = Field(ge=0, le=1)
+    test_readiness: float = Field(ge=0, le=1)
+    purchase_immediacy: float = Field(ge=0, le=1)
+    evidence_strength: float = Field(ge=0, le=1)
+    ambiguity_score: float = Field(ge=0, le=1)
+    reason_codes: list[str] = Field(default_factory=list)
+    evidence: list[Evidence] = Field(default_factory=list)
+
+
 class SpendDecision(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     decision: SpendDecisionLabel
+    commercial_potential: float = Field(default=0.0, ge=0, le=1)
+    test_readiness: float = Field(default=0.0, ge=0, le=1)
+    evidence_strength: float = Field(default=0.0, ge=0, le=1)
+    ambiguity_score: float = Field(default=1.0, ge=0, le=1)
     commercial_actionability: float = Field(ge=0, le=1)
     reason_codes: list[str] = Field(default_factory=list)
     evidence: list[Evidence] = Field(default_factory=list)

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import argparse
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -10,6 +11,10 @@ from buyermoment.spend_safety import spend_safety
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Evaluate Phase 4 multi-turn robustness controls.")
+    parser.add_argument("--json-output", type=Path, default=Path("artifacts/multi_turn_robustness.json"))
+    parser.add_argument("--report-output", type=Path, default=Path("reports/multi_turn_robustness.md"))
+    args = parser.parse_args()
     rows = [json.loads(line) for line in Path("data/ccb1/multiturn/phase4_journeys.jsonl").read_text().splitlines() if line.strip()]
     previous_predicted: dict[str, str] = {}
     previous_expected: dict[str, str] = {}
@@ -83,8 +88,10 @@ def main() -> None:
         },
         "status": "manually authored multi-turn controls; current-turn safety evaluation, not customer outcome validation",
     }
-    Path("artifacts/multi_turn_robustness.json").write_text(json.dumps(summary, indent=2) + "\n")
-    Path("reports/multi_turn_robustness.md").write_text(
+    args.json_output.parent.mkdir(parents=True, exist_ok=True)
+    args.report_output.parent.mkdir(parents=True, exist_ok=True)
+    args.json_output.write_text(json.dumps(summary, indent=2) + "\n")
+    args.report_output.write_text(
         "# Multi-turn robustness\n\n"
         + json.dumps(summary, indent=2)
         + "\n\nThe current-turn classifier is evaluated against explicit journey labels. `stale_context_error_rate` counts a positive eligible decision on a turn explicitly labeled as a support, reversal, or serviceability block.\n"

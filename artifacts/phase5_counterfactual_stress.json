@@ -1,0 +1,953 @@
+{
+  "summary": {
+    "group_count": 10,
+    "case_count": 60,
+    "decision_accuracy": 0.8,
+    "counterfactual_consistency": 0.8,
+    "by_group": {
+      "direct_buy": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "future": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "research": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "owner": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "budget": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "location": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "shipping": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "third_party_research": {
+        "count": 6,
+        "accuracy": 1.0
+      },
+      "conditional": {
+        "count": 6,
+        "accuracy": 0.0
+      },
+      "cancelled": {
+        "count": 6,
+        "accuracy": 0.0
+      }
+    },
+    "status": "one-feature policy counterfactual controls; no campaign outcome claim"
+  },
+  "cases": [
+    {
+      "group": "direct_buy",
+      "record_id": "cf:direct_buy:0",
+      "context": "I need waterproof hiking shoes under $150 and can order today.",
+      "expected_decision": "TEST",
+      "predicted_decision": "TEST",
+      "expected": true,
+      "reason_codes": [
+        "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.8296749999999999
+    },
+    {
+      "group": "direct_buy",
+      "record_id": "cf:direct_buy:1",
+      "context": "I need waterproof hiking shoes under $150 and can order today.",
+      "expected_decision": "TEST",
+      "predicted_decision": "TEST",
+      "expected": true,
+      "reason_codes": [
+        "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.8296749999999999
+    },
+    {
+      "group": "direct_buy",
+      "record_id": "cf:direct_buy:2",
+      "context": "I need waterproof hiking shoes under $150 and can order today.",
+      "expected_decision": "TEST",
+      "predicted_decision": "TEST",
+      "expected": true,
+      "reason_codes": [
+        "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.8296749999999999
+    },
+    {
+      "group": "direct_buy",
+      "record_id": "cf:direct_buy:3",
+      "context": "I need waterproof hiking shoes under $150 and can order today.",
+      "expected_decision": "TEST",
+      "predicted_decision": "TEST",
+      "expected": true,
+      "reason_codes": [
+        "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.8296749999999999
+    },
+    {
+      "group": "direct_buy",
+      "record_id": "cf:direct_buy:4",
+      "context": "I need waterproof hiking shoes under $150 and can order today.",
+      "expected_decision": "TEST",
+      "predicted_decision": "TEST",
+      "expected": true,
+      "reason_codes": [
+        "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.8296749999999999
+    },
+    {
+      "group": "direct_buy",
+      "record_id": "cf:direct_buy:5",
+      "context": "I need waterproof hiking shoes under $150 and can order today.",
+      "expected_decision": "TEST",
+      "predicted_decision": "TEST",
+      "expected": true,
+      "reason_codes": [
+        "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.8296749999999999
+    },
+    {
+      "group": "future",
+      "record_id": "cf:future:0",
+      "context": "I might buy waterproof hiking shoes next year.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7436358695652174
+    },
+    {
+      "group": "future",
+      "record_id": "cf:future:1",
+      "context": "I might buy waterproof hiking shoes next year.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7436358695652174
+    },
+    {
+      "group": "future",
+      "record_id": "cf:future:2",
+      "context": "I might buy waterproof hiking shoes next year.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7436358695652174
+    },
+    {
+      "group": "future",
+      "record_id": "cf:future:3",
+      "context": "I might buy waterproof hiking shoes next year.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7436358695652174
+    },
+    {
+      "group": "future",
+      "record_id": "cf:future:4",
+      "context": "I might buy waterproof hiking shoes next year.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7436358695652174
+    },
+    {
+      "group": "future",
+      "record_id": "cf:future:5",
+      "context": "I might buy waterproof hiking shoes next year.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7436358695652174
+    },
+    {
+      "group": "research",
+      "record_id": "cf:research:0",
+      "context": "I am researching waterproof hiking shoes for an article.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.41046590909090913
+    },
+    {
+      "group": "research",
+      "record_id": "cf:research:1",
+      "context": "I am researching waterproof hiking shoes for an article.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.41046590909090913
+    },
+    {
+      "group": "research",
+      "record_id": "cf:research:2",
+      "context": "I am researching waterproof hiking shoes for an article.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.41046590909090913
+    },
+    {
+      "group": "research",
+      "record_id": "cf:research:3",
+      "context": "I am researching waterproof hiking shoes for an article.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.41046590909090913
+    },
+    {
+      "group": "research",
+      "record_id": "cf:research:4",
+      "context": "I am researching waterproof hiking shoes for an article.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.41046590909090913
+    },
+    {
+      "group": "research",
+      "record_id": "cf:research:5",
+      "context": "I am researching waterproof hiking shoes for an article.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.41046590909090913
+    },
+    {
+      "group": "owner",
+      "record_id": "cf:owner:0",
+      "context": "I already own waterproof hiking shoes. How do I clean them?",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.521375
+    },
+    {
+      "group": "owner",
+      "record_id": "cf:owner:1",
+      "context": "I already own waterproof hiking shoes. How do I clean them?",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.521375
+    },
+    {
+      "group": "owner",
+      "record_id": "cf:owner:2",
+      "context": "I already own waterproof hiking shoes. How do I clean them?",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.521375
+    },
+    {
+      "group": "owner",
+      "record_id": "cf:owner:3",
+      "context": "I already own waterproof hiking shoes. How do I clean them?",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.521375
+    },
+    {
+      "group": "owner",
+      "record_id": "cf:owner:4",
+      "context": "I already own waterproof hiking shoes. How do I clean them?",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.521375
+    },
+    {
+      "group": "owner",
+      "record_id": "cf:owner:5",
+      "context": "I already own waterproof hiking shoes. How do I clean them?",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.521375
+    },
+    {
+      "group": "budget",
+      "record_id": "cf:budget:0",
+      "context": "I need waterproof hiking shoes under $50 and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "BUDGET_INCOMPATIBLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7953749999999999
+    },
+    {
+      "group": "budget",
+      "record_id": "cf:budget:1",
+      "context": "I need waterproof hiking shoes under $50 and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "BUDGET_INCOMPATIBLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7953749999999999
+    },
+    {
+      "group": "budget",
+      "record_id": "cf:budget:2",
+      "context": "I need waterproof hiking shoes under $50 and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "BUDGET_INCOMPATIBLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7953749999999999
+    },
+    {
+      "group": "budget",
+      "record_id": "cf:budget:3",
+      "context": "I need waterproof hiking shoes under $50 and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "BUDGET_INCOMPATIBLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7953749999999999
+    },
+    {
+      "group": "budget",
+      "record_id": "cf:budget:4",
+      "context": "I need waterproof hiking shoes under $50 and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "BUDGET_INCOMPATIBLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7953749999999999
+    },
+    {
+      "group": "budget",
+      "record_id": "cf:budget:5",
+      "context": "I need waterproof hiking shoes under $50 and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "BUDGET_INCOMPATIBLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7953749999999999
+    },
+    {
+      "group": "location",
+      "record_id": "cf:location:0",
+      "context": "I need waterproof hiking shoes in Canada and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.700375
+    },
+    {
+      "group": "location",
+      "record_id": "cf:location:1",
+      "context": "I need waterproof hiking shoes in Canada and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.700375
+    },
+    {
+      "group": "location",
+      "record_id": "cf:location:2",
+      "context": "I need waterproof hiking shoes in Canada and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.700375
+    },
+    {
+      "group": "location",
+      "record_id": "cf:location:3",
+      "context": "I need waterproof hiking shoes in Canada and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.700375
+    },
+    {
+      "group": "location",
+      "record_id": "cf:location:4",
+      "context": "I need waterproof hiking shoes in Canada and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.700375
+    },
+    {
+      "group": "location",
+      "record_id": "cf:location:5",
+      "context": "I need waterproof hiking shoes in Canada and can order today.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.700375
+    },
+    {
+      "group": "shipping",
+      "record_id": "cf:shipping:0",
+      "context": "I need waterproof hiking shoes tomorrow, but they cannot ship by then.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "SHIPPING_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7936749999999999
+    },
+    {
+      "group": "shipping",
+      "record_id": "cf:shipping:1",
+      "context": "I need waterproof hiking shoes tomorrow, but they cannot ship by then.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "SHIPPING_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7936749999999999
+    },
+    {
+      "group": "shipping",
+      "record_id": "cf:shipping:2",
+      "context": "I need waterproof hiking shoes tomorrow, but they cannot ship by then.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "SHIPPING_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7936749999999999
+    },
+    {
+      "group": "shipping",
+      "record_id": "cf:shipping:3",
+      "context": "I need waterproof hiking shoes tomorrow, but they cannot ship by then.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "SHIPPING_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7936749999999999
+    },
+    {
+      "group": "shipping",
+      "record_id": "cf:shipping:4",
+      "context": "I need waterproof hiking shoes tomorrow, but they cannot ship by then.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "SHIPPING_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7936749999999999
+    },
+    {
+      "group": "shipping",
+      "record_id": "cf:shipping:5",
+      "context": "I need waterproof hiking shoes tomorrow, but they cannot ship by then.",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "expected": true,
+      "reason_codes": [
+        "SHIPPING_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7936749999999999
+    },
+    {
+      "group": "third_party_research",
+      "record_id": "cf:third_party_research:0",
+      "context": "I am researching waterproof hiking shoes for my client's report.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.4096358695652174
+    },
+    {
+      "group": "third_party_research",
+      "record_id": "cf:third_party_research:1",
+      "context": "I am researching waterproof hiking shoes for my client's report.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.4096358695652174
+    },
+    {
+      "group": "third_party_research",
+      "record_id": "cf:third_party_research:2",
+      "context": "I am researching waterproof hiking shoes for my client's report.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.4096358695652174
+    },
+    {
+      "group": "third_party_research",
+      "record_id": "cf:third_party_research:3",
+      "context": "I am researching waterproof hiking shoes for my client's report.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.4096358695652174
+    },
+    {
+      "group": "third_party_research",
+      "record_id": "cf:third_party_research:4",
+      "context": "I am researching waterproof hiking shoes for my client's report.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.4096358695652174
+    },
+    {
+      "group": "third_party_research",
+      "record_id": "cf:third_party_research:5",
+      "context": "I am researching waterproof hiking shoes for my client's report.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "expected": true,
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ],
+      "test_readiness": 0.4096358695652174
+    },
+    {
+      "group": "conditional",
+      "record_id": "cf:conditional:0",
+      "context": "If my company approves the budget, I may buy waterproof hiking shoes next quarter.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7540288461538461
+    },
+    {
+      "group": "conditional",
+      "record_id": "cf:conditional:1",
+      "context": "If my company approves the budget, I may buy waterproof hiking shoes next quarter.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7540288461538461
+    },
+    {
+      "group": "conditional",
+      "record_id": "cf:conditional:2",
+      "context": "If my company approves the budget, I may buy waterproof hiking shoes next quarter.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7540288461538461
+    },
+    {
+      "group": "conditional",
+      "record_id": "cf:conditional:3",
+      "context": "If my company approves the budget, I may buy waterproof hiking shoes next quarter.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7540288461538461
+    },
+    {
+      "group": "conditional",
+      "record_id": "cf:conditional:4",
+      "context": "If my company approves the budget, I may buy waterproof hiking shoes next quarter.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7540288461538461
+    },
+    {
+      "group": "conditional",
+      "record_id": "cf:conditional:5",
+      "context": "If my company approves the budget, I may buy waterproof hiking shoes next quarter.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.7540288461538461
+    },
+    {
+      "group": "cancelled",
+      "record_id": "cf:cancelled:0",
+      "context": "I was going to buy waterproof hiking shoes, but I cancelled the trip.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.804675
+    },
+    {
+      "group": "cancelled",
+      "record_id": "cf:cancelled:1",
+      "context": "I was going to buy waterproof hiking shoes, but I cancelled the trip.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.804675
+    },
+    {
+      "group": "cancelled",
+      "record_id": "cf:cancelled:2",
+      "context": "I was going to buy waterproof hiking shoes, but I cancelled the trip.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.804675
+    },
+    {
+      "group": "cancelled",
+      "record_id": "cf:cancelled:3",
+      "context": "I was going to buy waterproof hiking shoes, but I cancelled the trip.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.804675
+    },
+    {
+      "group": "cancelled",
+      "record_id": "cf:cancelled:4",
+      "context": "I was going to buy waterproof hiking shoes, but I cancelled the trip.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.804675
+    },
+    {
+      "group": "cancelled",
+      "record_id": "cf:cancelled:5",
+      "context": "I was going to buy waterproof hiking shoes, but I cancelled the trip.",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "expected": false,
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ],
+      "test_readiness": 0.804675
+    }
+  ]
+}

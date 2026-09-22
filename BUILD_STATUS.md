@@ -24,14 +24,22 @@
 - Extended ContextFit output with semantic-product-fit, offer-fit, raw confidence, calibrated confidence fields, and explicit constraint-field extraction.
 - Reused only the two existing Azure-direct deployments for a bounded 10-case nano/mini routing run. No new Azure resource, deployment, Batch job, or non-dedicated resource was created.
 
+## Phase 5 completed in this branch
+
+- Added deterministic `TestReadiness` with separate commercial potential, evidence strength, ambiguity, purchase immediacy, and test-readiness components.
+- Added stricter `phase5-v1` TEST eligibility policy. The selected validation-only policy requires readiness 0.75, evidence strength 0.65, ambiguity at most 0.05, explicit immediate signal, and human approval.
+- Added false-TEST analysis, TEST-vs-WATCH, third-party, future-intent, harder multi-turn, counterfactual, routing, and shadow-pilot artifacts.
+- Phase 5 gate: `SHADOW-GO` for offline human review only; live spend remains `NO-GO`. Human approval remains mandatory.
+
 ## Currently working
 
-- Phase 4 findings are documented. The next safe step is human review of targeted adversarial/purchase-stage gold cases before any live pilot decision. No Phase 5 product expansion was started.
+- No live advertising or Phase 5 Azure generation is authorized. The next safe step is an independent blinded human shadow review and a reviewed purchase-stage/adversarial gold tranche.
 
 ## Blocked
 
 - Azure model dollar cost is not reported because the run metadata captured tokens only for the bounded comparison sample and no dated price sheet is embedded.
 - Live ChatGPT Ads integration is intentionally not implemented without an official stable import/API contract.
+- Phase 5 multi-turn stress exposes stale-context and intent-cancellation errors; the small TEST-vs-WATCH controls do not establish production safety.
 
 ## Azure resources created
 

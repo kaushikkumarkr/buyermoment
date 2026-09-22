@@ -1,0 +1,7 @@
+{
+  "decision": "SHADOW-GO",
+  "live_spend": "NO-GO",
+  "human_approval_required": true,
+  "rationale": "Zero measured false TESTs on the current held-out adversarial and TEST-vs-WATCH controls, but low coverage, weak multi-turn stress results, weak non-blinded demo-review agreement, and no campaign outcomes.",
+  "next_prerequisites": ["independent blinded shadow review", "human-reviewed gold tranche", "fix stale-context and counterfactual failures"]
+}

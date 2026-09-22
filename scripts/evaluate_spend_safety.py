@@ -7,7 +7,7 @@ from pathlib import Path
 
 from buyermoment.models import CommercialContextRecord, Evidence, LocationContext, Product
 from buyermoment.scoring import build_context, score
-from buyermoment.spend_safety import SpendSafetyPolicy, spend_safety
+from buyermoment.spend_safety import SpendSafetyPolicy, load_policy, spend_safety
 
 def metrics(pairs: list[tuple[str, str, bool, bool]]) -> dict:
     total = len(pairs)
@@ -58,7 +58,7 @@ def main() -> None:
     parser.add_argument("--report-output", type=Path, default=Path("reports/spend_safety_benchmark.md"))
     args = parser.parse_args()
     rows = [CommercialContextRecord.model_validate_json(line) for line in args.input.read_text().splitlines() if line.strip()]
-    policy = SpendSafetyPolicy()
+    policy = load_policy()
     validation, hidden = [row for row in rows if row.split == "validation"], [row for row in rows if row.split == "hidden_test"]
     hidden_pairs, failures = evaluate_rows(hidden, policy)
     by_category: dict[str, list[tuple[str, str, bool, bool]]] = defaultdict(list)
@@ -82,7 +82,8 @@ def main() -> None:
     args.report_output.parent.mkdir(parents=True, exist_ok=True)
     args.json_output.write_text(json.dumps(summary, indent=2) + "\n")
     args.report_output.write_text("# Spend-safety benchmark\n\n" + json.dumps(summary, indent=2) + "\n")
-    Path("artifacts/phase4_spend_failure_cases.jsonl").write_text("\n".join(json.dumps(item) for item in failures) + ("\n" if failures else ""))
+    if args.json_output == Path("artifacts/spend_safety_benchmark.json"):
+        Path("artifacts/phase4_spend_failure_cases.jsonl").write_text("\n".join(json.dumps(item) for item in failures) + ("\n" if failures else ""))
     print(json.dumps(summary, indent=2))
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ from pathlib import Path
 
 from buyermoment.models import CommercialContextRecord
 from buyermoment.scoring import build_context, score
-from buyermoment.spend_safety import spend_safety
+from buyermoment.spend_safety import load_policy, spend_safety
 from evaluate_spend_safety import product_for
 
 def f1(actual: list[str], predicted: list[str], label: str) -> float | None:
@@ -22,7 +22,9 @@ def main() -> None:
     parser.add_argument("--json-output", type=Path, default=Path("artifacts/adversarial_v2_benchmark.json"))
     parser.add_argument("--report-output", type=Path, default=Path("reports/adversarial_v2_benchmark.md"))
     args = parser.parse_args()
+    write_supporting_phase4_artifacts = args.json_output == Path("artifacts/adversarial_v2_benchmark.json")
     rows = [CommercialContextRecord.model_validate_json(line) for line in args.input.read_text().splitlines() if line.strip()]
+    policy = load_policy()
     actual, predicted = [], []
     action_actual, action_predicted = [], []
     by_type: dict[str, dict[str, list[str]]] = defaultdict(lambda: {"stage_actual": [], "stage_predicted": [], "action_actual": [], "action_predicted": []})
@@ -31,7 +33,7 @@ def main() -> None:
         product = product_for(row)
         context = build_context(row.context_text, source=row.source_dataset, context_id=row.record_id).model_copy(update={"location": row.location})
         result = score(context, product)
-        decision = spend_safety(context, product, result)
+        decision = spend_safety(context, product, result, policy)
         actual.append(row.purchase_stage or "unknown")
         predicted.append(result.purchase_stage)
         action_actual.append(str(row.metadata["gold_spend_decision"]))
@@ -64,40 +66,41 @@ def main() -> None:
         + json.dumps(summary, indent=2)
         + "\n```\n"
     )
-    Path("artifacts/purchase_stage_adversarial.json").write_text(
-        json.dumps({"benchmark": "Phase 4 adversarial purchase-stage benchmark", "purchase_stage": summary["purchase_stage"], "by_category": summary["by_category"], "status": summary["status"]}, indent=2)
-        + "\n"
-    )
-    Path("reports/purchase_stage_adversarial.md").write_text(
-        "# Purchase-stage adversarial benchmark\n\n"
-        f"The benchmark contains {len(rows)} controlled adversarial records across "
-        f"{summary['template_types']} categories.\n\n"
-        f"- Accuracy: **{summary['purchase_stage']['accuracy']:.4f}**\n"
-        f"- Macro F1: **{summary['purchase_stage']['macro_f1']:.4f}**\n\n"
-        "The result is intentionally reported separately from the clean hidden benchmark. "
-        "Errors are retained in `artifacts/phase4_failure_cases.jsonl`; no synthetic label is treated as a human outcome.\n"
-    )
-    Path("artifacts/phase4_failure_cases.jsonl").write_text(
-        "\n".join(
-            json.dumps(
-                {
-                    **failure,
-                    "failure_categories": [
-                        category
-                        for category, condition in (
-                            ("wrong_purchase_stage", failure["expected_stage"] != failure["predicted_stage"]),
-                            ("spend_decision_mismatch", failure["expected_decision"] != failure["predicted_decision"]),
-                        )
-                        if condition
-                    ],
-                    "root_cause": failure["reason_codes"][0] if failure["reason_codes"] else "unexplained_policy_or_stage_error",
-                    "fix_attempted": "Phase 4 deterministic SpendSafety policy and current ContextFit scorer",
-                }
-            )
-            for failure in failures
+    if write_supporting_phase4_artifacts:
+        Path("artifacts/purchase_stage_adversarial.json").write_text(
+            json.dumps({"benchmark": "Phase 4 adversarial purchase-stage benchmark", "purchase_stage": summary["purchase_stage"], "by_category": summary["by_category"], "status": summary["status"]}, indent=2)
+            + "\n"
         )
-        + ("\n" if failures else "")
-    )
+        Path("reports/purchase_stage_adversarial.md").write_text(
+            "# Purchase-stage adversarial benchmark\n\n"
+            f"The benchmark contains {len(rows)} controlled adversarial records across "
+            f"{summary['template_types']} categories.\n\n"
+            f"- Accuracy: **{summary['purchase_stage']['accuracy']:.4f}**\n"
+            f"- Macro F1: **{summary['purchase_stage']['macro_f1']:.4f}**\n\n"
+            "The result is intentionally reported separately from the clean hidden benchmark. "
+            "Errors are retained in `artifacts/phase4_failure_cases.jsonl`; no synthetic label is treated as a human outcome.\n"
+        )
+        Path("artifacts/phase4_failure_cases.jsonl").write_text(
+            "\n".join(
+                json.dumps(
+                    {
+                        **failure,
+                        "failure_categories": [
+                            category
+                            for category, condition in (
+                                ("wrong_purchase_stage", failure["expected_stage"] != failure["predicted_stage"]),
+                                ("spend_decision_mismatch", failure["expected_decision"] != failure["predicted_decision"]),
+                            )
+                            if condition
+                        ],
+                        "root_cause": failure["reason_codes"][0] if failure["reason_codes"] else "unexplained_policy_or_stage_error",
+                        "fix_attempted": "Phase 4 deterministic SpendSafety policy and current ContextFit scorer",
+                    }
+                )
+                for failure in failures
+            )
+            + ("\n" if failures else "")
+        )
     print(json.dumps(summary, indent=2))
 
 if __name__ == "__main__":

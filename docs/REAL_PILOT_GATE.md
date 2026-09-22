@@ -21,4 +21,8 @@ The gate is based on actual Phase 4 artifacts, not a target invented after seein
 
 ## Phase 4 decision
 
-Phase 4 is `NO-GO` for real advertiser spend. The expanded adversarial v2 set contains material stage errors and a measured 8.33% held-out Waste-Risk Rate (4.55% across all 300 controls); held-out TEST precision is 50%. The 45-business review is an internal engineering review rather than customer validation, and no human-reviewed gold tranche or campaign outcomes exists. The next safe prerequisite is human review of targeted adversarial and purchase-stage cases followed by a repeated gate evaluation.
+Phase 4 is `NO-GO` for real advertiser spend. The expanded adversarial v2 set contains material stage errors and a measured 8.33% held-out Waste-Risk Rate (4.55% across all 300 controls); held-out TEST precision is 50%. The 45-business review is an internal engineering review rather than customer validation, and no human-reviewed gold tranche or campaign outcomes exists.
+
+## Phase 5 decision
+
+Phase 5 is `SHADOW-GO` only for an offline, human-reviewed shadow workflow; live advertiser spend remains `NO-GO`. The stricter policy produced 1.0000 TEST precision and 0.0000 Waste-Risk Rate on the current held-out adversarial and TEST-vs-WATCH controls, but TEST coverage is low, the harder multi-turn stress set reached only 0.6944 stage accuracy with 0.1053 stale-context error, and the existing demo review was a non-blinded proxy with 0.0889 agreement. No campaign or revenue outcome is claimed. Human approval remains mandatory.

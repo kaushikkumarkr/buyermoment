@@ -18,6 +18,8 @@ Microsoft’s Foundry sponsorship guidance says startup credits apply when Micro
 | 2026-09-22 | bounded model comparison | `gpt-5.4-nano` and `gpt-5.4-mini` | 5 parents per model | Both models returned 5/5 schema-valid parent calls | Token counts in `artifacts/model_comparison_v0_1.json`; dollar cost intentionally not computed |
 | 2026-09-22 | Phase 3 bounded routing comparison | `gpt-5.4-nano` and `gpt-5.4-mini` | 10 adversarial stage cases; 26 total calls including escalation | 10 nano calls, 16 mini calls; one all-mini request hit 429, routed run completed | Token usage in `artifacts/model_routing_report.json`; posted dollar cost unavailable and not fabricated |
 | 2026-09-22 | Phase 4 robustness evaluation | existing deployments only | 300 local adversarial controls, 300 local journey turns, 150 local counterfactual controls | No Azure model call, Batch job, deployment, or resource change; local deterministic policy and scorer produced durable benchmark artifacts | No Phase 4 Azure spend; posted dollar cost remains unavailable |
+| 2026-09-22 | Phase 5 targeted augmentation preparation | none | 60 prompt-manifest rows derived from 10 false-TEST controls | Manifest only; no Azure request, Batch job, model deployment, or resource change | No Phase 5 Azure model spend; dollar cost remains unposted |
+| 2026-09-22 | Phase 5 local safety evaluation | none | 300 adversarial controls, 360 multi-turn turns, 60 counterfactuals, 45 shadow candidates | Deterministic scorer/policy only | No Phase 5 Azure model spend; dollar cost remains unposted |
 
 No 100-record Azure run or Batch workload has been submitted. The deterministic 500-row Stage A control and 500 hard negatives were generated locally at no model-token cost.
 

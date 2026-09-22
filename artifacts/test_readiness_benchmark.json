@@ -1,0 +1,3788 @@
+{
+  "benchmark": "Phase 5 TEST-vs-WATCH and TestReadiness",
+  "policy": {
+    "version": "phase5-v1",
+    "min_test_overall": 0.7,
+    "min_test_confidence": 0.68,
+    "min_test_actionability": 0.2,
+    "min_watch_overall": 0.5,
+    "min_watch_confidence": 0.5,
+    "min_test_readiness": 0.75,
+    "min_test_evidence_strength": 0.65,
+    "max_test_ambiguity": 0.05,
+    "require_immediate_signal": true,
+    "human_approval_required": true
+  },
+  "validation": {
+    "count": 12,
+    "test_precision": 1.0,
+    "test_recall": 0.5,
+    "test_coverage": 0.25,
+    "watch_precision": 0.5714285714285714,
+    "watch_recall": 0.6666666666666666,
+    "waste_risk_rate": 0.0,
+    "false_abstention_rate": 0.0,
+    "decision_distribution": {
+      "TEST": 3,
+      "WATCH": 7,
+      "ABSTAIN": 2,
+      "BLOCK": 0
+    },
+    "mean_evidence_strength_test": 0.7388888888888889,
+    "mean_evidence_strength_watch": 0.7250000000000001,
+    "mean_ambiguity_test": 0.008333333333333333,
+    "mean_ambiguity_watch": 0.26666666666666666
+  },
+  "hidden": {
+    "count": 12,
+    "test_precision": 1.0,
+    "test_recall": 0.3333333333333333,
+    "test_coverage": 0.16666666666666666,
+    "watch_precision": 0.5555555555555556,
+    "watch_recall": 0.8333333333333334,
+    "waste_risk_rate": 0.0,
+    "false_abstention_rate": 0.0,
+    "decision_distribution": {
+      "TEST": 2,
+      "WATCH": 9,
+      "ABSTAIN": 1,
+      "BLOCK": 0
+    },
+    "mean_evidence_strength_test": 0.7805555555555556,
+    "mean_evidence_strength_watch": 0.7388888888888889,
+    "mean_ambiguity_test": 0.008333333333333333,
+    "mean_ambiguity_watch": 0.11666666666666665
+  },
+  "top_validation_candidates": [
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.2,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.05,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.3,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.05,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.35,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.05,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.2,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.1,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.3,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.1,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.35,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.1,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.2,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.15,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.3,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.15,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.35,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.15,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.2,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.2,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.3,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.2,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.35,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.2,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.2,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.3,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.3,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.3,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.35,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.3,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.2,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.45,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.3,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.45,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.35,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.55,
+        "max_test_ambiguity": 0.45,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.2,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.6,
+        "max_test_ambiguity": 0.05,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    },
+    {
+      "policy": {
+        "version": "phase5-v1",
+        "min_test_overall": 0.7,
+        "min_test_confidence": 0.68,
+        "min_test_actionability": 0.3,
+        "min_watch_overall": 0.5,
+        "min_watch_confidence": 0.5,
+        "min_test_readiness": 0.55,
+        "min_test_evidence_strength": 0.6,
+        "max_test_ambiguity": 0.05,
+        "require_immediate_signal": true,
+        "human_approval_required": true
+      },
+      "metrics": {
+        "count": 12,
+        "test_precision": 1.0,
+        "test_recall": 0.5,
+        "test_coverage": 0.25,
+        "watch_precision": 0.5714285714285714,
+        "watch_recall": 0.6666666666666666,
+        "waste_risk_rate": 0.0,
+        "false_abstention_rate": 0.0,
+        "decision_distribution": {
+          "TEST": 3,
+          "WATCH": 7,
+          "ABSTAIN": 2,
+          "BLOCK": 0
+        },
+        "mean_evidence_strength_test": 0.7388888888888889,
+        "mean_evidence_strength_watch": 0.7250000000000001,
+        "mean_ambiguity_test": 0.008333333333333333,
+        "mean_ambiguity_watch": 0.26666666666666666
+      }
+    }
+  ],
+  "results": [
+    {
+      "record_id": "phase5-test-watch:000",
+      "label": "TEST",
+      "split": "validation",
+      "context": "accounting software for a 20-person construction company; we use QuickBooks and need to choose a replacement this month",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.39655172413793105,
+        "semantic_product_fit": 0.39655172413793105,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.1535051724137931,
+        "offer_fit": 0.7,
+        "confidence": 0.6799310344827587,
+        "raw_confidence": 0.6799310344827587,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:000-text",
+            "kind": "observed",
+            "text": "accounting software for a 20-person construction company; we use QuickBooks and need to choose a replacement this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:000",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, QuickBooks integration, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5752379310344828
+      },
+      "test_readiness": {
+        "commercial_potential": 0.5116379310344827,
+        "test_readiness": 0.6868103448275862,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:000-text",
+            "kind": "observed",
+            "text": "accounting software for a 20-person construction company; we use QuickBooks and need to choose a replacement this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:000",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, QuickBooks integration, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.5116379310344827,
+        "test_readiness": 0.6868103448275862,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.1535051724137931,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:000-text",
+            "kind": "observed",
+            "text": "accounting software for a 20-person construction company; we use QuickBooks and need to choose a replacement this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:000",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, QuickBooks integration, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6799310344827587,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:001",
+      "label": "TEST",
+      "split": "validation",
+      "context": "CRM for our 30-person sales team; we need to select a plan and start the pilot this quarter",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.37241379310344824,
+        "semantic_product_fit": 0.37241379310344824,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.28243862068965514,
+        "offer_fit": 0.7,
+        "confidence": 0.645448275862069,
+        "raw_confidence": 0.645448275862069,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:001-text",
+            "kind": "observed",
+            "text": "CRM for our 30-person sales team; we need to select a plan and start the pilot this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:001",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7656284482758621
+      },
+      "test_readiness": {
+        "commercial_potential": 0.787603448275862,
+        "test_readiness": 0.7979827586206897,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:001-text",
+            "kind": "observed",
+            "text": "CRM for our 30-person sales team; we need to select a plan and start the pilot this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:001",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.787603448275862,
+        "test_readiness": 0.7979827586206897,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.28243862068965514,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:001-text",
+            "kind": "observed",
+            "text": "CRM for our 30-person sales team; we need to select a plan and start the pilot this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:001",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.645448275862069,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:002",
+      "label": "TEST",
+      "split": "validation",
+      "context": "waterproof hiking boots under $150 for Yellowstone; I want to order them today",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.4037037037037037,
+        "semantic_product_fit": 0.4037037037037037,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.9009999999999999,
+        "commercial_actionability": 0.38755555555555554,
+        "offer_fit": 0.7,
+        "confidence": 0.8581481481481481,
+        "raw_confidence": 0.8581481481481481,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "waterproof"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 150.0,
+          "currency": "USD",
+          "required_features": [
+            "waterproof"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": "today",
+          "geography": "Yellowstone",
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:002-text",
+            "kind": "observed",
+            "text": "waterproof hiking boots under $150 for Yellowstone; I want to order them today",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:002",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, traction, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.8240759259259258
+      },
+      "test_readiness": {
+        "commercial_potential": 0.826925925925926,
+        "test_readiness": 0.8357407407407407,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:002-text",
+            "kind": "observed",
+            "text": "waterproof hiking boots under $150 for Yellowstone; I want to order them today",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:002",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, traction, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_potential": 0.826925925925926,
+        "test_readiness": 0.8357407407407407,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.38755555555555554,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:002-text",
+            "kind": "observed",
+            "text": "waterproof hiking boots under $150 for Yellowstone; I want to order them today",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:002",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, traction, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.8581481481481481,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:003",
+      "label": "TEST",
+      "split": "validation",
+      "context": "fragrance-free skincare for sensitive skin; I need the set delivered this week",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.46799999999999997,
+        "semantic_product_fit": 0.46799999999999997,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.829,
+        "commercial_actionability": 0.39311999999999997,
+        "offer_fit": 0.7,
+        "confidence": 0.95,
+        "raw_confidence": 0.95,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free",
+          "sensitive skin"
+        ],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [
+            "fragrance-free",
+            "sensitive skin"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": "this week",
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:003-text",
+            "kind": "observed",
+            "text": "fragrance-free skincare for sensitive skin; I need the set delivered this week",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:003",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, sensitive skin, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7933499999999999
+      },
+      "test_readiness": {
+        "commercial_potential": 0.771,
+        "test_readiness": 0.8126,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:003-text",
+            "kind": "observed",
+            "text": "fragrance-free skincare for sensitive skin; I need the set delivered this week",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:003",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, sensitive skin, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_potential": 0.771,
+        "test_readiness": 0.8126,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.39311999999999997,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:003-text",
+            "kind": "observed",
+            "text": "fragrance-free skincare for sensitive skin; I need the set delivered this week",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:003",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, sensitive skin, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.95,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:004",
+      "label": "TEST",
+      "split": "validation",
+      "context": "support analytics with SOC 2 and shared views for our team; finance approved a plan for this month",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.43999999999999995,
+        "semantic_product_fit": 0.43999999999999995,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.17032399999999998,
+        "offer_fit": 0.7,
+        "confidence": 0.742,
+        "raw_confidence": 0.742,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:004-text",
+            "kind": "observed",
+            "text": "support analytics with SOC 2 and shared views for our team; finance approved a plan for this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:004",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5861000000000001
+      },
+      "test_readiness": {
+        "commercial_potential": 0.5225,
+        "test_readiness": 0.683,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:004-text",
+            "kind": "observed",
+            "text": "support analytics with SOC 2 and shared views for our team; finance approved a plan for this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:004",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.5225,
+        "test_readiness": 0.683,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.17032399999999998,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:004-text",
+            "kind": "observed",
+            "text": "support analytics with SOC 2 and shared views for our team; finance approved a plan for this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:004",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.742,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:005",
+      "label": "TEST",
+      "split": "validation",
+      "context": "I am ready to order a fragrance-free gift set for my mother today",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.41666666666666663,
+        "semantic_product_fit": 0.41666666666666663,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.9009999999999999,
+        "commercial_actionability": 0.39999999999999997,
+        "offer_fit": 0.7,
+        "confidence": 0.8766666666666666,
+        "raw_confidence": 0.8766666666666666,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free"
+        ],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [
+            "fragrance-free"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": "today",
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:005-text",
+            "kind": "observed",
+            "text": "I am ready to order a fragrance-free gift set for my mother today",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:005",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, gift, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.8273166666666667
+      },
+      "test_readiness": {
+        "commercial_potential": 0.8301666666666666,
+        "test_readiness": 0.8133333333333334,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.05,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:005-text",
+            "kind": "observed",
+            "text": "I am ready to order a fragrance-free gift set for my mother today",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:005",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, gift, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_potential": 0.8301666666666666,
+        "test_readiness": 0.8133333333333334,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.05,
+        "commercial_actionability": 0.39999999999999997,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:005-text",
+            "kind": "observed",
+            "text": "I am ready to order a fragrance-free gift set for my mother today",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:005",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, gift, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.8766666666666666,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:012",
+      "label": "WATCH",
+      "split": "validation",
+      "context": "we may replace our accounting software next year; I am exploring what is available",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.38076923076923075,
+        "semantic_product_fit": 0.38076923076923075,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.14739576923076922,
+        "offer_fit": 0.7,
+        "confidence": 0.6573846153846155,
+        "raw_confidence": 0.6573846153846155,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:012-text",
+            "kind": "observed",
+            "text": "we may replace our accounting software next year; I am exploring what is available",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:012",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5712923076923078
+      },
+      "test_readiness": {
+        "commercial_potential": 0.5076923076923077,
+        "test_readiness": 0.5086538461538462,
+        "purchase_immediacy": 0.45,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.25,
+        "reason_codes": [
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:012-text",
+            "kind": "observed",
+            "text": "we may replace our accounting software next year; I am exploring what is available",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:012",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.5076923076923077,
+        "test_readiness": 0.5086538461538462,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.25,
+        "commercial_actionability": 0.14739576923076922,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:012-text",
+            "kind": "observed",
+            "text": "we may replace our accounting software next year; I am exploring what is available",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:012",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6573846153846155,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:013",
+      "label": "WATCH",
+      "split": "validation",
+      "context": "I am researching CRM vendors for a market report and will not purchase this quarter",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.35,
+        "semantic_product_fit": 0.35,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.26544,
+        "offer_fit": 0.7,
+        "confidence": 0.6134285714285714,
+        "raw_confidence": 0.6134285714285714,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [
+            "purchase this quarter"
+          ],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:013-text",
+            "kind": "observed",
+            "text": "I am researching CRM vendors for a market report and will not purchase this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:013",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.760025
+      },
+      "test_readiness": {
+        "commercial_potential": 0.782,
+        "test_readiness": 0.631,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.65,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_HIGH"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:013-text",
+            "kind": "observed",
+            "text": "I am researching CRM vendors for a market report and will not purchase this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:013",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_potential": 0.782,
+        "test_readiness": 0.631,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.65,
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_HIGH"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:013:research_only",
+            "kind": "inference",
+            "text": "I am researching CRM vendors for a market report and will not purchase this quarter",
+            "source": "spend_safety_policy",
+            "source_record_id": "phase5-test-watch:013",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6134285714285714,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:014",
+      "label": "WATCH",
+      "split": "validation",
+      "context": "what should a company look for when it evaluates support analytics?",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.384,
+        "semantic_product_fit": 0.384,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.1486464,
+        "offer_fit": 0.7,
+        "confidence": 0.662,
+        "raw_confidence": 0.662,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:014-text",
+            "kind": "observed",
+            "text": "what should a company look for when it evaluates support analytics?",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:014",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5721
+      },
+      "test_readiness": {
+        "commercial_potential": 0.5085,
+        "test_readiness": 0.5718000000000001,
+        "purchase_immediacy": 0.45,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:014-text",
+            "kind": "observed",
+            "text": "what should a company look for when it evaluates support analytics?",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:014",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.5085,
+        "test_readiness": 0.5718000000000001,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.1486464,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:014-text",
+            "kind": "observed",
+            "text": "what should a company look for when it evaluates support analytics?",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:014",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.662,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:015",
+      "label": "WATCH",
+      "split": "validation",
+      "context": "if finance approves the budget, we might buy a CRM next quarter",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.35833333333333334,
+        "semantic_product_fit": 0.35833333333333334,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.27176,
+        "offer_fit": 0.7,
+        "confidence": 0.6253333333333334,
+        "raw_confidence": 0.6253333333333334,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:015-text",
+            "kind": "observed",
+            "text": "if finance approves the budget, we might buy a CRM next quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:015",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7621083333333333
+      },
+      "test_readiness": {
+        "commercial_potential": 0.7840833333333332,
+        "test_readiness": 0.7326666666666667,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.25,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:015-text",
+            "kind": "observed",
+            "text": "if finance approves the budget, we might buy a CRM next quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:015",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_potential": 0.7840833333333332,
+        "test_readiness": 0.7326666666666667,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.25,
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "FUTURE_OR_CONDITIONAL_INTENT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:015:future_or_conditional_intent",
+            "kind": "inference",
+            "text": "if finance approves the budget, we might buy a CRM next quarter",
+            "source": "spend_safety_policy",
+            "source_record_id": "phase5-test-watch:015",
+            "provenance": [
+              "FUTURE_OR_CONDITIONAL_INTENT"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6253333333333334,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:016",
+      "label": "WATCH",
+      "split": "validation",
+      "context": "I am comparing hiking boot categories for an article, not shopping for myself",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.356,
+        "semantic_product_fit": 0.356,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.1378076,
+        "offer_fit": 0.7,
+        "confidence": 0.622,
+        "raw_confidence": 0.622,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [
+            "shopping for myself"
+          ],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:016-text",
+            "kind": "observed",
+            "text": "I am comparing hiking boot categories for an article, not shopping for myself",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:016",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5650999999999999
+      },
+      "test_readiness": {
+        "commercial_potential": 0.5015000000000001,
+        "test_readiness": 0.4662,
+        "purchase_immediacy": 0.45,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.45,
+        "reason_codes": [
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_HIGH"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:016-text",
+            "kind": "observed",
+            "text": "I am comparing hiking boot categories for an article, not shopping for myself",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:016",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.5015000000000001,
+        "test_readiness": 0.4662,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.45,
+        "commercial_actionability": 0.1378076,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_HIGH"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:016-text",
+            "kind": "observed",
+            "text": "I am comparing hiking boot categories for an article, not shopping for myself",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:016",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.622,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:017",
+      "label": "WATCH",
+      "split": "validation",
+      "context": "would this skincare set work for me?",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.39545454545454545,
+        "semantic_product_fit": 0.39545454545454545,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.15308045454545455,
+        "offer_fit": 0.7,
+        "confidence": 0.6783636363636364,
+        "raw_confidence": 0.6783636363636364,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:017-text",
+            "kind": "observed",
+            "text": "would this skincare set work for me?",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:017",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5749636363636363
+      },
+      "test_readiness": {
+        "commercial_potential": 0.5113636363636364,
+        "test_readiness": 0.5740909090909092,
+        "purchase_immediacy": 0.45,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:017-text",
+            "kind": "observed",
+            "text": "would this skincare set work for me?",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:017",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.5113636363636364,
+        "test_readiness": 0.5740909090909092,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.15308045454545455,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:017-text",
+            "kind": "observed",
+            "text": "would this skincare set work for me?",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:017",
+            "kind": "observed",
+            "text": "First-party catalog lists skincare set, fragrance-free, and price $72.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6783636363636364,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:006",
+      "label": "TEST",
+      "split": "hidden_test",
+      "context": "compare the team and core plans; we will choose one for our support team this quarter",
+      "contextfit": {
+        "commerciality": 0.76,
+        "product_fit": 0.3482758620689655,
+        "semantic_product_fit": 0.3482758620689655,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "comparison",
+        "ad_relevance": 0.6359999999999999,
+        "commercial_actionability": 0.20910482758620688,
+        "offer_fit": 0.7,
+        "confidence": 0.6109655172413794,
+        "raw_confidence": 0.6109655172413794,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:006-text",
+            "kind": "observed",
+            "text": "compare the team and core plans; we will choose one for our support team this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:006",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.6684689655172413
+      },
+      "test_readiness": {
+        "commercial_potential": 0.6615689655172414,
+        "test_readiness": 0.6286551724137931,
+        "purchase_immediacy": 0.45,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:006-text",
+            "kind": "observed",
+            "text": "compare the team and core plans; we will choose one for our support team this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:006",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.6615689655172414,
+        "test_readiness": 0.6286551724137931,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.20910482758620688,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:006-text",
+            "kind": "observed",
+            "text": "compare the team and core plans; we will choose one for our support team this quarter",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:006",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6109655172413794,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:007",
+      "label": "TEST",
+      "split": "hidden_test",
+      "context": "I need slip-resistant work shoes under $130 and they must arrive by Friday",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.4076923076923077,
+        "semantic_product_fit": 0.4076923076923077,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.3913846153846154,
+        "offer_fit": 0.7,
+        "confidence": 0.8638461538461538,
+        "raw_confidence": 0.8638461538461538,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "slip-resistant"
+        ],
+        "extracted_constraint_fields": {
+          "budget": 130.0,
+          "currency": "USD",
+          "required_features": [
+            "slip-resistant"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:007-text",
+            "kind": "observed",
+            "text": "I need slip-resistant work shoes under $130 and they must arrive by Friday",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:007",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, cushioning, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUDGET_MATCH",
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.816448076923077
+      },
+      "test_readiness": {
+        "commercial_potential": 0.8279230769230769,
+        "test_readiness": 0.8615384615384616,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.9333333333333333,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:007-text",
+            "kind": "observed",
+            "text": "I need slip-resistant work shoes under $130 and they must arrive by Friday",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:007",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, cushioning, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_potential": 0.8279230769230769,
+        "test_readiness": 0.8615384615384616,
+        "evidence_strength": 0.9333333333333333,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.3913846153846154,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:007-text",
+            "kind": "observed",
+            "text": "I need slip-resistant work shoes under $130 and they must arrive by Friday",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:007",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, cushioning, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.8638461538461538,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:008",
+      "label": "TEST",
+      "split": "hidden_test",
+      "context": "we are buying a CRM for our Canada office and need the contract signed this month",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.35,
+        "semantic_product_fit": 0.35,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.26544,
+        "offer_fit": 0.7,
+        "confidence": 0.6134285714285714,
+        "raw_confidence": 0.6134285714285714,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:008-text",
+            "kind": "observed",
+            "text": "we are buying a CRM for our Canada office and need the contract signed this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:008",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.760025
+      },
+      "test_readiness": {
+        "commercial_potential": 0.782,
+        "test_readiness": 0.7935,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:008-text",
+            "kind": "observed",
+            "text": "we are buying a CRM for our Canada office and need the contract signed this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:008",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.782,
+        "test_readiness": 0.7935,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.26544,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:008-text",
+            "kind": "observed",
+            "text": "we are buying a CRM for our Canada office and need the contract signed this month",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:008",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, shared pipeline, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6134285714285714,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:009",
+      "label": "TEST",
+      "split": "hidden_test",
+      "context": "please order size 9 work shoes for my mother; she needs them for her shift next week",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.3933333333333333,
+        "semantic_product_fit": 0.3933333333333333,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.298304,
+        "offer_fit": 0.7,
+        "confidence": 0.6753333333333333,
+        "raw_confidence": 0.6753333333333333,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:009-text",
+            "kind": "observed",
+            "text": "please order size 9 work shoes for my mother; she needs them for her shift next week",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:009",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, size 9, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7708583333333333
+      },
+      "test_readiness": {
+        "commercial_potential": 0.7928333333333333,
+        "test_readiness": 0.7896666666666666,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.05,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:009-text",
+            "kind": "observed",
+            "text": "please order size 9 work shoes for my mother; she needs them for her shift next week",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:009",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, size 9, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.7928333333333333,
+        "test_readiness": 0.7896666666666666,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.05,
+        "commercial_actionability": 0.298304,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:009-text",
+            "kind": "observed",
+            "text": "please order size 9 work shoes for my mother; she needs them for her shift next week",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:009",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, size 9, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6753333333333333,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:010",
+      "label": "TEST",
+      "split": "hidden_test",
+      "context": "our team has selected the plan and I need a checkout link for the $299 monthly option",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.325,
+        "semantic_product_fit": 0.325,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.24648,
+        "offer_fit": 0.7,
+        "confidence": 0.5777142857142857,
+        "raw_confidence": 0.5777142857142857,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": "USD",
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:010-text",
+            "kind": "observed",
+            "text": "our team has selected the plan and I need a checkout link for the $299 monthly option",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:010",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.753775
+      },
+      "test_readiness": {
+        "commercial_potential": 0.7757499999999999,
+        "test_readiness": 0.7885,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:010-text",
+            "kind": "observed",
+            "text": "our team has selected the plan and I need a checkout link for the $299 monthly option",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:010",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.7757499999999999,
+        "test_readiness": 0.7885,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.24648,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:010-text",
+            "kind": "observed",
+            "text": "our team has selected the plan and I need a checkout link for the $299 monthly option",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:010",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, SOC 2, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.5777142857142857,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:011",
+      "label": "TEST",
+      "split": "hidden_test",
+      "context": "I need a replacement moisturizer now because my current one is empty; fragrance-free is required",
+      "contextfit": {
+        "commerciality": 0.84,
+        "product_fit": 0.384,
+        "semantic_product_fit": 0.384,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "consideration",
+        "ad_relevance": 0.7715,
+        "commercial_actionability": 0.32256,
+        "offer_fit": 0.7,
+        "confidence": 0.83,
+        "raw_confidence": 0.83,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "fragrance-free"
+        ],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [
+            "fragrance-free"
+          ],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:011-text",
+            "kind": "observed",
+            "text": "I need a replacement moisturizer now because my current one is empty; fragrance-free is required",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:011",
+            "kind": "observed",
+            "text": "First-party catalog lists moisturizer, fragrance-free, sensitive skin, and price $34.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.763725
+      },
+      "test_readiness": {
+        "commercial_potential": 0.75,
+        "test_readiness": 0.7958,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:011-text",
+            "kind": "observed",
+            "text": "I need a replacement moisturizer now because my current one is empty; fragrance-free is required",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:011",
+            "kind": "observed",
+            "text": "First-party catalog lists moisturizer, fragrance-free, sensitive skin, and price $34.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "TEST",
+        "commercial_potential": 0.75,
+        "test_readiness": 0.7958,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.32256,
+        "reason_codes": [
+          "EVIDENCE_BACKED_COMMERCIAL_CONTEXT",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:011-text",
+            "kind": "observed",
+            "text": "I need a replacement moisturizer now because my current one is empty; fragrance-free is required",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:011",
+            "kind": "observed",
+            "text": "First-party catalog lists moisturizer, fragrance-free, sensitive skin, and price $34.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.83,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:018",
+      "label": "WATCH",
+      "split": "hidden_test",
+      "context": "my client asked me to gather accounting software options, but they may not buy anything",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.375,
+        "semantic_product_fit": 0.375,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.2844,
+        "offer_fit": 0.7,
+        "confidence": 0.6491428571428571,
+        "raw_confidence": 0.6491428571428571,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [
+            "buy anything"
+          ],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:018-text",
+            "kind": "observed",
+            "text": "my client asked me to gather accounting software options, but they may not buy anything",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:018",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7662749999999999
+      },
+      "test_readiness": {
+        "commercial_potential": 0.7882499999999999,
+        "test_readiness": 0.7985,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:018-text",
+            "kind": "observed",
+            "text": "my client asked me to gather accounting software options, but they may not buy anything",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:018",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.7882499999999999,
+        "test_readiness": 0.7985,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.2844,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:018-text",
+            "kind": "observed",
+            "text": "my client asked me to gather accounting software options, but they may not buy anything",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:018",
+            "kind": "observed",
+            "text": "First-party catalog lists accounting software, job costing, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6491428571428571,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:019",
+      "label": "WATCH",
+      "split": "hidden_test",
+      "context": "I am thinking about buying work shoes when I move to Boston next year",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.38076923076923075,
+        "semantic_product_fit": 0.38076923076923075,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.2887753846153846,
+        "offer_fit": 0.7,
+        "confidence": 0.6573846153846155,
+        "raw_confidence": 0.6573846153846155,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:019-text",
+            "kind": "observed",
+            "text": "I am thinking about buying work shoes when I move to Boston next year",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:019",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.7677173076923077
+      },
+      "test_readiness": {
+        "commercial_potential": 0.7896923076923077,
+        "test_readiness": 0.7246538461538462,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.25,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:019-text",
+            "kind": "observed",
+            "text": "I am thinking about buying work shoes when I move to Boston next year",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:019",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.7896923076923077,
+        "test_readiness": 0.7246538461538462,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.25,
+        "commercial_actionability": 0.2887753846153846,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:019-text",
+            "kind": "observed",
+            "text": "I am thinking about buying work shoes when I move to Boston next year",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:019",
+            "kind": "observed",
+            "text": "First-party catalog lists work shoes, slip-resistant, and price $119.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6573846153846155,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:020",
+      "label": "WATCH",
+      "split": "hidden_test",
+      "context": "compare these plans so I can understand the market; there is no current purchase",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.32799999999999996,
+        "semantic_product_fit": 0.32799999999999996,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.24875519999999995,
+        "offer_fit": 0.7,
+        "confidence": 0.5820000000000001,
+        "raw_confidence": 0.5820000000000001,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:020-text",
+            "kind": "observed",
+            "text": "compare these plans so I can understand the market; there is no current purchase",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:020",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.754525
+      },
+      "test_readiness": {
+        "commercial_potential": 0.7765,
+        "test_readiness": 0.7766000000000001,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:020-text",
+            "kind": "observed",
+            "text": "compare these plans so I can understand the market; there is no current purchase",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:020",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.7765,
+        "test_readiness": 0.7766000000000001,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.24875519999999995,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:020-text",
+            "kind": "observed",
+            "text": "compare these plans so I can understand the market; there is no current purchase",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:020",
+            "kind": "observed",
+            "text": "First-party catalog lists support analytics, shared views, and price $299.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.5820000000000001,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:021",
+      "label": "WATCH",
+      "split": "hidden_test",
+      "context": "I already bought the moisturizer and want to know how to use it",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.35833333333333334,
+        "semantic_product_fit": 0.35833333333333334,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.13871083333333334,
+        "offer_fit": 0.7,
+        "confidence": 0.6253333333333334,
+        "raw_confidence": 0.6253333333333334,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:021-text",
+            "kind": "observed",
+            "text": "I already bought the moisturizer and want to know how to use it",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:021",
+            "kind": "observed",
+            "text": "First-party catalog lists moisturizer, fragrance-free, and price $34.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.5656833333333333
+      },
+      "test_readiness": {
+        "commercial_potential": 0.5020833333333333,
+        "test_readiness": 0.6666666666666667,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:021-text",
+            "kind": "observed",
+            "text": "I already bought the moisturizer and want to know how to use it",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:021",
+            "kind": "observed",
+            "text": "First-party catalog lists moisturizer, fragrance-free, and price $34.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.5020833333333333,
+        "test_readiness": 0.6666666666666667,
+        "evidence_strength": 0.6833333333333333,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.13871083333333334,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:021-text",
+            "kind": "observed",
+            "text": "I already bought the moisturizer and want to know how to use it",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:021",
+            "kind": "observed",
+            "text": "First-party catalog lists moisturizer, fragrance-free, and price $34.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6253333333333334,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:022",
+      "label": "WATCH",
+      "split": "hidden_test",
+      "context": "our team is curious whether a CRM would help someday; no budget has been approved",
+      "contextfit": {
+        "commerciality": 0.49,
+        "product_fit": 0.375,
+        "semantic_product_fit": 0.375,
+        "constraint_match": 0.79,
+        "location_fit": 1.0,
+        "purchase_stage": "exploration",
+        "ad_relevance": 0.474,
+        "commercial_actionability": 0.1451625,
+        "offer_fit": 0.7,
+        "confidence": 0.6491428571428571,
+        "raw_confidence": 0.6491428571428571,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [],
+          "excluded_features": [],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:022-text",
+            "kind": "observed",
+            "text": "our team is curious whether a CRM would help someday; no budget has been approved",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:022",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [],
+        "overall": 0.56985
+      },
+      "test_readiness": {
+        "commercial_potential": 0.50625,
+        "test_readiness": 0.5825,
+        "purchase_immediacy": 0.45,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "reason_codes": [
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:022-text",
+            "kind": "observed",
+            "text": "our team is curious whether a CRM would help someday; no budget has been approved",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:022",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "WATCH",
+        "commercial_potential": 0.50625,
+        "test_readiness": 0.5825,
+        "evidence_strength": 0.7666666666666667,
+        "ambiguity_score": 0.0,
+        "commercial_actionability": 0.1451625,
+        "reason_codes": [
+          "PLAUSIBLE_BUT_UNCERTAIN",
+          "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_CONTROLLED"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:022-text",
+            "kind": "observed",
+            "text": "our team is curious whether a CRM would help someday; no budget has been approved",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:022",
+            "kind": "observed",
+            "text": "First-party catalog lists CRM software, team permissions, and price $499.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.6491428571428571,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    },
+    {
+      "record_id": "phase5-test-watch:023",
+      "label": "WATCH",
+      "split": "hidden_test",
+      "context": "I am reading about waterproof boots because they are popular, not because I need to buy them",
+      "contextfit": {
+        "commerciality": 0.96,
+        "product_fit": 0.37777777777777777,
+        "semantic_product_fit": 0.37777777777777777,
+        "constraint_match": 1.0,
+        "location_fit": 1.0,
+        "purchase_stage": "transactional",
+        "ad_relevance": 0.8434999999999999,
+        "commercial_actionability": 0.36266666666666664,
+        "offer_fit": 0.7,
+        "confidence": 0.821111111111111,
+        "raw_confidence": 0.821111111111111,
+        "calibrated_confidence": null,
+        "confidence_band": null,
+        "extracted_constraints": [
+          "waterproof"
+        ],
+        "extracted_constraint_fields": {
+          "budget": null,
+          "currency": null,
+          "required_features": [
+            "waterproof"
+          ],
+          "excluded_features": [
+            "because i need to buy them"
+          ],
+          "compatibility": [],
+          "timing": null,
+          "geography": null,
+          "language": null,
+          "shipping": null
+        },
+        "evidence": [
+          {
+            "id": "phase5-test-watch:023-text",
+            "kind": "observed",
+            "text": "I am reading about waterproof boots because they are popular, not because I need to buy them",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:023",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ],
+        "reason_codes": [
+          "FEATURE_MATCH",
+          "BUYING_LANGUAGE"
+        ],
+        "overall": 0.8089694444444444
+      },
+      "test_readiness": {
+        "commercial_potential": 0.8204444444444444,
+        "test_readiness": 0.7305555555555554,
+        "purchase_immediacy": 0.95,
+        "evidence_strength": 0.85,
+        "ambiguity_score": 0.45,
+        "reason_codes": [
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_HIGH"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:023-text",
+            "kind": "observed",
+            "text": "I am reading about waterproof boots because they are popular, not because I need to buy them",
+            "source": "phase5_control",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          },
+          {
+            "id": "phase5-product-evidence:023",
+            "kind": "observed",
+            "text": "First-party catalog lists hiking boots, waterproof, and price $129.",
+            "source": "first_party_catalog",
+            "source_record_id": null,
+            "provenance": [],
+            "confidence": 1.0
+          }
+        ]
+      },
+      "spend_decision": {
+        "decision": "ABSTAIN",
+        "commercial_potential": 0.8204444444444444,
+        "test_readiness": 0.7305555555555554,
+        "evidence_strength": 0.85,
+        "ambiguity_score": 0.45,
+        "commercial_actionability": 0.0,
+        "reason_codes": [
+          "RESEARCH_ONLY",
+          "EXPLICIT_IMMEDIATE_SIGNAL",
+          "EVIDENCE_STRENGTH_HIGH",
+          "AMBIGUITY_HIGH"
+        ],
+        "evidence": [
+          {
+            "id": "phase5-test-watch:023:research_only",
+            "kind": "inference",
+            "text": "I am reading about waterproof boots because they are popular, not because I need to buy them",
+            "source": "spend_safety_policy",
+            "source_record_id": "phase5-test-watch:023",
+            "provenance": [
+              "RESEARCH_ONLY"
+            ],
+            "confidence": 1.0
+          }
+        ],
+        "confidence": 0.821111111111111,
+        "human_approval_required": true,
+        "policy_version": "phase5-v1"
+      }
+    }
+  ],
+  "status": "manually authored readiness controls; no campaign outcome claim"
+}

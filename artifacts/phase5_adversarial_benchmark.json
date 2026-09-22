@@ -1,0 +1,2796 @@
+{
+  "summary": {
+    "benchmark": "Phase 4 adversarial v2",
+    "record_count": 300,
+    "validation_count": 150,
+    "hidden_count": 150,
+    "template_types": 30,
+    "integrity": {
+      "duplicate_context_count": 0,
+      "source_category_split_violations": 0
+    },
+    "purchase_stage": {
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.6256410256410255
+    },
+    "spend_safety": {
+      "decision_accuracy": 0.7266666666666667,
+      "commercial_intent_f1": 0.40425531914893614,
+      "test_precision": 1.0,
+      "test_recall": 0.475,
+      "waste_risk_rate": 0.0,
+      "hard_negative_fpr": 0.0,
+      "abstain_rate": 0.26666666666666666,
+      "block_accuracy": 1.0
+    },
+    "by_category": {
+      "third_party_buying": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.9,
+        "predicted_decisions": {
+          "TEST": 9,
+          "WATCH": 1
+        }
+      },
+      "gift_buying": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.9,
+        "predicted_decisions": {
+          "TEST": 9,
+          "WATCH": 1
+        }
+      },
+      "research_only": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "existing_support": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "negative_alternatives": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.2,
+        "predicted_decisions": {
+          "WATCH": 8,
+          "TEST": 2
+        }
+      },
+      "competitor_research": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "future_intent": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "conditional_intent": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "company_gathering": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "budget_mismatch": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "location_mismatch": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "mixed_commercial": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.0,
+        "predicted_decisions": {
+          "WATCH": 10
+        }
+      },
+      "ambiguous_pronoun": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.0,
+        "predicted_decisions": {
+          "WATCH": 10
+        }
+      },
+      "multiple_users": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.9,
+        "predicted_decisions": {
+          "TEST": 9,
+          "WATCH": 1
+        }
+      },
+      "location_change": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "budget_change": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "intent_reversal": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "sarcasm": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 0.0,
+        "predicted_decisions": {
+          "WATCH": 10
+        }
+      },
+      "hypothetical": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 0.0,
+        "predicted_decisions": {
+          "WATCH": 10
+        }
+      },
+      "professional_research": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "return_request": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "availability_buy": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.0,
+        "predicted_decisions": {
+          "WATCH": 10
+        }
+      },
+      "unavailable_product": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "shipping_deadline": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "language_mismatch": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "BLOCK": 10
+        }
+      },
+      "team_comparison": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.0,
+        "predicted_decisions": {
+          "WATCH": 10
+        }
+      },
+      "popular_research": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "complaint": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 1.0,
+        "predicted_decisions": {
+          "ABSTAIN": 10
+        }
+      },
+      "direct_gift": {
+        "stage_accuracy": 1.0,
+        "decision_accuracy": 0.9,
+        "predicted_decisions": {
+          "TEST": 9,
+          "WATCH": 1
+        }
+      },
+      "research_then_buy": {
+        "stage_accuracy": 0.0,
+        "decision_accuracy": 0.0,
+        "predicted_decisions": {
+          "WATCH": 10
+        }
+      }
+    },
+    "failure_count": 182,
+    "status": "measured on manually authored Phase 4 adversarial controls; no customer outcome claim"
+  },
+  "failure_cases": [
+    {
+      "record_id": "adversarial-v2:third_party_buying:08:00",
+      "category": "third_party_buying",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:gift_buying:08:01",
+      "category": "gift_buying",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:00:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:01:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:02:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:03:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:04:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:05:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:06:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:07:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:08:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_only:09:02",
+      "category": "research_only",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:00:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:01:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:02:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:03:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:04:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:05:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:06:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:07:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:08:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:existing_support:09:03",
+      "category": "existing_support",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "EXISTING_OWNER_SUPPORT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:00:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:01:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:02:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:03:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:04:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:05:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:08:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:negative_alternatives:09:04",
+      "category": "negative_alternatives",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:00:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:01:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:02:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:03:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:04:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:05:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:06:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:07:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:08:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:competitor_research:09:05",
+      "category": "competitor_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:00:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:01:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:02:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:03:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:04:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:05:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:06:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:07:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:08:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:future_intent:09:06",
+      "category": "future_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "consideration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:00:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:01:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:02:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:03:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:04:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:05:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:06:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:07:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:08:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:conditional_intent:09:07",
+      "category": "conditional_intent",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "FUTURE_OR_CONDITIONAL_INTENT",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:00:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:01:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:02:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:03:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:04:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:05:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:06:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:07:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:08:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_mismatch:09:10",
+      "category": "location_mismatch",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:00:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:01:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:02:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:03:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:04:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:05:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:06:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:07:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:08:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:mixed_commercial:09:11",
+      "category": "mixed_commercial",
+      "expected_stage": "consideration",
+      "predicted_stage": "consideration",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:00:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:01:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:02:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:03:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:04:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:05:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:06:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:07:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:08:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:ambiguous_pronoun:09:12",
+      "category": "ambiguous_pronoun",
+      "expected_stage": "exploration",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:multiple_users:08:13",
+      "category": "multiple_users",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:00:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:01:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:02:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:03:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:04:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:05:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:06:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:07:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:08:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:location_change:09:14",
+      "category": "location_change",
+      "expected_stage": "consideration",
+      "predicted_stage": "exploration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "LOCATION_UNSERVICEABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:00:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:01:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:02:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:03:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:04:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:05:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:06:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:07:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:08:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:sarcasm:09:17",
+      "category": "sarcasm",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:00:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:01:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:02:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:03:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:04:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:05:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:06:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:07:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:08:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:hypothetical:09:18",
+      "category": "hypothetical",
+      "expected_stage": "exploration",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:00:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:01:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:02:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:03:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:04:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:05:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:06:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:07:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:08:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:professional_research:09:19",
+      "category": "professional_research",
+      "expected_stage": "informational",
+      "predicted_stage": "exploration",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:00:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:01:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:02:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:03:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:04:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:05:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:06:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:07:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:08:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:availability_buy:09:21",
+      "category": "availability_buy",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:00:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:01:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:02:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:03:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:04:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:05:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:06:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:07:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:08:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:unavailable_product:09:22",
+      "category": "unavailable_product",
+      "expected_stage": "transactional",
+      "predicted_stage": "consideration",
+      "expected_decision": "BLOCK",
+      "predicted_decision": "BLOCK",
+      "reason_codes": [
+        "PRODUCT_UNAVAILABLE",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:00:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:01:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:02:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:03:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:04:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:05:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:06:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:07:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:08:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:team_comparison:09:25",
+      "category": "team_comparison",
+      "expected_stage": "comparison",
+      "predicted_stage": "comparison",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_LIMITED",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:00:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:01:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:02:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:03:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:04:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:05:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:06:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:07:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:08:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:popular_research:09:26",
+      "category": "popular_research",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "ABSTAIN",
+      "reason_codes": [
+        "RESEARCH_ONLY",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:direct_gift:08:28",
+      "category": "direct_gift",
+      "expected_stage": "transactional",
+      "predicted_stage": "transactional",
+      "expected_decision": "TEST",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_CONTROLLED"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:00:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:01:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:02:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:03:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:04:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:05:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:06:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:07:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:08:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    },
+    {
+      "record_id": "adversarial-v2:research_then_buy:09:29",
+      "category": "research_then_buy",
+      "expected_stage": "informational",
+      "predicted_stage": "transactional",
+      "expected_decision": "ABSTAIN",
+      "predicted_decision": "WATCH",
+      "reason_codes": [
+        "PLAUSIBLE_BUT_UNCERTAIN",
+        "EXPLICIT_IMMEDIATE_SIGNAL",
+        "EVIDENCE_STRENGTH_HIGH",
+        "AMBIGUITY_HIGH"
+      ]
+    }
+  ]
+}
