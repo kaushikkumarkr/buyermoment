@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d0f" />
+    <meta name="description" content="BuyerMoment turns customer conversations into evidence-backed advertising experiments." />
+    <title>BuyerMoment — Know what deserves budget</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d7ff63'/%3E%3Cpath d='M18 43V21h7l7 10 7-10h7v22h-7V31l-7 9-7-9v12z' fill='%230b0d0f'/%3E%3C/svg%3E" />
+    <style>
+      :root {
+        --ink: #0b0d0f;
+        --paper: #f4f5ef;
+        --muted: #a3aaa5;
+        --line: rgba(244, 245, 239, .14);
+        --acid: #d7ff63;
+        --cyan: #78e3d5;
+        --card: #14181a;
+        --serif: Georgia, 'Times New Roman', serif;
+        --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; background: var(--ink); color: var(--paper); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
+      a { color: inherit; text-decoration: none; }
+      .page { overflow: hidden; }
+      .wrap { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+      .nav { height: 84px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+      .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 700; letter-spacing: -.04em; font-size: 18px; }
+      .brand-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: var(--acid); color: var(--ink); font-weight: 900; font-size: 17px; }
+      .nav-links { display: flex; gap: 28px; color: var(--muted); font-size: 14px; }
+      .nav-links a:hover { color: var(--paper); }
+      .nav-cta { padding: 11px 16px; border: 1px solid rgba(215,255,99,.65); border-radius: 999px; color: var(--acid); font-size: 14px; transition: .2s ease; }
+      .nav-cta:hover { background: var(--acid); color: var(--ink); }
+
+      .hero { position: relative; padding: 112px 0 94px; }
+      .hero:before { content: ''; position: absolute; width: 560px; height: 560px; right: -260px; top: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(120,227,213,.16), transparent 66%); pointer-events: none; }
+      .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--acid); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+      .eyebrow:before { content: ''; display: block; width: 7px; height: 7px; border-radius: 50%; background: var(--acid); box-shadow: 0 0 18px var(--acid); }
+      h1 { max-width: 790px; margin: 25px 0 24px; font-size: clamp(50px, 8vw, 94px); line-height: .98; letter-spacing: -.075em; font-weight: 500; }
+      h1 em { color: var(--acid); font-family: var(--serif); font-weight: 400; }
+      .hero-copy { max-width: 590px; color: #c0c6c0; font-size: 19px; line-height: 1.55; }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; align-items: center; margin-top: 36px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 19px; border-radius: 999px; border: 1px solid var(--acid); background: var(--acid); color: var(--ink); font-weight: 750; font-size: 14px; transition: .2s ease; }
+      .button:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(215,255,99,.13); }
+      .button.ghost { background: transparent; border-color: var(--line); color: var(--paper); }
+      .button.ghost:hover { border-color: rgba(244,245,239,.5); box-shadow: none; }
+      .hero-note { margin-top: 18px; color: #7e8982; font-size: 13px; }
+
+      .signal-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 20px 0; color: #7e8982; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+      .signal-row { display: flex; flex-wrap: wrap; gap: 20px 38px; align-items: center; }
+      .signal-row span { display: inline-flex; align-items: center; gap: 10px; }
+      .signal-row span:not(:last-child):after { content: '↗'; color: var(--acid); font-size: 16px; }
+
+      section { padding: 116px 0; }
+      .section-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; align-items: start; }
+      .section-kicker { color: var(--acid); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+      h2 { margin: 14px 0 0; font-size: clamp(36px, 5vw, 61px); line-height: 1.02; letter-spacing: -.065em; font-weight: 500; }
+      h2 em { font-family: var(--serif); font-weight: 400; color: #bbc3ba; }
+      .section-intro { color: var(--muted); max-width: 570px; font-size: 18px; margin: 3px 0 0; }
+
+      .insight-card { background: linear-gradient(135deg, #161c1a, #101416); border: 1px solid rgba(215,255,99,.24); border-radius: 24px; padding: 30px; position: relative; overflow: hidden; }
+      .insight-card:after { content: ''; position: absolute; width: 220px; height: 220px; right: -80px; bottom: -110px; border-radius: 50%; border: 1px solid rgba(120,227,213,.45); box-shadow: 0 0 0 22px rgba(120,227,213,.03), 0 0 0 44px rgba(120,227,213,.03); }
+      .card-label { color: var(--acid); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+      .quote { max-width: 520px; margin: 34px 0 35px; font-size: clamp(23px, 3vw, 32px); line-height: 1.18; letter-spacing: -.04em; }
+      .quote strong { color: var(--acid); font-weight: 500; }
+      .card-footer { display: flex; justify-content: space-between; gap: 18px; border-top: 1px solid var(--line); padding-top: 18px; color: #87928a; font-size: 13px; }
+
+      .workflow { background: var(--paper); color: var(--ink); }
+      .workflow .section-kicker { color: #527000; }
+      .workflow h2 em { color: #5f665e; }
+      .workflow .section-intro { color: #5f665e; }
+      .steps { margin-top: 58px; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(11,13,15,.2); }
+      .step { min-height: 245px; padding: 25px 24px 18px 0; border-right: 1px solid rgba(11,13,15,.2); margin-right: 24px; }
+      .step:last-child { border-right: 0; margin-right: 0; }
+      .step-num { font-family: var(--serif); color: #66705f; font-size: 20px; }
+      .step h3 { margin: 35px 0 9px; font-size: 22px; letter-spacing: -.04em; font-weight: 600; }
+      .step p { margin: 0; max-width: 210px; color: #616a62; font-size: 15px; }
+
+      .offer { padding-bottom: 132px; }
+      .offer-card { margin-top: 52px; border: 1px solid rgba(215,255,99,.36); border-radius: 24px; padding: 28px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; background: linear-gradient(120deg, rgba(215,255,99,.06), rgba(120,227,213,.035)); }
+      .offer-title { margin: 0; font-size: 31px; letter-spacing: -.05em; }
+      .offer-sub { color: var(--muted); max-width: 470px; margin: 12px 0 28px; }
+      .deliverables { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+      .deliverable { display: flex; gap: 10px; color: #cad0c9; font-size: 14px; }
+      .deliverable:before { content: '↗'; color: var(--acid); }
+      .price-box { border-left: 1px solid var(--line); padding-left: 40px; display: flex; flex-direction: column; justify-content: center; }
+      .price-label { color: var(--acid); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+      .price { margin: 9px 0; font-size: 52px; letter-spacing: -.07em; }
+      .price small { color: var(--muted); font-size: 14px; letter-spacing: 0; }
+      .price-note { color: var(--muted); font-size: 14px; margin: 0 0 23px; }
+
+      .proof { padding-top: 0; }
+      .proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 48px; }
+      .proof-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 28px; min-height: 215px; }
+      .proof-card.large { grid-row: span 2; min-height: 448px; background: radial-gradient(circle at 85% 15%, rgba(215,255,99,.13), transparent 38%), var(--card); }
+      .proof-card h3 { margin: 26px 0 8px; font-size: 22px; letter-spacing: -.04em; }
+      .proof-card p { margin: 0; color: var(--muted); max-width: 380px; }
+      .mini-icon { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: rgba(215,255,99,.12); color: var(--acid); font-weight: 700; }
+      .metric { display: flex; justify-content: space-between; align-items: end; gap: 15px; margin-top: 76px; padding-top: 18px; border-top: 1px solid var(--line); }
+      .metric strong { font-size: 46px; letter-spacing: -.07em; font-weight: 500; }
+      .metric span { color: var(--muted); font-size: 13px; max-width: 160px; text-align: right; }
+
+      .final { padding: 105px 0 130px; border-top: 1px solid var(--line); }
+      .final-inner { display: flex; justify-content: space-between; align-items: end; gap: 40px; }
+      .final h2 { max-width: 700px; }
+      .final-copy { color: var(--muted); max-width: 400px; margin: 18px 0 0; }
+      .footer { border-top: 1px solid var(--line); padding: 22px 0 28px; display: flex; justify-content: space-between; color: #6f7971; font-size: 13px; }
+      .footer a:hover { color: var(--paper); }
+
+      @media (max-width: 800px) {
+        .wrap { width: min(100% - 32px, 620px); }
+        .nav { height: 72px; }
+        .nav-links { display: none; }
+        .hero { padding: 78px 0 72px; }
+        h1 { font-size: clamp(46px, 15vw, 75px); }
+        .hero-copy { font-size: 17px; }
+        section { padding: 78px 0; }
+        .section-grid, .offer-card, .final-inner { grid-template-columns: 1fr; display: grid; gap: 32px; }
+        .steps { grid-template-columns: 1fr 1fr; gap: 0 18px; }
+        .step { min-height: 215px; margin: 0; border-right: 0; border-bottom: 1px solid rgba(11,13,15,.2); }
+        .step:nth-child(odd) { border-right: 1px solid rgba(11,13,15,.2); padding-right: 18px; }
+        .step:nth-child(n+3) { border-bottom: 0; }
+        .offer-card { padding: 23px; }
+        .price-box { border-left: 0; border-top: 1px solid var(--line); padding: 26px 0 0; }
+        .proof-grid { grid-template-columns: 1fr; }
+        .proof-card.large { grid-row: auto; min-height: 325px; }
+        .final { padding: 78px 0 95px; }
+        .footer { gap: 20px; flex-direction: column; }
+      }
+      @media (max-width: 470px) {
+        .deliverables { grid-template-columns: 1fr; }
+        .signal-row { gap: 12px 16px; }
+        .signal-row span:not(:last-child):after { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="wrap nav">
+        <a class="brand" href="#top" aria-label="BuyerMoment home"><span class="brand-mark">M</span>BuyerMoment</a>
+        <nav class="nav-links" aria-label="Primary navigation"><a href="#how-it-works">How it works</a><a href="#pilot">The pilot</a><a href="#why">Why us</a></nav>
+        <a class="nav-cta" href="#pilot">Start a pilot <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main id="top">
+        <section class="wrap hero">
+          <div class="eyebrow">Buyer intelligence for growth teams</div>
+          <h1>Know what deserves <em>budget.</em></h1>
+          <p class="hero-copy">BuyerMoment turns the language of your customers into evidence-backed advertising experiments—so your next campaign starts with what people actually need.</p>
+          <div class="hero-actions"><a class="button" href="#pilot">Book a seven-day pilot <span aria-hidden="true">↗</span></a><a class="button ghost" href="#how-it-works">See the method</a></div>
+          <p class="hero-note">Built for B2B SaaS teams, agencies, and founders with a real customer signal.</p>
+        </section>
+
+        <div class="signal-strip"><div class="wrap signal-row"><span>Sales calls</span><span>Support tickets</span><span>Reviews</span><span>Campaign data</span><span>Search intent</span></div></div>
+
+        <section class="wrap" id="why">
+          <div class="section-grid">
+            <div><div class="section-kicker">The gap</div><h2>Good campaigns are built on <em>specific</em> truth.</h2></div>
+            <div><p class="section-intro">Most teams have more customer evidence than they can use. It lives in sales notes, support threads, reviews, and conversations—while campaigns are still shaped by guesses.</p><div class="insight-card" style="margin-top:34px"><div class="card-label">A buyer moment</div><p class="quote">“I need something my team can adopt <strong>without another six-week implementation.</strong>”</p><div class="card-footer"><span>High intent · adoption concern</span><span>→ Testable message</span></div></div></div>
+          </div>
+        </section>
+
+        <section class="workflow" id="how-it-works">
+          <div class="wrap">
+            <div class="section-grid"><div><div class="section-kicker">The method</div><h2>From raw signal to <em>clear action.</em></h2></div><p class="section-intro">We combine structured analysis with human judgment to find the moments worth testing—and the moments that should not receive budget yet.</p></div>
+            <div class="steps">
+              <article class="step"><div class="step-num">01</div><h3>Collect</h3><p>Share a small, anonymized sample of conversations, reviews, or sales notes.</p></article>
+              <article class="step"><div class="step-num">02</div><h3>Distill</h3><p>We surface intent, triggers, objections, language, and moments of readiness.</p></article>
+              <article class="step"><div class="step-num">03</div><h3>Design</h3><p>We turn the strongest patterns into audiences, messages, and campaign hypotheses.</p></article>
+              <article class="step"><div class="step-num">04</div><h3>Decide</h3><p>You get a measured test plan—with clear approval gates before spend.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="wrap offer" id="pilot">
+          <div class="section-kicker">Founding pilot</div><h2>A focused sprint, not another <em>dashboard.</em></h2>
+          <div class="offer-card"><div><h3 class="offer-title">The BuyerMoment Growth Sprint</h3><p class="offer-sub">In seven days, we turn one product and its customer evidence into a practical advertising experiment you can approve and run.</p><div class="deliverables"><div class="deliverable">Buyer-moment analysis</div><div class="deliverable">Messaging and objections</div><div class="deliverable">Meta / Google test plan</div><div class="deliverable">Creative direction</div><div class="deliverable">ChatGPT Ads package</div><div class="deliverable">AEO / GEO recommendations</div></div></div><div class="price-box"><div class="price-label">Two founding slots</div><div class="price">$750 <small>/ sprint</small></div><p class="price-note">One product. One week. One clear set of experiments. Your team keeps control of accounts and media spend.</p><a class="button" href="mailto:hello@buyermoment.ai?subject=BuyerMoment%20founding%20pilot">Ask about a pilot <span aria-hidden="true">↗</span></a></div></div>
+        </section>
+
+        <section class="wrap proof" aria-labelledby="proof-title"><div class="section-kicker">What you leave with</div><h2 id="proof-title">A point of view you can <em>act on.</em></h2><div class="proof-grid"><article class="proof-card large"><div class="mini-icon">◎</div><h3>Evidence before amplification</h3><p>Know which customer language is backed by real signal, which is an inference, and which needs more proof before it deserves budget.</p><div class="metric"><strong>01</strong><span>prioritized experiment brief for your next growth conversation</span></div></article><article class="proof-card"><div class="mini-icon">↗</div><h3>Sharper creative</h3><p>Move from generic benefits to the words and tensions your buyers already use.</p></article><article class="proof-card"><div class="mini-icon">⌁</div><h3>Safer decisions</h3><p>Know when to test, watch, or abstain before media spend gets involved.</p></article></div></section>
+
+        <section class="final"><div class="wrap final-inner"><div><div class="section-kicker">Make the next campaign count</div><h2>Bring us the messy customer evidence.</h2><p class="final-copy">We will help you find the signal, shape the experiment, and decide what is ready for budget.</p></div><a class="button" href="mailto:hello@buyermoment.ai?subject=BuyerMoment%20pilot%20conversation">Start a conversation <span aria-hidden="true">↗</span></a></div></section>
+      </main>
+
+      <footer class="wrap footer"><span>© 2026 BuyerMoment</span><span>Human-approved growth intelligence · <a href="mailto:hello@buyermoment.ai">hello@buyermoment.ai</a></span></footer>
+    </div>
+  </body>
+</html>
+
