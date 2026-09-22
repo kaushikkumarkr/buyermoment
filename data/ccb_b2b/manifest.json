@@ -1,9 +1,9 @@
 {
   "version": "CCB-B2B silver v0.1",
-  "records": 22,
+  "records": 44,
   "human_reviewed_records": 0,
   "gold_holdout": 0,
-  "review_queue": 22,
+  "review_queue": 44,
   "categories": [
     "Accounting / Finance",
     "Analytics / BI",

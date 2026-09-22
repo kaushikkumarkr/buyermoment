@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-09-22",
+  "resource_group": "rg-buyermoment-dev",
+  "subscription": "97be63b6-5dd8-45f4-87da-0bc4d87ac24a",
+  "resources": [
+    {"name": "buyermoment-foundry-260921", "type": "Microsoft.CognitiveServices/accounts", "region": "eastus2"},
+    {"name": "buyermoment-bulk-generator", "type": "deployment", "model": "gpt-5.4-nano", "billing": "GlobalStandard; direct-from-Azure status not independently verified"},
+    {"name": "buyermoment-extractor", "type": "deployment", "model": "gpt-5.4-mini", "billing": "GlobalStandard; direct-from-Azure status not independently verified"},
+    {"name": "acrbuymoment260921", "type": "Microsoft.ContainerRegistry/registries"},
+    {"name": "stbuyermoment260921", "type": "Microsoft.Storage/storageAccounts"},
+    {"name": "kv-buyermoment-260921", "type": "Microsoft.KeyVault/vaults"},
+    {"name": "law-buyermoment-260921", "type": "Microsoft.OperationalInsights/workspaces"},
+    {"name": "cae-buyermoment-dev", "type": "Microsoft.App/managedEnvironments"}
+  ],
+  "missing_optional_resources": ["Azure AI Search", "Azure ML", "Application Insights", "Container App"],
+  "posted_cost": "unavailable in query result",
+  "remaining_credit": "unverified",
+  "phase9_new_resources": 0,
+  "model_inference_jobs_submitted": 0
+}

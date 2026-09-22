@@ -1,0 +1,13 @@
+{
+  "result": "SERVICE_READY_WITH_LIMITATIONS",
+  "local_backend_tests": 22,
+  "synthetic_demo_businesses": 3,
+  "real_clients": 0,
+  "live_campaigns": 0,
+  "real_campaign_outcomes": 0,
+  "human_approval_required": true,
+  "autonomous_spend": false,
+  "azure_ai_search_provisioned": false,
+  "foundry_inference_jobs_phase9": 0,
+  "limitations": ["no external client validation", "no live outcome data", "auth/deployment hardening remains", "no documented campaign-creation API claimed"]
+}

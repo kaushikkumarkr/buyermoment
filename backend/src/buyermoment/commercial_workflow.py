@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import io
 import json
 from pathlib import Path
 from typing import Any
@@ -110,7 +111,7 @@ def build_opportunity_report(package: BusinessEvidencePackage, *, top_n: int = 5
     )
 
 
-def generate_ad_experiment(moment: BuyerMoment, business_id: str, *, platform: str = "chatgpt_ads", budget: float | None = None) -> AdExperiment:
+def generate_ad_experiment(moment: BuyerMoment, business_id: str, *, platform: str = "chatgpt_ads", budget: float | None = None, client_id: str = "default") -> AdExperiment:
     product = moment.matching_products[0]
     context = CommercialContext(
             id=f"{moment.id}-context",
@@ -136,6 +137,7 @@ def generate_ad_experiment(moment: BuyerMoment, business_id: str, *, platform: s
     safety = spend_safety(context, product, moment.score)
     return AdExperiment(
         experiment_id=f"adexp-{moment.id}",
+        client_id=client_id,
         business_id=business_id,
         buyer_moment_id=moment.id,
         platform=platform,
@@ -197,13 +199,34 @@ def import_outcomes_csv(path: Path) -> list[CampaignOutcome]:
     return outcomes
 
 
+def import_outcomes_csv_text(text: str, *, source_name: str = "manual_csv") -> list[CampaignOutcome]:
+    """Portable manual-import path used by the service API; no platform API is assumed."""
+    outcomes: list[CampaignOutcome] = []
+    for row in csv.DictReader(io.StringIO(text)):
+        outcomes.append(CampaignOutcome(
+            experiment_id=row["experiment_id"], client_id=row.get("client_id", "default"), buyer_moment_id=row["buyer_moment_id"],
+            platform=row.get("platform", "manual"), date=row["date"], impressions=int(row.get("impressions", 0) or 0),
+            clicks=int(row.get("clicks", 0) or 0), spend=float(row.get("spend", 0) or 0), conversions=int(row.get("conversions", 0) or 0),
+            qualified_conversions=int(row.get("qualified_conversions", 0) or 0),
+            conversion_value=float(row["conversion_value"]) if row.get("conversion_value") else None,
+            revenue=float(row["revenue"]) if row.get("revenue") else None, campaign=row.get("campaign") or None,
+            ad_group=row.get("ad_group") or None, landing_page=row.get("landing_page") or None,
+            source=row.get("source", source_name), import_method="manual_csv",
+            provenance={"source_name": source_name, "columns": sorted(row.keys()), "prediction_at_launch_immutable": True},
+        ))
+    return outcomes
+
+
 def outcome_lineage(experiment: AdExperiment, outcome: CampaignOutcome) -> CommercialContextOutcome:
     if experiment.experiment_id != outcome.experiment_id or experiment.buyer_moment_id != outcome.buyer_moment_id:
         raise ValueError("Outcome does not match immutable experiment lineage")
+    if outcome.client_id not in {"default", experiment.client_id}:
+        raise ValueError("Outcome crosses client boundary")
     quality = "revenue_attributed" if outcome.revenue is not None else "qualified" if outcome.qualified_conversions else "unknown"
     return CommercialContextOutcome(
         buyer_moment_id=experiment.buyer_moment_id,
         experiment_id=experiment.experiment_id,
+        client_id=experiment.client_id,
         contextfit_prediction=experiment.contextfit_score,
         test_readiness_prediction=experiment.test_readiness,
         platform=experiment.platform,

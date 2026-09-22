@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-22",
+  "branch": "phase9/service-readiness",
+  "parent_commit": "16fe45b39892771bf6f2a1ecc40674e026854fd0",
+  "checks": {
+    "backend_tests": {"status": "PASS", "passed": 18},
+    "ruff": "PASS",
+    "evaluation_cli": "PASS",
+    "frontend_typecheck": "PASS",
+    "frontend_build": "PASS"
+  },
+  "preserved_metrics": {
+    "hidden_purchase_stage_accuracy": 0.872,
+    "hidden_relevance_f1": 0.7388,
+    "hidden_ndcg": 0.8502,
+    "hidden_mrr": 0.8244,
+    "phase6_multiturn_stage_accuracy": 0.625,
+    "phase6_stale_context_error": 0.0,
+    "ccb_b2b_silver_records": 22,
+    "ccb_b2b_human_reviewed_records": 0,
+    "product_fit_candidate": "REJECTED",
+    "evidence_grounding_authored_control_accuracy": 0.5
+  }
+}

@@ -1,0 +1,1358 @@
+[
+  {
+    "client": {
+      "id": "demo-crm-client",
+      "name": "Demo CRM SaaS",
+      "website": null,
+      "vertical": "B2B SaaS",
+      "status": "ONBOARDING",
+      "created_at": "2026-09-22T18:32:03.170021Z",
+      "provenance": {}
+    },
+    "analysis": {
+      "client": {
+        "id": "demo-crm-client",
+        "name": "Demo CRM SaaS",
+        "website": null,
+        "vertical": "B2B SaaS",
+        "status": "ONBOARDING",
+        "created_at": "2026-09-22T18:32:03.170021Z",
+        "provenance": {}
+      },
+      "evidence_sources": [],
+      "buyer_moments": [
+        {
+          "id": "demo-crm-moment-demo-crm-hypothesis-1-demo-crm-product",
+          "business_id": "demo-crm",
+          "title": "CRM teams with an active evaluation \u2014 Pipeline Desk",
+          "problem": "Revenue teams need a clearer handoff from inbound lead to sales owner.",
+          "situation": "A 60-person services company is replacing spreadsheets and wants a CRM shortlist this quarter.",
+          "desired_outcome": "Shortlist Pipeline Desk for a controlled evaluation.",
+          "constraints": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "shipping": null,
+            "language": null
+          },
+          "purchase_stage": "consideration",
+          "location": {
+            "country": null,
+            "region": null,
+            "city": null,
+            "language": null,
+            "currency": null,
+            "shipping": null,
+            "location_specificity": "unknown"
+          },
+          "matching_products": [
+            {
+              "id": "demo-crm-product",
+              "name": "Pipeline Desk",
+              "category": "CRM",
+              "description": "DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+              "price": null,
+              "currency": "USD",
+              "url": "https://demo.invalid/demo-crm",
+              "features": [
+                "role-based access",
+                "exportable reporting"
+              ],
+              "service_regions": [],
+              "available": null,
+              "shipping_deadline_met": null,
+              "evidence": [
+                {
+                  "id": "demo-crm-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-crm-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ]
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "id": "demo-crm-evidence-1",
+              "kind": "observed",
+              "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+              "source": "service_demo_fixture",
+              "source_record_id": "demo-crm-product",
+              "provenance": [
+                "synthetic fixture; not a real company claim"
+              ],
+              "confidence": 1.0
+            },
+            {
+              "id": "demo-crm-demo-crm-hypothesis-1-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: CRM teams with an active evaluation",
+              "source": "commercial_workflow",
+              "source_record_id": "demo-crm-hypothesis-1",
+              "provenance": [
+                "demo-crm-evidence-1"
+              ],
+              "confidence": 0.65
+            }
+          ],
+          "confidence": 0.8158461538461539,
+          "score": {
+            "commerciality": 0.75,
+            "product_fit": 0.4076923076923077,
+            "semantic_product_fit": 0.4076923076923077,
+            "constraint_match": 0.79,
+            "location_fit": 0.72,
+            "purchase_stage": "consideration",
+            "ad_relevance": 0.73,
+            "commercial_actionability": 0.17392153846153846,
+            "offer_fit": 0.7,
+            "confidence": 0.8158461538461539,
+            "raw_confidence": 0.8158461538461539,
+            "calibrated_confidence": null,
+            "confidence_band": null,
+            "extracted_constraints": [],
+            "extracted_constraint_fields": {
+              "budget": null,
+              "currency": null,
+              "required_features": [],
+              "excluded_features": [],
+              "compatibility": [],
+              "timing": null,
+              "geography": null,
+              "language": null,
+              "shipping": null
+            },
+            "evidence": [
+              {
+                "id": "demo-crm-evidence-1",
+                "kind": "observed",
+                "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                "source": "service_demo_fixture",
+                "source_record_id": "demo-crm-product",
+                "provenance": [
+                  "synthetic fixture; not a real company claim"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "id": "demo-crm-demo-crm-hypothesis-1-inference",
+                "kind": "inference",
+                "text": "Candidate commercial situation: CRM teams with an active evaluation",
+                "source": "commercial_workflow",
+                "source_record_id": "demo-crm-hypothesis-1",
+                "provenance": [
+                  "demo-crm-evidence-1"
+                ],
+                "confidence": 0.65
+              },
+              {
+                "id": "demo-crm-evidence-1",
+                "kind": "observed",
+                "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                "source": "service_demo_fixture",
+                "source_record_id": "demo-crm-product",
+                "provenance": [
+                  "synthetic fixture; not a real company claim"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "reason_codes": [
+              "BUYING_LANGUAGE"
+            ],
+            "overall": 0.6664230769230769
+          },
+          "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+        }
+      ],
+      "portfolio": {
+        "client_id": "demo-crm-client",
+        "generated_at": "2026-09-22T18:32:03.171399Z",
+        "test": [],
+        "watch": [],
+        "blocked_or_abstained": [
+          {
+            "buyer_moment": {
+              "id": "demo-crm-moment-demo-crm-hypothesis-1-demo-crm-product",
+              "business_id": "demo-crm",
+              "title": "CRM teams with an active evaluation \u2014 Pipeline Desk",
+              "problem": "Revenue teams need a clearer handoff from inbound lead to sales owner.",
+              "situation": "A 60-person services company is replacing spreadsheets and wants a CRM shortlist this quarter.",
+              "desired_outcome": "Shortlist Pipeline Desk for a controlled evaluation.",
+              "constraints": {
+                "budget": null,
+                "currency": null,
+                "required_features": [],
+                "excluded_features": [],
+                "compatibility": [],
+                "timing": null,
+                "geography": null,
+                "shipping": null,
+                "language": null
+              },
+              "purchase_stage": "consideration",
+              "location": {
+                "country": null,
+                "region": null,
+                "city": null,
+                "language": null,
+                "currency": null,
+                "shipping": null,
+                "location_specificity": "unknown"
+              },
+              "matching_products": [
+                {
+                  "id": "demo-crm-product",
+                  "name": "Pipeline Desk",
+                  "category": "CRM",
+                  "description": "DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                  "price": null,
+                  "currency": "USD",
+                  "url": "https://demo.invalid/demo-crm",
+                  "features": [
+                    "role-based access",
+                    "exportable reporting"
+                  ],
+                  "service_regions": [],
+                  "available": null,
+                  "shipping_deadline_met": null,
+                  "evidence": [
+                    {
+                      "id": "demo-crm-evidence-1",
+                      "kind": "observed",
+                      "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                      "source": "service_demo_fixture",
+                      "source_record_id": "demo-crm-product",
+                      "provenance": [
+                        "synthetic fixture; not a real company claim"
+                      ],
+                      "confidence": 1.0
+                    }
+                  ]
+                }
+              ],
+              "supporting_evidence": [
+                {
+                  "id": "demo-crm-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-crm-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                },
+                {
+                  "id": "demo-crm-demo-crm-hypothesis-1-inference",
+                  "kind": "inference",
+                  "text": "Candidate commercial situation: CRM teams with an active evaluation",
+                  "source": "commercial_workflow",
+                  "source_record_id": "demo-crm-hypothesis-1",
+                  "provenance": [
+                    "demo-crm-evidence-1"
+                  ],
+                  "confidence": 0.65
+                }
+              ],
+              "confidence": 0.8158461538461539,
+              "score": {
+                "commerciality": 0.75,
+                "product_fit": 0.4076923076923077,
+                "semantic_product_fit": 0.4076923076923077,
+                "constraint_match": 0.79,
+                "location_fit": 0.72,
+                "purchase_stage": "consideration",
+                "ad_relevance": 0.73,
+                "commercial_actionability": 0.17392153846153846,
+                "offer_fit": 0.7,
+                "confidence": 0.8158461538461539,
+                "raw_confidence": 0.8158461538461539,
+                "calibrated_confidence": null,
+                "confidence_band": null,
+                "extracted_constraints": [],
+                "extracted_constraint_fields": {
+                  "budget": null,
+                  "currency": null,
+                  "required_features": [],
+                  "excluded_features": [],
+                  "compatibility": [],
+                  "timing": null,
+                  "geography": null,
+                  "language": null,
+                  "shipping": null
+                },
+                "evidence": [
+                  {
+                    "id": "demo-crm-evidence-1",
+                    "kind": "observed",
+                    "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                    "source": "service_demo_fixture",
+                    "source_record_id": "demo-crm-product",
+                    "provenance": [
+                      "synthetic fixture; not a real company claim"
+                    ],
+                    "confidence": 1.0
+                  },
+                  {
+                    "id": "demo-crm-demo-crm-hypothesis-1-inference",
+                    "kind": "inference",
+                    "text": "Candidate commercial situation: CRM teams with an active evaluation",
+                    "source": "commercial_workflow",
+                    "source_record_id": "demo-crm-hypothesis-1",
+                    "provenance": [
+                      "demo-crm-evidence-1"
+                    ],
+                    "confidence": 0.65
+                  },
+                  {
+                    "id": "demo-crm-evidence-1",
+                    "kind": "observed",
+                    "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                    "source": "service_demo_fixture",
+                    "source_record_id": "demo-crm-product",
+                    "provenance": [
+                      "synthetic fixture; not a real company claim"
+                    ],
+                    "confidence": 1.0
+                  }
+                ],
+                "reason_codes": [
+                  "BUYING_LANGUAGE"
+                ],
+                "overall": 0.6664230769230769
+              },
+              "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+            },
+            "offer_fit": {
+              "client_id": "demo-crm-client",
+              "buyer_moment_id": "demo-crm-moment-demo-crm-hypothesis-1-demo-crm-product",
+              "offer_id": "demo-crm-offer",
+              "fit": 0.75,
+              "recommendation": "Test Book a workflow review as the offer hypothesis for this Buyer Moment.",
+              "cta": "Book a workflow review",
+              "evidence": [
+                {
+                  "id": "demo-crm-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-crm-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ],
+              "unknowns": [
+                "Offer conversion rate is unknown until a real experiment runs."
+              ],
+              "risks": [
+                "Offer fit is semantic/provisional; human approval is required."
+              ],
+              "observed_or_inferred": "inferred"
+            },
+            "landing_page_fit": {
+              "client_id": "demo-crm-client",
+              "buyer_moment_id": "demo-crm-moment-demo-crm-hypothesis-1-demo-crm-product",
+              "page_id": "demo-crm-product",
+              "status": "PARTIAL",
+              "fit": 0.55,
+              "message_match": 0.6,
+              "offer_match": 0.5,
+              "proof": 0.4,
+              "cta": "Review the relevant product page",
+              "missing_elements": [
+                "Dedicated message-match review",
+                "conversion and proof data"
+              ],
+              "recommended_changes": [
+                "Confirm the page supports the stated constraints before launch."
+              ],
+              "evidence": [
+                {
+                  "id": "demo-crm-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: CRM workspace with account views and role-based reporting.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-crm-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ]
+            },
+            "commercial_potential": 0.6704230769230768,
+            "test_readiness": 0.5614134615384616,
+            "evidence_strength": 0.48583333333333334,
+            "ambiguity": 0.15,
+            "spend_decision": "ABSTAIN",
+            "risks": [
+              "INSUFFICIENT_EVIDENCE",
+              "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+              "EVIDENCE_STRENGTH_LIMITED",
+              "AMBIGUITY_CONTROLLED"
+            ]
+          }
+        ],
+        "human_approval_required": true
+      },
+      "measurement_audit": null,
+      "generated_at": "2026-09-22T18:32:03.171416Z",
+      "intelligence_mode": "legacy",
+      "human_approval_required": true
+    },
+    "measurement": {
+      "client_id": "demo-crm-client",
+      "status": "TRACKING_READY",
+      "primary_conversion": "demo_request",
+      "checks": {
+        "primary_conversion_defined": true,
+        "utm_parameters": true,
+        "deduplication": true,
+        "crm_linkage": true,
+        "offline_conversion_path": true,
+        "revenue_or_pipeline_fields": true,
+        "conversion_lag_defined": true
+      },
+      "blockers": [],
+      "recommendations": [],
+      "evidence": []
+    },
+    "report": {
+      "id": "report-demo-crm-client",
+      "client_id": "demo-crm-client",
+      "generated_at": "2026-09-22T18:32:03.171446Z",
+      "executive_summary": "Demo CRM SaaS: 0 TEST, 0 WATCH, and 1 blocked/abstained opportunities. Human approval is required.",
+      "what_changed": [
+        "Initial evidence-backed commercial-context analysis created."
+      ],
+      "top_buyer_moments": [],
+      "experiments": [],
+      "outcomes": [],
+      "next_actions": [
+        "Review evidence and approve or reject candidates.",
+        "Audit tracking before any paid test."
+      ],
+      "unknowns": [
+        "DEMO_SYNTHETIC: no real customers, pricing, margins, or campaign outcomes supplied."
+      ],
+      "data_origin": "synthetic"
+    },
+    "data_origin": "DEMO_SYNTHETIC"
+  },
+  {
+    "client": {
+      "id": "demo-analytics-client",
+      "name": "Demo Analytics SaaS",
+      "website": null,
+      "vertical": "B2B SaaS",
+      "status": "ONBOARDING",
+      "created_at": "2026-09-22T18:32:03.171925Z",
+      "provenance": {}
+    },
+    "analysis": {
+      "client": {
+        "id": "demo-analytics-client",
+        "name": "Demo Analytics SaaS",
+        "website": null,
+        "vertical": "B2B SaaS",
+        "status": "ONBOARDING",
+        "created_at": "2026-09-22T18:32:03.171925Z",
+        "provenance": {}
+      },
+      "evidence_sources": [],
+      "buyer_moments": [
+        {
+          "id": "demo-analytics-moment-demo-analytics-hypothesis-1-demo-analytics-product",
+          "business_id": "demo-analytics",
+          "title": "Analytics / BI teams with an active evaluation \u2014 Signal Board",
+          "problem": "Finance and operations teams need a shared view of weekly performance without a long implementation.",
+          "situation": "A mid-market operations team is evaluating BI tools with a defined implementation window.",
+          "desired_outcome": "Shortlist Signal Board for a controlled evaluation.",
+          "constraints": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "shipping": null,
+            "language": null
+          },
+          "purchase_stage": "consideration",
+          "location": {
+            "country": null,
+            "region": null,
+            "city": null,
+            "language": null,
+            "currency": null,
+            "shipping": null,
+            "location_specificity": "unknown"
+          },
+          "matching_products": [
+            {
+              "id": "demo-analytics-product",
+              "name": "Signal Board",
+              "category": "Analytics / BI",
+              "description": "DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+              "price": null,
+              "currency": "USD",
+              "url": "https://demo.invalid/demo-analytics",
+              "features": [
+                "role-based access",
+                "exportable reporting"
+              ],
+              "service_regions": [],
+              "available": null,
+              "shipping_deadline_met": null,
+              "evidence": [
+                {
+                  "id": "demo-analytics-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-analytics-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ]
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "id": "demo-analytics-evidence-1",
+              "kind": "observed",
+              "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+              "source": "service_demo_fixture",
+              "source_record_id": "demo-analytics-product",
+              "provenance": [
+                "synthetic fixture; not a real company claim"
+              ],
+              "confidence": 1.0
+            },
+            {
+              "id": "demo-analytics-demo-analytics-hypothesis-1-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: Analytics / BI teams with an active evaluation",
+              "source": "commercial_workflow",
+              "source_record_id": "demo-analytics-hypothesis-1",
+              "provenance": [
+                "demo-analytics-evidence-1"
+              ],
+              "confidence": 0.65
+            }
+          ],
+          "confidence": 0.8220000000000001,
+          "score": {
+            "commerciality": 0.75,
+            "product_fit": 0.412,
+            "semantic_product_fit": 0.412,
+            "constraint_match": 0.79,
+            "location_fit": 0.72,
+            "purchase_stage": "consideration",
+            "ad_relevance": 0.73,
+            "commercial_actionability": 0.1757592,
+            "offer_fit": 0.7,
+            "confidence": 0.8220000000000001,
+            "raw_confidence": 0.8220000000000001,
+            "calibrated_confidence": null,
+            "confidence_band": null,
+            "extracted_constraints": [],
+            "extracted_constraint_fields": {
+              "budget": null,
+              "currency": null,
+              "required_features": [],
+              "excluded_features": [],
+              "compatibility": [],
+              "timing": null,
+              "geography": null,
+              "language": null,
+              "shipping": null
+            },
+            "evidence": [
+              {
+                "id": "demo-analytics-evidence-1",
+                "kind": "observed",
+                "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                "source": "service_demo_fixture",
+                "source_record_id": "demo-analytics-product",
+                "provenance": [
+                  "synthetic fixture; not a real company claim"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "id": "demo-analytics-demo-analytics-hypothesis-1-inference",
+                "kind": "inference",
+                "text": "Candidate commercial situation: Analytics / BI teams with an active evaluation",
+                "source": "commercial_workflow",
+                "source_record_id": "demo-analytics-hypothesis-1",
+                "provenance": [
+                  "demo-analytics-evidence-1"
+                ],
+                "confidence": 0.65
+              },
+              {
+                "id": "demo-analytics-evidence-1",
+                "kind": "observed",
+                "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                "source": "service_demo_fixture",
+                "source_record_id": "demo-analytics-product",
+                "provenance": [
+                  "synthetic fixture; not a real company claim"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "reason_codes": [
+              "BUYING_LANGUAGE"
+            ],
+            "overall": 0.6675
+          },
+          "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+        }
+      ],
+      "portfolio": {
+        "client_id": "demo-analytics-client",
+        "generated_at": "2026-09-22T18:32:03.172481Z",
+        "test": [],
+        "watch": [],
+        "blocked_or_abstained": [
+          {
+            "buyer_moment": {
+              "id": "demo-analytics-moment-demo-analytics-hypothesis-1-demo-analytics-product",
+              "business_id": "demo-analytics",
+              "title": "Analytics / BI teams with an active evaluation \u2014 Signal Board",
+              "problem": "Finance and operations teams need a shared view of weekly performance without a long implementation.",
+              "situation": "A mid-market operations team is evaluating BI tools with a defined implementation window.",
+              "desired_outcome": "Shortlist Signal Board for a controlled evaluation.",
+              "constraints": {
+                "budget": null,
+                "currency": null,
+                "required_features": [],
+                "excluded_features": [],
+                "compatibility": [],
+                "timing": null,
+                "geography": null,
+                "shipping": null,
+                "language": null
+              },
+              "purchase_stage": "consideration",
+              "location": {
+                "country": null,
+                "region": null,
+                "city": null,
+                "language": null,
+                "currency": null,
+                "shipping": null,
+                "location_specificity": "unknown"
+              },
+              "matching_products": [
+                {
+                  "id": "demo-analytics-product",
+                  "name": "Signal Board",
+                  "category": "Analytics / BI",
+                  "description": "DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                  "price": null,
+                  "currency": "USD",
+                  "url": "https://demo.invalid/demo-analytics",
+                  "features": [
+                    "role-based access",
+                    "exportable reporting"
+                  ],
+                  "service_regions": [],
+                  "available": null,
+                  "shipping_deadline_met": null,
+                  "evidence": [
+                    {
+                      "id": "demo-analytics-evidence-1",
+                      "kind": "observed",
+                      "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                      "source": "service_demo_fixture",
+                      "source_record_id": "demo-analytics-product",
+                      "provenance": [
+                        "synthetic fixture; not a real company claim"
+                      ],
+                      "confidence": 1.0
+                    }
+                  ]
+                }
+              ],
+              "supporting_evidence": [
+                {
+                  "id": "demo-analytics-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-analytics-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                },
+                {
+                  "id": "demo-analytics-demo-analytics-hypothesis-1-inference",
+                  "kind": "inference",
+                  "text": "Candidate commercial situation: Analytics / BI teams with an active evaluation",
+                  "source": "commercial_workflow",
+                  "source_record_id": "demo-analytics-hypothesis-1",
+                  "provenance": [
+                    "demo-analytics-evidence-1"
+                  ],
+                  "confidence": 0.65
+                }
+              ],
+              "confidence": 0.8220000000000001,
+              "score": {
+                "commerciality": 0.75,
+                "product_fit": 0.412,
+                "semantic_product_fit": 0.412,
+                "constraint_match": 0.79,
+                "location_fit": 0.72,
+                "purchase_stage": "consideration",
+                "ad_relevance": 0.73,
+                "commercial_actionability": 0.1757592,
+                "offer_fit": 0.7,
+                "confidence": 0.8220000000000001,
+                "raw_confidence": 0.8220000000000001,
+                "calibrated_confidence": null,
+                "confidence_band": null,
+                "extracted_constraints": [],
+                "extracted_constraint_fields": {
+                  "budget": null,
+                  "currency": null,
+                  "required_features": [],
+                  "excluded_features": [],
+                  "compatibility": [],
+                  "timing": null,
+                  "geography": null,
+                  "language": null,
+                  "shipping": null
+                },
+                "evidence": [
+                  {
+                    "id": "demo-analytics-evidence-1",
+                    "kind": "observed",
+                    "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                    "source": "service_demo_fixture",
+                    "source_record_id": "demo-analytics-product",
+                    "provenance": [
+                      "synthetic fixture; not a real company claim"
+                    ],
+                    "confidence": 1.0
+                  },
+                  {
+                    "id": "demo-analytics-demo-analytics-hypothesis-1-inference",
+                    "kind": "inference",
+                    "text": "Candidate commercial situation: Analytics / BI teams with an active evaluation",
+                    "source": "commercial_workflow",
+                    "source_record_id": "demo-analytics-hypothesis-1",
+                    "provenance": [
+                      "demo-analytics-evidence-1"
+                    ],
+                    "confidence": 0.65
+                  },
+                  {
+                    "id": "demo-analytics-evidence-1",
+                    "kind": "observed",
+                    "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                    "source": "service_demo_fixture",
+                    "source_record_id": "demo-analytics-product",
+                    "provenance": [
+                      "synthetic fixture; not a real company claim"
+                    ],
+                    "confidence": 1.0
+                  }
+                ],
+                "reason_codes": [
+                  "BUYING_LANGUAGE"
+                ],
+                "overall": 0.6675
+              },
+              "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+            },
+            "offer_fit": {
+              "client_id": "demo-analytics-client",
+              "buyer_moment_id": "demo-analytics-moment-demo-analytics-hypothesis-1-demo-analytics-product",
+              "offer_id": "demo-analytics-offer",
+              "fit": 0.8,
+              "recommendation": "Test Request an analytics assessment as the offer hypothesis for this Buyer Moment.",
+              "cta": "Request an analytics assessment",
+              "evidence": [
+                {
+                  "id": "demo-analytics-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-analytics-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ],
+              "unknowns": [
+                "Offer conversion rate is unknown until a real experiment runs."
+              ],
+              "risks": [
+                "Offer fit is semantic/provisional; human approval is required."
+              ],
+              "observed_or_inferred": "inferred"
+            },
+            "landing_page_fit": {
+              "client_id": "demo-analytics-client",
+              "buyer_moment_id": "demo-analytics-moment-demo-analytics-hypothesis-1-demo-analytics-product",
+              "page_id": "demo-analytics-product",
+              "status": "PARTIAL",
+              "fit": 0.55,
+              "message_match": 0.6,
+              "offer_match": 0.5,
+              "proof": 0.4,
+              "cta": "Review the relevant product page",
+              "missing_elements": [
+                "Dedicated message-match review",
+                "conversion and proof data"
+              ],
+              "recommended_changes": [
+                "Confirm the page supports the stated constraints before launch."
+              ],
+              "evidence": [
+                {
+                  "id": "demo-analytics-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: analytics workspace with exportable reporting and role-based access.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-analytics-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ]
+            },
+            "commercial_potential": 0.6715,
+            "test_readiness": 0.5622750000000001,
+            "evidence_strength": 0.48583333333333334,
+            "ambiguity": 0.15,
+            "spend_decision": "ABSTAIN",
+            "risks": [
+              "INSUFFICIENT_EVIDENCE",
+              "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+              "EVIDENCE_STRENGTH_LIMITED",
+              "AMBIGUITY_CONTROLLED"
+            ]
+          }
+        ],
+        "human_approval_required": true
+      },
+      "measurement_audit": null,
+      "generated_at": "2026-09-22T18:32:03.172493Z",
+      "intelligence_mode": "legacy",
+      "human_approval_required": true
+    },
+    "measurement": {
+      "client_id": "demo-analytics-client",
+      "status": "TRACKING_READY",
+      "primary_conversion": "demo_request",
+      "checks": {
+        "primary_conversion_defined": true,
+        "utm_parameters": true,
+        "deduplication": true,
+        "crm_linkage": true,
+        "offline_conversion_path": true,
+        "revenue_or_pipeline_fields": true,
+        "conversion_lag_defined": true
+      },
+      "blockers": [],
+      "recommendations": [],
+      "evidence": []
+    },
+    "report": {
+      "id": "report-demo-analytics-client",
+      "client_id": "demo-analytics-client",
+      "generated_at": "2026-09-22T18:32:03.172527Z",
+      "executive_summary": "Demo Analytics SaaS: 0 TEST, 0 WATCH, and 1 blocked/abstained opportunities. Human approval is required.",
+      "what_changed": [
+        "Initial evidence-backed commercial-context analysis created."
+      ],
+      "top_buyer_moments": [],
+      "experiments": [],
+      "outcomes": [],
+      "next_actions": [
+        "Review evidence and approve or reject candidates.",
+        "Audit tracking before any paid test."
+      ],
+      "unknowns": [
+        "DEMO_SYNTHETIC: no real customers, pricing, margins, or campaign outcomes supplied."
+      ],
+      "data_origin": "synthetic"
+    },
+    "data_origin": "DEMO_SYNTHETIC"
+  },
+  {
+    "client": {
+      "id": "demo-cyber-client",
+      "name": "Demo Cybersecurity SaaS",
+      "website": null,
+      "vertical": "B2B SaaS",
+      "status": "ONBOARDING",
+      "created_at": "2026-09-22T18:32:03.172643Z",
+      "provenance": {}
+    },
+    "analysis": {
+      "client": {
+        "id": "demo-cyber-client",
+        "name": "Demo Cybersecurity SaaS",
+        "website": null,
+        "vertical": "B2B SaaS",
+        "status": "ONBOARDING",
+        "created_at": "2026-09-22T18:32:03.172643Z",
+        "provenance": {}
+      },
+      "evidence_sources": [],
+      "buyer_moments": [
+        {
+          "id": "demo-cyber-moment-demo-cyber-hypothesis-1-demo-cyber-product",
+          "business_id": "demo-cyber",
+          "title": "Cybersecurity teams with an active evaluation \u2014 Cloud Guard",
+          "problem": "Security teams need a practical shortlist that fits their review and data-residency requirements.",
+          "situation": "A security team is comparing cloud posture tools before a quarterly assessment.",
+          "desired_outcome": "Shortlist Cloud Guard for a controlled evaluation.",
+          "constraints": {
+            "budget": null,
+            "currency": null,
+            "required_features": [],
+            "excluded_features": [],
+            "compatibility": [],
+            "timing": null,
+            "geography": null,
+            "shipping": null,
+            "language": null
+          },
+          "purchase_stage": "consideration",
+          "location": {
+            "country": null,
+            "region": null,
+            "city": null,
+            "language": null,
+            "currency": null,
+            "shipping": null,
+            "location_specificity": "unknown"
+          },
+          "matching_products": [
+            {
+              "id": "demo-cyber-product",
+              "name": "Cloud Guard",
+              "category": "Cybersecurity",
+              "description": "DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+              "price": null,
+              "currency": "USD",
+              "url": "https://demo.invalid/demo-cyber",
+              "features": [
+                "role-based access",
+                "exportable reporting"
+              ],
+              "service_regions": [],
+              "available": null,
+              "shipping_deadline_met": null,
+              "evidence": [
+                {
+                  "id": "demo-cyber-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-cyber-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ]
+            }
+          ],
+          "supporting_evidence": [
+            {
+              "id": "demo-cyber-evidence-1",
+              "kind": "observed",
+              "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+              "source": "service_demo_fixture",
+              "source_record_id": "demo-cyber-product",
+              "provenance": [
+                "synthetic fixture; not a real company claim"
+              ],
+              "confidence": 1.0
+            },
+            {
+              "id": "demo-cyber-demo-cyber-hypothesis-1-inference",
+              "kind": "inference",
+              "text": "Candidate commercial situation: Cybersecurity teams with an active evaluation",
+              "source": "commercial_workflow",
+              "source_record_id": "demo-cyber-hypothesis-1",
+              "provenance": [
+                "demo-cyber-evidence-1"
+              ],
+              "confidence": 0.65
+            }
+          ],
+          "confidence": 0.8286666666666667,
+          "score": {
+            "commerciality": 0.75,
+            "product_fit": 0.41666666666666663,
+            "semantic_product_fit": 0.41666666666666663,
+            "constraint_match": 0.79,
+            "location_fit": 0.72,
+            "purchase_stage": "consideration",
+            "ad_relevance": 0.73,
+            "commercial_actionability": 0.17775,
+            "offer_fit": 0.7,
+            "confidence": 0.8286666666666667,
+            "raw_confidence": 0.8286666666666667,
+            "calibrated_confidence": null,
+            "confidence_band": null,
+            "extracted_constraints": [],
+            "extracted_constraint_fields": {
+              "budget": null,
+              "currency": null,
+              "required_features": [],
+              "excluded_features": [],
+              "compatibility": [],
+              "timing": null,
+              "geography": null,
+              "language": null,
+              "shipping": null
+            },
+            "evidence": [
+              {
+                "id": "demo-cyber-evidence-1",
+                "kind": "observed",
+                "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                "source": "service_demo_fixture",
+                "source_record_id": "demo-cyber-product",
+                "provenance": [
+                  "synthetic fixture; not a real company claim"
+                ],
+                "confidence": 1.0
+              },
+              {
+                "id": "demo-cyber-demo-cyber-hypothesis-1-inference",
+                "kind": "inference",
+                "text": "Candidate commercial situation: Cybersecurity teams with an active evaluation",
+                "source": "commercial_workflow",
+                "source_record_id": "demo-cyber-hypothesis-1",
+                "provenance": [
+                  "demo-cyber-evidence-1"
+                ],
+                "confidence": 0.65
+              },
+              {
+                "id": "demo-cyber-evidence-1",
+                "kind": "observed",
+                "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                "source": "service_demo_fixture",
+                "source_record_id": "demo-cyber-product",
+                "provenance": [
+                  "synthetic fixture; not a real company claim"
+                ],
+                "confidence": 1.0
+              }
+            ],
+            "reason_codes": [
+              "BUYING_LANGUAGE"
+            ],
+            "overall": 0.6686666666666666
+          },
+          "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+        }
+      ],
+      "portfolio": {
+        "client_id": "demo-cyber-client",
+        "generated_at": "2026-09-22T18:32:03.173093Z",
+        "test": [],
+        "watch": [],
+        "blocked_or_abstained": [
+          {
+            "buyer_moment": {
+              "id": "demo-cyber-moment-demo-cyber-hypothesis-1-demo-cyber-product",
+              "business_id": "demo-cyber",
+              "title": "Cybersecurity teams with an active evaluation \u2014 Cloud Guard",
+              "problem": "Security teams need a practical shortlist that fits their review and data-residency requirements.",
+              "situation": "A security team is comparing cloud posture tools before a quarterly assessment.",
+              "desired_outcome": "Shortlist Cloud Guard for a controlled evaluation.",
+              "constraints": {
+                "budget": null,
+                "currency": null,
+                "required_features": [],
+                "excluded_features": [],
+                "compatibility": [],
+                "timing": null,
+                "geography": null,
+                "shipping": null,
+                "language": null
+              },
+              "purchase_stage": "consideration",
+              "location": {
+                "country": null,
+                "region": null,
+                "city": null,
+                "language": null,
+                "currency": null,
+                "shipping": null,
+                "location_specificity": "unknown"
+              },
+              "matching_products": [
+                {
+                  "id": "demo-cyber-product",
+                  "name": "Cloud Guard",
+                  "category": "Cybersecurity",
+                  "description": "DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                  "price": null,
+                  "currency": "USD",
+                  "url": "https://demo.invalid/demo-cyber",
+                  "features": [
+                    "role-based access",
+                    "exportable reporting"
+                  ],
+                  "service_regions": [],
+                  "available": null,
+                  "shipping_deadline_met": null,
+                  "evidence": [
+                    {
+                      "id": "demo-cyber-evidence-1",
+                      "kind": "observed",
+                      "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                      "source": "service_demo_fixture",
+                      "source_record_id": "demo-cyber-product",
+                      "provenance": [
+                        "synthetic fixture; not a real company claim"
+                      ],
+                      "confidence": 1.0
+                    }
+                  ]
+                }
+              ],
+              "supporting_evidence": [
+                {
+                  "id": "demo-cyber-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-cyber-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                },
+                {
+                  "id": "demo-cyber-demo-cyber-hypothesis-1-inference",
+                  "kind": "inference",
+                  "text": "Candidate commercial situation: Cybersecurity teams with an active evaluation",
+                  "source": "commercial_workflow",
+                  "source_record_id": "demo-cyber-hypothesis-1",
+                  "provenance": [
+                    "demo-cyber-evidence-1"
+                  ],
+                  "confidence": 0.65
+                }
+              ],
+              "confidence": 0.8286666666666667,
+              "score": {
+                "commerciality": 0.75,
+                "product_fit": 0.41666666666666663,
+                "semantic_product_fit": 0.41666666666666663,
+                "constraint_match": 0.79,
+                "location_fit": 0.72,
+                "purchase_stage": "consideration",
+                "ad_relevance": 0.73,
+                "commercial_actionability": 0.17775,
+                "offer_fit": 0.7,
+                "confidence": 0.8286666666666667,
+                "raw_confidence": 0.8286666666666667,
+                "calibrated_confidence": null,
+                "confidence_band": null,
+                "extracted_constraints": [],
+                "extracted_constraint_fields": {
+                  "budget": null,
+                  "currency": null,
+                  "required_features": [],
+                  "excluded_features": [],
+                  "compatibility": [],
+                  "timing": null,
+                  "geography": null,
+                  "language": null,
+                  "shipping": null
+                },
+                "evidence": [
+                  {
+                    "id": "demo-cyber-evidence-1",
+                    "kind": "observed",
+                    "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                    "source": "service_demo_fixture",
+                    "source_record_id": "demo-cyber-product",
+                    "provenance": [
+                      "synthetic fixture; not a real company claim"
+                    ],
+                    "confidence": 1.0
+                  },
+                  {
+                    "id": "demo-cyber-demo-cyber-hypothesis-1-inference",
+                    "kind": "inference",
+                    "text": "Candidate commercial situation: Cybersecurity teams with an active evaluation",
+                    "source": "commercial_workflow",
+                    "source_record_id": "demo-cyber-hypothesis-1",
+                    "provenance": [
+                      "demo-cyber-evidence-1"
+                    ],
+                    "confidence": 0.65
+                  },
+                  {
+                    "id": "demo-cyber-evidence-1",
+                    "kind": "observed",
+                    "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                    "source": "service_demo_fixture",
+                    "source_record_id": "demo-cyber-product",
+                    "provenance": [
+                      "synthetic fixture; not a real company claim"
+                    ],
+                    "confidence": 1.0
+                  }
+                ],
+                "reason_codes": [
+                  "BUYING_LANGUAGE"
+                ],
+                "overall": 0.6686666666666666
+              },
+              "why_experiment": "Candidate hypothesis derived from supplied business evidence; human approval is required before any spend."
+            },
+            "offer_fit": {
+              "client_id": "demo-cyber-client",
+              "buyer_moment_id": "demo-cyber-moment-demo-cyber-hypothesis-1-demo-cyber-product",
+              "offer_id": "demo-cyber-offer",
+              "fit": 0.8500000000000001,
+              "recommendation": "Test Schedule a security review as the offer hypothesis for this Buyer Moment.",
+              "cta": "Schedule a security review",
+              "evidence": [
+                {
+                  "id": "demo-cyber-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-cyber-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ],
+              "unknowns": [
+                "Offer conversion rate is unknown until a real experiment runs."
+              ],
+              "risks": [
+                "Offer fit is semantic/provisional; human approval is required."
+              ],
+              "observed_or_inferred": "inferred"
+            },
+            "landing_page_fit": {
+              "client_id": "demo-cyber-client",
+              "buyer_moment_id": "demo-cyber-moment-demo-cyber-hypothesis-1-demo-cyber-product",
+              "page_id": "demo-cyber-product",
+              "status": "PARTIAL",
+              "fit": 0.55,
+              "message_match": 0.6,
+              "offer_match": 0.5,
+              "proof": 0.4,
+              "cta": "Review the relevant product page",
+              "missing_elements": [
+                "Dedicated message-match review",
+                "conversion and proof data"
+              ],
+              "recommended_changes": [
+                "Confirm the page supports the stated constraints before launch."
+              ],
+              "evidence": [
+                {
+                  "id": "demo-cyber-evidence-1",
+                  "kind": "observed",
+                  "text": "DEMO_SYNTHETIC: DEMO_SYNTHETIC: cloud security workflow with role-based findings and exportable reports.",
+                  "source": "service_demo_fixture",
+                  "source_record_id": "demo-cyber-product",
+                  "provenance": [
+                    "synthetic fixture; not a real company claim"
+                  ],
+                  "confidence": 1.0
+                }
+              ]
+            },
+            "commercial_potential": 0.6726666666666665,
+            "test_readiness": 0.5632083333333333,
+            "evidence_strength": 0.48583333333333334,
+            "ambiguity": 0.15,
+            "spend_decision": "ABSTAIN",
+            "risks": [
+              "INSUFFICIENT_EVIDENCE",
+              "NO_EXPLICIT_IMMEDIATE_SIGNAL",
+              "EVIDENCE_STRENGTH_LIMITED",
+              "AMBIGUITY_CONTROLLED"
+            ]
+          }
+        ],
+        "human_approval_required": true
+      },
+      "measurement_audit": null,
+      "generated_at": "2026-09-22T18:32:03.173103Z",
+      "intelligence_mode": "legacy",
+      "human_approval_required": true
+    },
+    "measurement": {
+      "client_id": "demo-cyber-client",
+      "status": "TRACKING_READY",
+      "primary_conversion": "demo_request",
+      "checks": {
+        "primary_conversion_defined": true,
+        "utm_parameters": true,
+        "deduplication": true,
+        "crm_linkage": true,
+        "offline_conversion_path": true,
+        "revenue_or_pipeline_fields": true,
+        "conversion_lag_defined": true
+      },
+      "blockers": [],
+      "recommendations": [],
+      "evidence": []
+    },
+    "report": {
+      "id": "report-demo-cyber-client",
+      "client_id": "demo-cyber-client",
+      "generated_at": "2026-09-22T18:32:03.173131Z",
+      "executive_summary": "Demo Cybersecurity SaaS: 0 TEST, 0 WATCH, and 1 blocked/abstained opportunities. Human approval is required.",
+      "what_changed": [
+        "Initial evidence-backed commercial-context analysis created."
+      ],
+      "top_buyer_moments": [],
+      "experiments": [],
+      "outcomes": [],
+      "next_actions": [
+        "Review evidence and approve or reject candidates.",
+        "Audit tracking before any paid test."
+      ],
+      "unknowns": [
+        "DEMO_SYNTHETIC: no real customers, pricing, margins, or campaign outcomes supplied."
+      ],
+      "data_origin": "synthetic"
+    },
+    "data_origin": "DEMO_SYNTHETIC"
+  }
+]

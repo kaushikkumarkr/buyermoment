@@ -27,6 +27,7 @@ class ExperimentLedger:
                 """
                 CREATE TABLE IF NOT EXISTS experiments (
                     experiment_id TEXT PRIMARY KEY,
+                    client_id TEXT NOT NULL DEFAULT 'default',
                     buyer_moment_id TEXT NOT NULL,
                     business_id TEXT NOT NULL,
                     payload_json TEXT NOT NULL,
@@ -55,13 +56,16 @@ class ExperimentLedger:
                 );
                 """
             )
+            columns = {row["name"] for row in connection.execute("PRAGMA table_info(experiments)")}
+            if "client_id" not in columns:
+                connection.execute("ALTER TABLE experiments ADD COLUMN client_id TEXT NOT NULL DEFAULT 'default'")
 
     def save_experiment(self, experiment: AdExperiment) -> None:
         payload = json.dumps(experiment.model_dump(mode="json"), sort_keys=True)
         with self._connect() as connection:
             connection.execute(
-                "INSERT OR REPLACE INTO experiments(experiment_id, buyer_moment_id, business_id, payload_json, created_at) VALUES (?, ?, ?, ?, ?)",
-                (experiment.experiment_id, experiment.buyer_moment_id, experiment.business_id, payload, experiment.created_at.isoformat()),
+                "INSERT OR REPLACE INTO experiments(experiment_id, client_id, buyer_moment_id, business_id, payload_json, created_at) VALUES (?, ?, ?, ?, ?, ?)",
+                (experiment.experiment_id, experiment.client_id, experiment.buyer_moment_id, experiment.business_id, payload, experiment.created_at.isoformat()),
             )
 
     def save_outcome(self, outcome: CampaignOutcome) -> CommercialContextOutcome:

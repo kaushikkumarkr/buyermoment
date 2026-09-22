@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Protocol
 
 from .commercial import AdExperiment
+from .planners import chatgpt_ads_bulk_row
 
 
 class PlatformAdapter(Protocol):
@@ -38,4 +39,10 @@ class ChatGPTAdsAdapter:
             writer.writeheader()
             for hint in experiment.audience_or_context_strategy.context_hints:
                 writer.writerow({"experiment_id": experiment.experiment_id, "buyer_moment_id": experiment.buyer_moment_id, "ad_group_concept": experiment.audience_or_context_strategy.commercial_context, "context_hint": hint})
-        return {"package_json": str(payload_path), "context_hints_csv": str(context_path)}
+        bulk_path = output_dir / f"{experiment.experiment_id}_bulk_upload.csv"
+        row = chatgpt_ads_bulk_row(experiment)
+        with bulk_path.open("w", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=list(row))
+            writer.writeheader()
+            writer.writerow({**row, "context_hints": json.dumps(row["context_hints"]), "landing_page_url": row["landing_page_url"]})
+        return {"package_json": str(payload_path), "context_hints_csv": str(context_path), "bulk_upload_csv": str(bulk_path)}

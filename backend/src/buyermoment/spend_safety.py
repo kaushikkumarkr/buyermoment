@@ -24,6 +24,8 @@ class SpendSafetyPolicy:
 
 
 def load_policy(path: Path = Path("policies/spend_safety.yaml")) -> SpendSafetyPolicy:
+    if not path.is_absolute() and not path.exists():
+        path = Path(__file__).resolve().parents[3] / path
     values: dict[str, str] = {}
     for line in path.read_text().splitlines():
         if line.strip() and not line.lstrip().startswith("#") and ":" in line:

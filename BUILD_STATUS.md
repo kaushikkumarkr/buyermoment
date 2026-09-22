@@ -1,5 +1,26 @@
 # Build status
 
+## Phase 9 — service operating system (current branch)
+
+- Branch: `phase9/service-readiness` (from `phase8/intelligence-v1`, parent `16fe45b`).
+- Frozen pre-service baseline is recorded at `reports/final_build_baseline.md`; all prior benchmark artifacts remain preserved.
+- Added client-scoped SQLite workspace tables for clients, evidence sources/chunks, portfolios, approvals, feedback, reports, and experiment lineage.
+- Added deterministic local evidence ingestion for website/HTML/TXT/Markdown/CSV/JSON/DOCX and optional PDF parsing, with size/type validation and prompt-injection flags.
+- Added client-filtered retrieval, preliminary evidence analysis, OfferFit, LandingPageFit, Experiment Portfolio, measurement audit, manual outcome CSV import, next-best-experiment structure, client reports, and platform-neutral plans.
+- Added documented ChatGPT Ads manual/bulk workflow and Google AI Max planning contract using official first-party documentation; no undocumented API or private ChatGPT conversation access is claimed.
+- Expanded CCB-B2B silver queue to 44 controlled scenarios across 11 categories; human-reviewed/gold records remain 0.
+- Added three explicitly `DEMO_SYNTHETIC` B2B full-flow demos: CRM, Analytics/BI, Cybersecurity.
+- Added minimal client workspace intake strip to the existing UI; no redesign or autonomous action.
+- Local service validation: 22 backend tests passing; frontend typecheck/build passing; no Phase 9 Azure inference job or new Azure resource.
+- Service gate: `SERVICE_READY_WITH_LIMITATIONS` for controlled internal/design-partner operation; live advertising and autonomous spend remain `NO-GO`.
+
+### Phase 9 limitations
+
+- No external client, live campaign, or real outcome is present in the repository.
+- Azure AI Search, Container Apps app, Application Insights, and Azure ML were not provisioned; local SQLite/lexical retrieval is the tested default.
+- Authentication/deployment hardening is still required before private client data is accepted in a deployed service.
+- Evidence grounding is conservative local support logic, not a production semantic verifier.
+
 ## Completed
 
 - Product context and evidence-first principles recorded in `PRODUCT.md`.

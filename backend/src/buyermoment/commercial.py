@@ -76,6 +76,7 @@ class AdExperiment(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     experiment_id: str
+    client_id: str = "default"
     business_id: str
     buyer_moment_id: str
     platform: Platform
@@ -102,6 +103,7 @@ class CampaignOutcome(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     experiment_id: str
+    client_id: str = "default"
     buyer_moment_id: str
     platform: Platform
     date: str
@@ -127,6 +129,7 @@ class GoogleAiMaxOutcome(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     experiment_id: str
+    client_id: str = "default"
     buyer_moment_id: str
     date: str
     search_term: str | None = None
@@ -149,6 +152,7 @@ class CommercialContextOutcome(BaseModel):
 
     buyer_moment_id: str
     experiment_id: str
+    client_id: str = "default"
     contextfit_prediction: float = Field(ge=0, le=1)
     test_readiness_prediction: float = Field(ge=0, le=1)
     platform: Platform

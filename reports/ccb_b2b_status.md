@@ -2,10 +2,10 @@
 
 The CCB-B2B schema and review queue are implemented. The current controlled silver foundation contains:
 
-- Silver scenarios: `22`
+- Silver scenarios: `44`
 - Human-reviewed records: `0`
 - Gold holdout: `0`
-- Pending review queue: `22`
+- Pending review queue: `44`
 - Categories: `11` of the planned initial category list
 - Azure-generated records: `0`
 
